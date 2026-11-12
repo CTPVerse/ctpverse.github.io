@@ -1269,7 +1269,10 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],proc
   <section class="hero-banner" id="hero-banner" aria-roledescription="carousel" aria-label="CTPVerse hero banner">
     <div class="hero-viewport">
       <figure class="hero-slide is-active">
-        <img src="assets/hero-01-chamber.jpg" alt="Resofactor in the aluminum chamber room" width="1920" height="1080" />
+        <img src="assets/hero-00-ctpverse.jpg" alt="CTPVerse — Conscious Translational Physics" width="1920" height="1080" />
+      </figure>
+      <figure class="hero-slide" aria-hidden="true">
+        <img src="assets/hero-01-chamber.jpg" alt="Resofactor in the aluminum chamber room" width="1920" height="1080" loading="lazy" />
       </figure>
       <figure class="hero-slide" aria-hidden="true">
         <img src="assets/hero-03-triangular-craft.jpg" alt="Triangular CTP Space Systems craft" width="1920" height="1080" loading="lazy" />
@@ -1501,9 +1504,9 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],proc
       <button type="button" class="hero-arrow hero-arrow-next" id="heroNext" aria-label="Next hero image">&#8250;</button>
 
       <div class="hero-bar">
-        <p class="hero-caption" id="heroCaption">Resofactor in the aluminum chamber room</p>
+        <p class="hero-caption" id="heroCaption">CTPVerse — Conscious Translational Physics</p>
         <div class="hero-controls">
-          <span class="hero-count" id="heroCount" aria-live="polite">Hero 1 of 76</span>
+          <span class="hero-count" id="heroCount" aria-live="polite">Hero 0 of 77</span>
         </div>
       </div>
     </div>
@@ -3324,6 +3327,7 @@ are based on THIS: the <strong>CTPSci Sciences</strong>, discovered by Drazen.</
   var banner=document.getElementById('hero-banner');
   if(!banner) return;
   var captions=[
+    'CTPVerse \u2014 Conscious Translational Physics',
     'Resofactor in the aluminum chamber room',
     'Triangular CTP Space Systems craft',
     'Resofactor portrait, white background, ankle-length coat',
@@ -3441,7 +3445,7 @@ are based on THIS: the <strong>CTPSci Sciences</strong>, discovered by Drazen.</
       }
     });
     if(captionEl) captionEl.textContent=captions[heroIdx]||'';
-    if(countEl) countEl.textContent='Hero '+(heroNumbers[heroIdx]||(heroIdx+1))+' of '+slides.length;
+    if(countEl) countEl.textContent='Hero '+((heroNumbers[heroIdx]!=null)?heroNumbers[heroIdx]:(heroIdx+1))+' of '+slides.length;
     if(manual) restart();
   }
   /* Auto-advance is RANDOM: each automatic step jumps to a slide picked at
@@ -3492,7 +3496,7 @@ are based on THIS: the <strong>CTPSci Sciences</strong>, discovered by Drazen.</
   if(prevBtn) prevBtn.addEventListener('click',function(){ showHero(heroIdx-1,true); });
   if(nextBtn) nextBtn.addEventListener('click',function(){ showHero(heroIdx+1,true); });
   /* Touch swipe — swipe left for the next hero, swipe right for the previous one.
-     Works alongside the prev / next arrows, the caption and the Hero X of 76 counter. */
+     Works alongside the prev / next arrows, the caption and the Hero X of 77 counter. */
   var swipeX=null, swipeY=null;
   function swipeStart(x,y){ swipeX=x; swipeY=y; }
   function swipeEnd(x,y){
