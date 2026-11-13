@@ -1499,6 +1499,9 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],proc
       <figure class="hero-slide" aria-hidden="true">
         <img src="assets/hero-79-ctp-eos-tri-force.jpg" alt="CTP-EOS banner, metallic blue Tri-Force triangle on a dark blue background" width="1920" height="1080" loading="lazy" />
       </figure>
+      <figure class="hero-slide" aria-hidden="true">
+        <img src="assets/hero-80-cylindrical-craft-1950.jpg" alt="Cylindrical craft, New York, 1950" width="1920" height="1080" loading="lazy" />
+      </figure>
 
       <button type="button" class="hero-arrow hero-arrow-prev" id="heroPrev" aria-label="Previous hero image">&#8249;</button>
       <button type="button" class="hero-arrow hero-arrow-next" id="heroNext" aria-label="Next hero image">&#8250;</button>
@@ -1506,7 +1509,7 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],proc
       <div class="hero-bar">
         <p class="hero-caption" id="heroCaption">CTPVerse — Conscious Translational Physics</p>
         <div class="hero-controls">
-          <span class="hero-count" id="heroCount" aria-live="polite">Hero 0 of 77</span>
+          <span class="hero-count" id="heroCount" aria-live="polite">Hero 0 of 78</span>
         </div>
       </div>
     </div>
@@ -3412,7 +3415,8 @@ are based on THIS: the <strong>CTPSci Sciences</strong>, discovered by Drazen.</
     'Three CTP orbs, white, blue and black',
     'CE entity, chrome with green glowing eyes and green holographic data panels',
     'Wireframe CE entity holding a glowing orb above the clouds',
-    'CTP-EOS banner — Tri-Force'
+    'CTP-EOS banner — Tri-Force',
+    'Cylindrical craft — New York, 1950'
   ];
   var slides=[].slice.call(banner.querySelectorAll('.hero-slide'));
   /* Each slide's own hero number, parsed from its image filename (hero-NN-...).
@@ -3505,7 +3509,7 @@ are based on THIS: the <strong>CTPSci Sciences</strong>, discovered by Drazen.</
   if(prevBtn) prevBtn.addEventListener('click',function(){ showHero(heroIdx-1,true); });
   if(nextBtn) nextBtn.addEventListener('click',function(){ showHero(heroIdx+1,true); });
   /* Touch swipe — swipe left for the next hero, swipe right for the previous one.
-     Works alongside the prev / next arrows, the caption and the Hero X of 77 counter. */
+     Works alongside the prev / next arrows, the caption and the Hero X of 78 counter. */
   var swipeX=null, swipeY=null;
   function swipeStart(x,y){ swipeX=x; swipeY=y; }
   function swipeEnd(x,y){
