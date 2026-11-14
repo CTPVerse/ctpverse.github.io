@@ -10,7 +10,7 @@
 <script>
   /* Restore the last-used theme before first paint, so there is no flash — new visitors land on CTP-EOS Cynamic (the default) */
   (function(){
-    var VALID=['eos','eos-light','eos-medium','eos-medium-dark','eos-dark','ctpix','cdomain-light','cdomain-medium','cdomain-medium-dark','cdomain-dark','frey-light','frey-medium','frey-medium-dark','frey-dark','light','medium','dark','nuke-dark','matrix','amber','catppuccin','cerulean','synthwave','dracula','nord','cyberpunk','tokyonight','solarized','corporate'];
+    var VALID=['eos','eos-light','eos-medium','eos-medium-dark','eos-dark','tecknotronic-psy','tecknotronic-matrix','ctpix','cdomain-light','cdomain-medium','cdomain-medium-dark','cdomain-dark','frey-light','frey-medium','frey-medium-dark','frey-dark','light','medium','dark','nuke-dark','matrix','amber','catppuccin','cerulean','synthwave','dracula','nord','cyberpunk','tokyonight','solarized','corporate'];
     try{
       var saved=localStorage.getItem('ctpverse-dashboard-theme');
       if(VALID.indexOf(saved)>-1){
@@ -32,7 +32,7 @@
   })();
 </script>
 <style>
-  /* ===== Classic Nuke portal — 29 user-selectable themes in one drop-down: CTP-EOS Cynamic first, then the 4 logo-derived CTP-EOS themes, then CTPIX, then the 4 C-domain themes, then the 4 Frey Grey Blue themes, then Light / Medium / Dark, then the 12 CTP-EOS GitHub IO themes ===== */
+  /* ===== Classic Nuke portal — 31 user-selectable themes in one drop-down: CTP-EOS Cynamic first, then the 4 logo-derived CTP-EOS themes, then the 2 Tecknotronic themes, then CTPIX, then the 4 C-domain themes, then the 4 Frey Grey Blue themes, then Light / Medium / Dark, then the 12 CTP-EOS GitHub IO themes ===== */
   /* LIGHT — the original bright blue / white / black Nuke look */
   :root, :root[data-theme="light"]{
     color-scheme:light;
@@ -117,6 +117,30 @@
     --btn-bg:#062f4f; --btn-text:#ffffff; --header-grad:linear-gradient(to bottom,#00aeef 0%,#062f4f 45%,#011631 100%);
     --title-grad:linear-gradient(to bottom,#062f4f,#021d38); --nav-bg:#000000; --strip-bg:#000000;
     --mark-bg:#011631; --mark-text:#00aeef; --hover-border:#00aeef;
+  }
+  /* CTP TECKNOTRONIC PSY — black and dark gray, cyan highlights */
+  :root[data-theme="tecknotronic-psy"]{
+    color-scheme:dark;
+    --navy:#00aeef; --navy-dark:#7ed6ff; --blue:#00aeef; --blue-mid:#29bdf0;
+    --blue-pale:#1c2b33; --blue-wash:#0a0a0a; --blue-soft:#223840;
+    --page:#000000; --text:#ffffff; --text-2:#f3f4f6; --text-3:#e5e7eb; --muted:#c0c8d0; --line:#00aeef;
+    --outer:#000000; --surface:#1a1a1a; --heading:#5ed4ff; --link:#5ed4ff; --link-hover:#ffffff;
+    --border-soft:#333333; --border-faint:#1a1a1a; --input-bg:#0a0a0a; --input-focus:#1a1a1a;
+    --btn-bg:#1a1a1a; --btn-text:#ffffff; --header-grad:linear-gradient(to bottom,#00aeef 0%,#1a1a1a 45%,#000000 100%);
+    --title-grad:linear-gradient(to bottom,#00aeef,#1a1a1a); --nav-bg:#000000; --strip-bg:#000000;
+    --mark-bg:#0a0a0a; --mark-text:#00aeef; --hover-border:#00aeef;
+  }
+  /* CTP TECKNOTRONIC MATRIX — black and dark gray, phosphor terminal green highlights */
+  :root[data-theme="tecknotronic-matrix"]{
+    color-scheme:dark;
+    --navy:#00ff41; --navy-dark:#7dff9e; --blue:#00ff41; --blue-mid:#33ff66;
+    --blue-pale:#12261a; --blue-wash:#0a0a0a; --blue-soft:#1d3325;
+    --page:#000000; --text:#ffffff; --text-2:#f3f4f6; --text-3:#e5e7eb; --muted:#c0c8d0; --line:#00ff41;
+    --outer:#000000; --surface:#1a1a1a; --heading:#5eff8a; --link:#5eff8a; --link-hover:#ffffff;
+    --border-soft:#333333; --border-faint:#1a1a1a; --input-bg:#0a0a0a; --input-focus:#1a1a1a;
+    --btn-bg:#1a1a1a; --btn-text:#ffffff; --header-grad:linear-gradient(to bottom,#00ff41 0%,#1a1a1a 45%,#000000 100%);
+    --title-grad:linear-gradient(to bottom,#00ff41,#1a1a1a); --nav-bg:#000000; --strip-bg:#000000;
+    --mark-bg:#0a0a0a; --mark-text:#00ff41; --hover-border:#00ff41;
   }
   /* CTPIX — Artix Linux site theme (artixlinux.org/default.css): bg #0b0a0a, panels #1b1a1a, text #d9d9d9, headings #eaeaea, links #53bffc, hover #ccf */
   :root[data-theme="ctpix"]{
@@ -760,11 +784,15 @@
   :root[data-theme="dark"] .brand p,
   :root[data-theme="eos"] .brand p,
   :root[data-theme="eos-medium-dark"] .brand p,
-  :root[data-theme="eos-dark"] .brand p{color:#ffffff}
+  :root[data-theme="eos-dark"] .brand p,
+  :root[data-theme="tecknotronic-psy"] .brand p,
+  :root[data-theme="tecknotronic-matrix"] .brand p{color:#ffffff}
   :root[data-theme="dark"] .search input::placeholder,
   :root[data-theme="eos"] .search input::placeholder,
   :root[data-theme="eos-medium-dark"] .search input::placeholder,
-  :root[data-theme="eos-dark"] .search input::placeholder{color:#ffffff; opacity:.8}
+  :root[data-theme="eos-dark"] .search input::placeholder,
+  :root[data-theme="tecknotronic-psy"] .search input::placeholder,
+  :root[data-theme="tecknotronic-matrix"] .search input::placeholder{color:#ffffff; opacity:.8}
   footer a{color:#99ccff; font-weight:bold}
   footer a:hover{color:#ffffff}
 
@@ -1186,7 +1214,7 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],proc
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 <body>
-<!-- Dashboard build v112 -->
+<!-- Dashboard build v113 -->
 <div class="wrap">
 
   <!-- ===== Banner header ===== -->
@@ -1209,6 +1237,8 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],proc
             <option value="eos-medium">CTP-EOS Medium</option>
             <option value="eos-medium-dark">CTP-EOS Medium Dark</option>
             <option value="eos-dark">CTP-EOS Dark</option>
+            <option value="tecknotronic-psy">CTP Tecknotronic Psy</option>
+            <option value="tecknotronic-matrix">CTP Tecknotronic Matrix</option>
             <option value="ctpix">CTPIX</option>
             <option value="cdomain-light">C-domain Light</option>
             <option value="cdomain-medium">C-domain Medium</option>
@@ -3203,7 +3233,7 @@ are based on THIS: the <strong>CTPSci Sciences</strong>, discovered by Drazen.</
 
   <!-- ===== Footer ===== -->
   <footer>
-    <div class="foot-blue">CTPVerse Dashboard · Resofactor · CTP = Conscious Translational Physics · v112</div>
+    <div class="foot-blue">CTPVerse Dashboard · Resofactor · CTP = Conscious Translational Physics · v113</div>
     <div class="foot-black">Contact: <a href="mailto:info@ctp-energy.com">info@ctp-energy.com</a> · Hub: <a href="https://linktr.ee/resofactor" target="_blank" rel="noopener">linktr.ee/resofactor</a> · CTP-EOS Portal: <a href="https://ctp-eos.github.io/" target="_blank" rel="noopener">ctp-eos.github.io</a> · GitHub: <a href="https://github.com/ctp-eos" target="_blank" rel="noopener">github.com/ctp-eos</a> · Classic Nuke-style layout · Themes: CTP-EOS Cynamic / Light / Medium / Dark</div>
   </footer>
 </div>
@@ -3242,12 +3272,12 @@ are based on THIS: the <strong>CTPSci Sciences</strong>, discovered by Drazen.</
   syncStickTop();
   window.addEventListener('resize',syncStickTop);
   window.addEventListener('load',syncStickTop);
-  // Theme drop-down — 29 themes: CTP-EOS Cynamic first, then the 4 logo-derived CTP-EOS themes, then CTPIX, then the 4 C-domain themes, then the 4 Frey Grey Blue themes, then Light / Medium / Dark, then the 12 CTP-EOS GitHub IO themes.
+  // Theme drop-down — 31 themes: CTP-EOS Cynamic first, then the 4 logo-derived CTP-EOS themes, then the 2 Tecknotronic themes, then CTPIX, then the 4 C-domain themes, then the 4 Frey Grey Blue themes, then Light / Medium / Dark, then the 12 CTP-EOS GitHub IO themes.
   // CTP-EOS Cynamic is first and the default; the choice is remembered on this device.
   var THEME_KEY='ctpverse-dashboard-theme';
-  var VALID_THEMES=['eos','eos-light','eos-medium','eos-medium-dark','eos-dark','ctpix','cdomain-light','cdomain-medium','cdomain-medium-dark','cdomain-dark','frey-light','frey-medium','frey-medium-dark','frey-dark','light','medium','dark','nuke-dark','matrix','amber','catppuccin','cerulean','synthwave','dracula','nord','cyberpunk','tokyonight','solarized','corporate'];
+  var VALID_THEMES=['eos','eos-light','eos-medium','eos-medium-dark','eos-dark','tecknotronic-psy','tecknotronic-matrix','ctpix','cdomain-light','cdomain-medium','cdomain-medium-dark','cdomain-dark','frey-light','frey-medium','frey-medium-dark','frey-dark','light','medium','dark','nuke-dark','matrix','amber','catppuccin','cerulean','synthwave','dracula','nord','cyberpunk','tokyonight','solarized','corporate'];
   var LIGHT_THEMES={light:true,medium:true,corporate:true,'eos-light':true,'eos-medium':true,'cdomain-light':true,'frey-light':true,'frey-medium':true};
-  var THEME_LABELS={eos:'CTP-EOS Cynamic','eos-light':'CTP-EOS Light','eos-medium':'CTP-EOS Medium','eos-medium-dark':'CTP-EOS Medium Dark','eos-dark':'CTP-EOS Dark',ctpix:'CTPIX','cdomain-light':'C-domain Light','cdomain-medium':'C-domain Medium','cdomain-medium-dark':'C-domain Medium Dark','cdomain-dark':'C-domain Dark','frey-light':'Frey Light','frey-medium':'Frey Medium','frey-medium-dark':'Frey Medium Dark','frey-dark':'Frey Dark',light:'Light',medium:'Medium',dark:'Dark','nuke-dark':'Nuke Dark',matrix:'Matrix',amber:'Amber',catppuccin:'Catppuccin',cerulean:'Cerulean',synthwave:'Synthwave',dracula:'Dracula',nord:'Nord',cyberpunk:'Cyberpunk',tokyonight:'Tokyo Night',solarized:'Solarized',corporate:'Corporate'};
+  var THEME_LABELS={eos:'CTP-EOS Cynamic','eos-light':'CTP-EOS Light','eos-medium':'CTP-EOS Medium','eos-medium-dark':'CTP-EOS Medium Dark','eos-dark':'CTP-EOS Dark','tecknotronic-psy':'CTP Tecknotronic Psy','tecknotronic-matrix':'CTP Tecknotronic Matrix',ctpix:'CTPIX','cdomain-light':'C-domain Light','cdomain-medium':'C-domain Medium','cdomain-medium-dark':'C-domain Medium Dark','cdomain-dark':'C-domain Dark','frey-light':'Frey Light','frey-medium':'Frey Medium','frey-medium-dark':'Frey Medium Dark','frey-dark':'Frey Dark',light:'Light',medium:'Medium',dark:'Dark','nuke-dark':'Nuke Dark',matrix:'Matrix',amber:'Amber',catppuccin:'Catppuccin',cerulean:'Cerulean',synthwave:'Synthwave',dracula:'Dracula',nord:'Nord',cyberpunk:'Cyberpunk',tokyonight:'Tokyo Night',solarized:'Solarized',corporate:'Corporate'};
   var themeSelect=document.getElementById('themeSelect');
   function loadTheme(){
     try{ return localStorage.getItem(THEME_KEY); }catch(e){ return null; }
