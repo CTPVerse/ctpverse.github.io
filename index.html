@@ -10,7 +10,7 @@
 <script>
   /* Restore the last-used theme before first paint, so there is no flash — new visitors land on CTP-EOS Cynamic (the default) */
   (function(){
-    var VALID=['eos','eos-light','eos-medium','eos-medium-dark','eos-dark','tecknotronic-psy','tecknotronic-matrix','ctpix','cdomain-light','cdomain-medium','cdomain-medium-dark','cdomain-dark','frey-light','frey-medium','frey-medium-dark','frey-dark','light','medium','dark','nuke-dark','matrix','amber','catppuccin','cerulean','synthwave','dracula','nord','cyberpunk','tokyonight','solarized','corporate'];
+    var VALID=['eos','eos-light','eos-medium','eos-medium-dark','eos-dark','space-cadet-light','space-cadet-medium','space-cadet-medium-dark','space-cadet-dark','midnight-blue','midnight','tecknotronic-psy','tecknotronic-matrix','ctpix','cdomain-light','cdomain-medium','cdomain-medium-dark','cdomain-dark','frey-light','frey-medium','frey-medium-dark','frey-dark','light','medium','dark','nuke-dark','matrix','amber','catppuccin','cerulean','synthwave','dracula','nord','cyberpunk','tokyonight','solarized','void-signal','plasma-field','cathode-green','deep-current','corporate'];
     try{
       var saved=localStorage.getItem('ctpverse-dashboard-theme');
       if(VALID.indexOf(saved)>-1){
@@ -117,6 +117,78 @@
     --btn-bg:#062f4f; --btn-text:#ffffff; --header-grad:linear-gradient(to bottom,#00aeef 0%,#062f4f 45%,#011631 100%);
     --title-grad:linear-gradient(to bottom,#062f4f,#021d38); --nav-bg:#000000; --strip-bg:#000000;
     --mark-bg:#011631; --mark-text:#00aeef; --hover-border:#00aeef;
+  }
+  /* CTP SPACE CADET LIGHT — base #333365, light variant, bg #E8E8F2, panels white, text #1A1A33 */
+  :root[data-theme="space-cadet-light"]{
+    color-scheme:light;
+    --navy:#333365; --navy-dark:#1A1A33; --blue:#333365; --blue-mid:#4A4A80;
+    --blue-pale:#D5D5E8; --blue-wash:#E8E8F2; --blue-soft:#C5C5D6;
+    --page:#E8E8F2; --text:#1A1A33; --text-2:#1A1A33; --text-3:#26264D; --muted:#4A4A66; --line:#333365;
+    --outer:#C5C5D6; --surface:#FFFFFF; --heading:#333365; --link:#333365; --link-hover:#1A1A33;
+    --border-soft:#9A9AB8; --border-faint:#D5D5E8; --input-bg:#FFFFFF; --input-focus:#E8E8F2;
+    --btn-bg:#D5D5E8; --btn-text:#1A1A33; --header-grad:linear-gradient(to bottom,#4A4A80 0%,#333365 45%,#1A1A33 100%);
+    --title-grad:linear-gradient(to bottom,#4A4A80,#333365); --nav-bg:#1A1A33; --strip-bg:#1A1A33;
+    --mark-bg:#FFFFFF; --mark-text:#333365; --hover-border:#333365;
+  }
+  /* CTP SPACE CADET MEDIUM — base #333365, bg #8F8FB0, panels #B8B8CC, text #1A1A33 */
+  :root[data-theme="space-cadet-medium"]{
+    color-scheme:light;
+    --navy:#333365; --navy-dark:#1A1A33; --blue:#333365; --blue-mid:#4A4A80;
+    --blue-pale:#A8A8C4; --blue-wash:#9AA0BC; --blue-soft:#9A9AB8;
+    --page:#8F8FB0; --text:#1A1A33; --text-2:#1A1A33; --text-3:#26264D; --muted:#33334D; --line:#333365;
+    --outer:#333365; --surface:#B8B8CC; --heading:#2A2A55; --link:#2A2A55; --link-hover:#1A1A33;
+    --border-soft:#6E6E94; --border-faint:#8F8FB0; --input-bg:#E8E8F2; --input-focus:#FFFFFF;
+    --btn-bg:#E8E8F2; --btn-text:#1A1A33; --header-grad:linear-gradient(to bottom,#4A4A80 0%,#333365 45%,#1A1A33 100%);
+    --title-grad:linear-gradient(to bottom,#4A4A80,#333365); --nav-bg:#1A1A33; --strip-bg:#1A1A33;
+    --mark-bg:#E8E8F2; --mark-text:#333365; --hover-border:#333365;
+  }
+  /* CTP SPACE CADET MEDIUM DARK — base #333365, bg #333365, panels #45457C, text #E8E8F0 */
+  :root[data-theme="space-cadet-medium-dark"]{
+    color-scheme:dark;
+    --navy:#9A9AD0; --navy-dark:#B8B8E8; --blue:#9A9AD0; --blue-mid:#A8A8DC;
+    --blue-pale:#45457C; --blue-wash:#26264D; --blue-soft:#3A3A6E;
+    --page:#333365; --text:#E8E8F0; --text-2:#E8E8F0; --text-3:#D5D5E8; --muted:#B8B8CC; --line:#9A9AD0;
+    --outer:#1A1A33; --surface:#45457C; --heading:#B8B8E8; --link:#B8B8E8; --link-hover:#FFFFFF;
+    --border-soft:#5A5A94; --border-faint:#333365; --input-bg:#26264D; --input-focus:#333365;
+    --btn-bg:#333365; --btn-text:#E8E8F0; --header-grad:linear-gradient(to bottom,#9A9AD0 0%,#45457C 45%,#1A1A33 100%);
+    --title-grad:linear-gradient(to bottom,#45457C,#333365); --nav-bg:#1A1A33; --strip-bg:#1A1A33;
+    --mark-bg:#26264D; --mark-text:#9A9AD0; --hover-border:#9A9AD0;
+  }
+  /* CTP SPACE CADET DARK — base #333365, bg #14142B, panels #1F1F40, text #FFFFFF */
+  :root[data-theme="space-cadet-dark"]{
+    color-scheme:dark;
+    --navy:#8A8AC8; --navy-dark:#A8A8E0; --blue:#8A8AC8; --blue-mid:#9A9AD8;
+    --blue-pale:#1F1F40; --blue-wash:#14142B; --blue-soft:#26264D;
+    --page:#14142B; --text:#FFFFFF; --text-2:#FFFFFF; --text-3:#E8E8F0; --muted:#B8B8CC; --line:#8A8AC8;
+    --outer:#000000; --surface:#1F1F40; --heading:#A8A8E0; --link:#A8A8E0; --link-hover:#FFFFFF;
+    --border-soft:#333365; --border-faint:#1F1F40; --input-bg:#14142B; --input-focus:#1F1F40;
+    --btn-bg:#1F1F40; --btn-text:#FFFFFF; --header-grad:linear-gradient(to bottom,#8A8AC8 0%,#1F1F40 45%,#14142B 100%);
+    --title-grad:linear-gradient(to bottom,#1F1F40,#14142B); --nav-bg:#000000; --strip-bg:#000000;
+    --mark-bg:#14142B; --mark-text:#8A8AC8; --hover-border:#8A8AC8;
+  }
+  /* CTP MIDNIGHT BLUE — dark navy, bg #0A1128, panels #141D33, accent #5B8DEF, text #E8EEF7 */
+  :root[data-theme="midnight-blue"]{
+    color-scheme:dark;
+    --navy:#5B8DEF; --navy-dark:#8FB4FF; --blue:#5B8DEF; --blue-mid:#6E9EF5;
+    --blue-pale:#1A2440; --blue-wash:#0A1128; --blue-soft:#1E2C4A;
+    --page:#0A1128; --text:#E8EEF7; --text-2:#E8EEF7; --text-3:#D5DDF0; --muted:#A8B4CC; --line:#5B8DEF;
+    --outer:#05081A; --surface:#141D33; --heading:#8FB4FF; --link:#8FB4FF; --link-hover:#FFFFFF;
+    --border-soft:#2A3A5E; --border-faint:#141D33; --input-bg:#0A1128; --input-focus:#141D33;
+    --btn-bg:#141D33; --btn-text:#E8EEF7; --header-grad:linear-gradient(to bottom,#5B8DEF 0%,#141D33 45%,#0A1128 100%);
+    --title-grad:linear-gradient(to bottom,#5B8DEF,#141D33); --nav-bg:#05081A; --strip-bg:#05081A;
+    --mark-bg:#0A1128; --mark-text:#5B8DEF; --hover-border:#5B8DEF;
+  }
+  /* CTP MIDNIGHT — black with light-grey accents, bg #000000, panels #111111, text #E8E8E8 */
+  :root[data-theme="midnight"]{
+    color-scheme:dark;
+    --navy:#B8B8B8; --navy-dark:#E0E0E0; --blue:#B8B8B8; --blue-mid:#C8C8C8;
+    --blue-pale:#1A1A1A; --blue-wash:#000000; --blue-soft:#222222;
+    --page:#000000; --text:#E8E8E8; --text-2:#E8E8E8; --text-3:#D8D8D8; --muted:#A8A8A8; --line:#B8B8B8;
+    --outer:#000000; --surface:#111111; --heading:#E0E0E0; --link:#E0E0E0; --link-hover:#FFFFFF;
+    --border-soft:#333333; --border-faint:#111111; --input-bg:#000000; --input-focus:#111111;
+    --btn-bg:#111111; --btn-text:#E8E8E8; --header-grad:linear-gradient(to bottom,#B8B8B8 0%,#111111 45%,#000000 100%);
+    --title-grad:linear-gradient(to bottom,#B8B8B8,#111111); --nav-bg:#000000; --strip-bg:#000000;
+    --mark-bg:#000000; --mark-text:#B8B8B8; --hover-border:#B8B8B8;
   }
   /* CTP TECKNOTRONIC PSY — black and dark gray, cyan highlights */
   :root[data-theme="tecknotronic-psy"]{
@@ -397,6 +469,54 @@
     --title-grad:linear-gradient(to bottom,#0f4f5c,#022b34); --nav-bg:#00141a; --strip-bg:#00141a;
     --mark-bg:#00141a; --mark-text:#2aa198; --hover-border:#2aa198;
   }
+  /* VOID SIGNAL — bg #07070C, surface #11121A, accent #7C5CFF, text #E8E8F0 */
+  :root[data-theme="void-signal"]{
+    color-scheme:dark;
+    --navy:#7C5CFF; --navy-dark:#B3A1FF; --blue:#7C5CFF; --blue-mid:#9378FF;
+    --blue-pale:#1A1B2E; --blue-wash:#07070C; --blue-soft:#1E1F33;
+    --page:#07070C; --text:#E8E8F0; --text-2:#E8E8F0; --text-3:#D5D5E8; --muted:#A8A8C0; --line:#7C5CFF;
+    --outer:#000000; --surface:#11121A; --heading:#B3A1FF; --link:#B3A1FF; --link-hover:#FFFFFF;
+    --border-soft:#2E2F4A; --border-faint:#11121A; --input-bg:#07070C; --input-focus:#11121A;
+    --btn-bg:#11121A; --btn-text:#E8E8F0; --header-grad:linear-gradient(to bottom,#7C5CFF 0%,#11121A 45%,#07070C 100%);
+    --title-grad:linear-gradient(to bottom,#7C5CFF,#11121A); --nav-bg:#000000; --strip-bg:#000000;
+    --mark-bg:#07070C; --mark-text:#7C5CFF; --hover-border:#7C5CFF;
+  }
+  /* PLASMA FIELD — bg #0C0608, surface #170D12, accent #FF3D6E, text #F3E9EC */
+  :root[data-theme="plasma-field"]{
+    color-scheme:dark;
+    --navy:#FF3D6E; --navy-dark:#FF8FAB; --blue:#FF3D6E; --blue-mid:#FF5C85;
+    --blue-pale:#2A1420; --blue-wash:#0C0608; --blue-soft:#2E1826;
+    --page:#0C0608; --text:#F3E9EC; --text-2:#F3E9EC; --text-3:#E8D5DB; --muted:#C0A8B2; --line:#FF3D6E;
+    --outer:#000000; --surface:#170D12; --heading:#FF8FAB; --link:#FF8FAB; --link-hover:#FFFFFF;
+    --border-soft:#4A2436; --border-faint:#170D12; --input-bg:#0C0608; --input-focus:#170D12;
+    --btn-bg:#170D12; --btn-text:#F3E9EC; --header-grad:linear-gradient(to bottom,#FF3D6E 0%,#170D12 45%,#0C0608 100%);
+    --title-grad:linear-gradient(to bottom,#FF3D6E,#170D12); --nav-bg:#000000; --strip-bg:#000000;
+    --mark-bg:#0C0608; --mark-text:#FF3D6E; --hover-border:#FF3D6E;
+  }
+  /* CATHODE GREEN — bg #040D0A, surface #0C1712, accent #29E08F, text #E6F5EE */
+  :root[data-theme="cathode-green"]{
+    color-scheme:dark;
+    --navy:#29E08F; --navy-dark:#6FF2B0; --blue:#29E08F; --blue-mid:#4AE8A3;
+    --blue-pale:#14261E; --blue-wash:#040D0A; --blue-soft:#182B23;
+    --page:#040D0A; --text:#E6F5EE; --text-2:#E6F5EE; --text-3:#D5EBE0; --muted:#A8C4B6; --line:#29E08F;
+    --outer:#000000; --surface:#0C1712; --heading:#6FF2B0; --link:#6FF2B0; --link-hover:#FFFFFF;
+    --border-soft:#24483A; --border-faint:#0C1712; --input-bg:#040D0A; --input-focus:#0C1712;
+    --btn-bg:#0C1712; --btn-text:#E6F5EE; --header-grad:linear-gradient(to bottom,#29E08F 0%,#0C1712 45%,#040D0A 100%);
+    --title-grad:linear-gradient(to bottom,#29E08F,#0C1712); --nav-bg:#000000; --strip-bg:#000000;
+    --mark-bg:#040D0A; --mark-text:#29E08F; --hover-border:#29E08F;
+  }
+  /* DEEP CURRENT — bg #05101A, surface #0C1D2B, accent #31A6FF, text #E6F0F7 */
+  :root[data-theme="deep-current"]{
+    color-scheme:dark;
+    --navy:#31A6FF; --navy-dark:#7CC6FF; --blue:#31A6FF; --blue-mid:#4DB2FF;
+    --blue-pale:#142A3D; --blue-wash:#05101A; --blue-soft:#183049;
+    --page:#05101A; --text:#E6F0F7; --text-2:#E6F0F7; --text-3:#D5E3EE; --muted:#A8BCCB; --line:#31A6FF;
+    --outer:#000000; --surface:#0C1D2B; --heading:#7CC6FF; --link:#7CC6FF; --link-hover:#FFFFFF;
+    --border-soft:#24465E; --border-faint:#0C1D2B; --input-bg:#05101A; --input-focus:#0C1D2B;
+    --btn-bg:#0C1D2B; --btn-text:#E6F0F7; --header-grad:linear-gradient(to bottom,#31A6FF 0%,#0C1D2B 45%,#05101A 100%);
+    --title-grad:linear-gradient(to bottom,#31A6FF,#0C1D2B); --nav-bg:#000000; --strip-bg:#000000;
+    --mark-bg:#05101A; --mark-text:#31A6FF; --hover-border:#31A6FF;
+  }
   /* CORPORATE — light theme: bg #f8fafc, panel #ffffff, primary #2563eb, secondary #0284c7, text #1e293b */
   :root[data-theme="corporate"]{
     color-scheme:light;
@@ -470,7 +590,7 @@
   .btn.primary:hover{background:#006699; color:#ffffff}
   .btn.accent{background:#006699; color:#ffffff; border:2px outset #3399cc}
   .btn.accent:hover{background:#003366; color:#ffffff}
-  /* Theme drop-down — one <select> holding all 21 themes (CTP-EOS Cynamic first, and the default).
+  /* Theme drop-down — one <select> holding all 41 themes (CTP-EOS Cynamic first, and the default).
      Colours come from the active theme's own variables, so the control and its option list stay
      readable in every theme, light ones included. */
   .theme-switch{display:flex; flex-wrap:wrap; gap:6px; align-items:center}
@@ -787,13 +907,29 @@
   :root[data-theme="eos-medium-dark"] .brand p,
   :root[data-theme="eos-dark"] .brand p,
   :root[data-theme="tecknotronic-psy"] .brand p,
-  :root[data-theme="tecknotronic-matrix"] .brand p{color:#ffffff}
+  :root[data-theme="tecknotronic-matrix"] .brand p,
+  :root[data-theme="space-cadet-medium-dark"] .brand p,
+  :root[data-theme="space-cadet-dark"] .brand p,
+  :root[data-theme="midnight-blue"] .brand p,
+  :root[data-theme="midnight"] .brand p,
+  :root[data-theme="void-signal"] .brand p,
+  :root[data-theme="plasma-field"] .brand p,
+  :root[data-theme="cathode-green"] .brand p,
+  :root[data-theme="deep-current"] .brand p{color:#ffffff}
   :root[data-theme="dark"] .search input::placeholder,
   :root[data-theme="eos"] .search input::placeholder,
   :root[data-theme="eos-medium-dark"] .search input::placeholder,
   :root[data-theme="eos-dark"] .search input::placeholder,
   :root[data-theme="tecknotronic-psy"] .search input::placeholder,
-  :root[data-theme="tecknotronic-matrix"] .search input::placeholder{color:#ffffff; opacity:.8}
+  :root[data-theme="tecknotronic-matrix"] .search input::placeholder,
+  :root[data-theme="space-cadet-medium-dark"] .search input::placeholder,
+  :root[data-theme="space-cadet-dark"] .search input::placeholder,
+  :root[data-theme="midnight-blue"] .search input::placeholder,
+  :root[data-theme="midnight"] .search input::placeholder,
+  :root[data-theme="void-signal"] .search input::placeholder,
+  :root[data-theme="plasma-field"] .search input::placeholder,
+  :root[data-theme="cathode-green"] .search input::placeholder,
+  :root[data-theme="deep-current"] .search input::placeholder{color:#ffffff; opacity:.8}
   footer a{color:#99ccff; font-weight:bold}
   footer a:hover{color:#ffffff}
 
@@ -1215,7 +1351,7 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],proc
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 <body>
-<!-- Dashboard build v114 -->
+<!-- Dashboard build v115 -->
 <div class="wrap">
 
   <!-- ===== Banner header ===== -->
@@ -1238,6 +1374,12 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],proc
             <option value="eos-medium">CTP-EOS Medium</option>
             <option value="eos-medium-dark">CTP-EOS Medium Dark</option>
             <option value="eos-dark">CTP-EOS Dark</option>
+            <option value="space-cadet-light">CTP Space Cadet Light</option>
+            <option value="space-cadet-medium">CTP Space Cadet Medium</option>
+            <option value="space-cadet-medium-dark">CTP Space Cadet Medium Dark</option>
+            <option value="space-cadet-dark">CTP Space Cadet Dark</option>
+            <option value="midnight-blue">CTP Midnight Blue</option>
+            <option value="midnight">CTP Midnight</option>
             <option value="tecknotronic-psy">CTP Tecknotronic Psy</option>
             <option value="tecknotronic-matrix">CTP Tecknotronic Matrix</option>
             <option value="ctpix">CTPIX</option>
@@ -1263,6 +1405,10 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],proc
             <option value="cyberpunk">Cyberpunk</option>
             <option value="tokyonight">Tokyo Night</option>
             <option value="solarized">Solarized</option>
+            <option value="void-signal">Void Signal</option>
+            <option value="plasma-field">Plasma Field</option>
+            <option value="cathode-green">Cathode Green</option>
+            <option value="deep-current">Deep Current</option>
             <option value="corporate">Corporate</option>
           </select>
         </div>
@@ -3244,7 +3390,7 @@ are based on THIS: the <strong>CTPSci Sciences</strong>, discovered by Drazen.</
 
   <!-- ===== Footer ===== -->
   <footer>
-    <div class="foot-blue">CTPVerse Dashboard · Resofactor · CTP = Conscious Translational Physics · v114</div>
+    <div class="foot-blue">CTPVerse Dashboard · Resofactor · CTP = Conscious Translational Physics · v115</div>
     <div class="foot-black">Contact: <a href="mailto:info@ctp-energy.com">info@ctp-energy.com</a> · Hub: <a href="https://linktr.ee/resofactor" target="_blank" rel="noopener">linktr.ee/resofactor</a> · CTP-EOS Portal: <a href="https://ctp-eos.github.io/" target="_blank" rel="noopener">ctp-eos.github.io</a> · GitHub: <a href="https://github.com/ctp-eos" target="_blank" rel="noopener">github.com/ctp-eos</a> · Classic Nuke-style layout · Themes: CTP-EOS Cynamic / Light / Medium / Dark</div>
   </footer>
 </div>
@@ -3283,12 +3429,12 @@ are based on THIS: the <strong>CTPSci Sciences</strong>, discovered by Drazen.</
   syncStickTop();
   window.addEventListener('resize',syncStickTop);
   window.addEventListener('load',syncStickTop);
-  // Theme drop-down — 31 themes: CTP-EOS Cynamic first, then the 4 logo-derived CTP-EOS themes, then the 2 Tecknotronic themes, then CTPIX, then the 4 C-domain themes, then the 4 Frey Grey Blue themes, then Light / Medium / Dark, then the 12 CTP-EOS GitHub IO themes.
+  // Theme drop-down — 41 themes: CTP-EOS Cynamic first, then the 4 logo-derived CTP-EOS themes, then the 4 CTP Space Cadet themes, then the 2 CTP Midnight themes, then the 2 Tecknotronic themes, then CTPIX, then the 4 C-domain themes, then the 4 Frey Grey Blue themes, then Light / Medium / Dark, then the 12 CTP-EOS GitHub IO themes, then Void Signal, Plasma Field, Cathode Green and Deep Current, then Corporate.
   // CTP-EOS Cynamic is first and the default; the choice is remembered on this device.
   var THEME_KEY='ctpverse-dashboard-theme';
-  var VALID_THEMES=['eos','eos-light','eos-medium','eos-medium-dark','eos-dark','tecknotronic-psy','tecknotronic-matrix','ctpix','cdomain-light','cdomain-medium','cdomain-medium-dark','cdomain-dark','frey-light','frey-medium','frey-medium-dark','frey-dark','light','medium','dark','nuke-dark','matrix','amber','catppuccin','cerulean','synthwave','dracula','nord','cyberpunk','tokyonight','solarized','corporate'];
+  var VALID_THEMES=['eos','eos-light','eos-medium','eos-medium-dark','eos-dark','space-cadet-light','space-cadet-medium','space-cadet-medium-dark','space-cadet-dark','midnight-blue','midnight','tecknotronic-psy','tecknotronic-matrix','ctpix','cdomain-light','cdomain-medium','cdomain-medium-dark','cdomain-dark','frey-light','frey-medium','frey-medium-dark','frey-dark','light','medium','dark','nuke-dark','matrix','amber','catppuccin','cerulean','synthwave','dracula','nord','cyberpunk','tokyonight','solarized','void-signal','plasma-field','cathode-green','deep-current','corporate'];
   var LIGHT_THEMES={light:true,medium:true,corporate:true,'eos-light':true,'eos-medium':true,'cdomain-light':true,'frey-light':true,'frey-medium':true};
-  var THEME_LABELS={eos:'CTP-EOS Cynamic','eos-light':'CTP-EOS Light','eos-medium':'CTP-EOS Medium','eos-medium-dark':'CTP-EOS Medium Dark','eos-dark':'CTP-EOS Dark','tecknotronic-psy':'CTP Tecknotronic Psy','tecknotronic-matrix':'CTP Tecknotronic Matrix',ctpix:'CTPIX','cdomain-light':'C-domain Light','cdomain-medium':'C-domain Medium','cdomain-medium-dark':'C-domain Medium Dark','cdomain-dark':'C-domain Dark','frey-light':'Frey Light','frey-medium':'Frey Medium','frey-medium-dark':'Frey Medium Dark','frey-dark':'Frey Dark',light:'Light',medium:'Medium',dark:'Dark','nuke-dark':'Nuke Dark',matrix:'Matrix',amber:'Amber',catppuccin:'Catppuccin',cerulean:'Cerulean',synthwave:'Synthwave',dracula:'Dracula',nord:'Nord',cyberpunk:'Cyberpunk',tokyonight:'Tokyo Night',solarized:'Solarized',corporate:'Corporate'};
+  var THEME_LABELS={eos:'CTP-EOS Cynamic','eos-light':'CTP-EOS Light','eos-medium':'CTP-EOS Medium','eos-medium-dark':'CTP-EOS Medium Dark','eos-dark':'CTP-EOS Dark','space-cadet-light':'CTP Space Cadet Light','space-cadet-medium':'CTP Space Cadet Medium','space-cadet-medium-dark':'CTP Space Cadet Medium Dark','space-cadet-dark':'CTP Space Cadet Dark','midnight-blue':'CTP Midnight Blue','midnight':'CTP Midnight','tecknotronic-psy':'CTP Tecknotronic Psy','tecknotronic-matrix':'CTP Tecknotronic Matrix',ctpix:'CTPIX','cdomain-light':'C-domain Light','cdomain-medium':'C-domain Medium','cdomain-medium-dark':'C-domain Medium Dark','cdomain-dark':'C-domain Dark','frey-light':'Frey Light','frey-medium':'Frey Medium','frey-medium-dark':'Frey Medium Dark','frey-dark':'Frey Dark',light:'Light',medium:'Medium',dark:'Dark','nuke-dark':'Nuke Dark',matrix:'Matrix',amber:'Amber',catppuccin:'Catppuccin',cerulean:'Cerulean',synthwave:'Synthwave',dracula:'Dracula',nord:'Nord',cyberpunk:'Cyberpunk',tokyonight:'Tokyo Night',solarized:'Solarized','void-signal':'Void Signal','plasma-field':'Plasma Field','cathode-green':'Cathode Green','deep-current':'Deep Current',corporate:'Corporate'};
   var themeSelect=document.getElementById('themeSelect');
   function loadTheme(){
     try{ return localStorage.getItem(THEME_KEY); }catch(e){ return null; }
