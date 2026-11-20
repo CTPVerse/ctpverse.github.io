@@ -2007,6 +2007,11 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],proc
           </a>
         </div>
       </div>
+
+      <div class="block" id="ctpverse-sites">
+        <div class="block-title">CTPVerse Sites</div>
+        <div class="block-body" style="line-height:0;"><a id="ctpverse-sites-link" href="https://ctp-eos.github.io/" title="CTP-EOS — visit the live site"><img id="ctpverse-sites-img" src="https://ctp-eos.github.io/assets/branding/ctp-eos-triangle-logo.jpg" alt="CTP-EOS" width="1024" height="1024" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover;" /></a></div>
+      </div>
     </div>
 
     <!-- CENTRE MODULES -->
@@ -4260,6 +4265,44 @@ are based on THIS: the <strong>CTPSci Sciences</strong>, discovered by Drazen.</
      click restarted it. The timer is only paused while the tab is hidden. */
   document.addEventListener('visibilitychange',function(){ if(document.hidden){ stop(); } else { start(); } });
   showGlyph(Math.floor(Math.random()*slides.length),false);
+  start();
+})();
+<script>
+/* ===== CTPVerse sites — random rotating square banner, bottom of the left column =====
+   Picks a random sister site logo (different from the one showing) every 5 seconds
+   and swaps the image + link. No fade — a plain swap. Starts on CTP-EOS. */
+(function(){
+  var sites=[
+    {name:'CTP-EOS',href:'https://ctp-eos.github.io/',img:'https://ctp-eos.github.io/assets/branding/ctp-eos-triangle-logo.jpg'},
+    {name:'CTP Magazine',href:'https://ctp-magazine.github.io/',img:'https://ctp-magazine.github.io/assets/branding/ctp-magazine-1254x1254.png'},
+    {name:'FIN-DSP',href:'https://fin-dsp.github.io/',img:'https://fin-dsp.github.io/assets/branding/findsp-logo-200x200.jpg'},
+    {name:'CTP Music',href:'https://ctp-music.github.io/',img:'https://ctp-music.github.io/assets/branding/ctp-music-org-avatar.jpg'},
+    {name:'CTP Space Systems',href:'https://ctp-space-systems.github.io/',img:'https://ctp-space-systems.github.io/assets/branding/ctp-space-systems-org-avatar.jpg'}
+  ];
+  var link=document.getElementById('ctpverse-sites-link');
+  var img=document.getElementById('ctpverse-sites-img');
+  if(!link||!img||sites.length<2) return;
+  var idx=0, timer=null, reduceMotion=false;
+  try{ reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches; }catch(e){}
+  function show(i){
+    idx=i;
+    link.href=sites[idx].href;
+    link.title=sites[idx].name+' — visit the live site';
+    img.src=sites[idx].img;
+    img.alt=sites[idx].name;
+  }
+  function randomNext(){
+    var n=idx;
+    while(n===idx){ n=Math.floor(Math.random()*sites.length); }
+    show(n);
+  }
+  function stop(){ if(timer){ clearInterval(timer); timer=null; } }
+  function start(){
+    stop();
+    if(reduceMotion) return;
+    timer=setInterval(randomNext,5000);
+  }
+  document.addEventListener('visibilitychange',function(){ if(document.hidden){ stop(); } else { start(); } });
   start();
 })();
 </script>
