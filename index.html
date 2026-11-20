@@ -628,6 +628,20 @@
   .lineage b{color:#99ccff}
   .arrow{color:#3399cc}
 
+  /* ===== Brand banner (logo above main menu, links to GitHub org) ===== */
+  .brand-banner{
+    background:var(--outer); border-bottom:1px solid var(--border-soft);
+    padding:10px 18px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;
+    width:100%; box-sizing:border-box;
+  }
+  .brand-banner-title{
+    font-family:"Rajdhani", sans-serif; font-weight:700; font-size:15px;
+    letter-spacing:3px; text-transform:uppercase; color:var(--muted);
+  }
+  .brand-banner a{display:inline-flex; align-items:center}
+  .brand-banner a:hover{text-decoration:none}
+  .brand-banner img{display:block; height:84px; width:auto}
+
   /* ===== Horizontal main menu bar ===== */
   .nav{
     position:sticky; top:0; z-index:20; background:var(--nav-bg);
@@ -1423,6 +1437,11 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],proc
   </div>
 
   <!-- ===== Main menu bar ===== -->
+  <div class="brand-banner">
+    <div class="brand-banner-title">CTPVERSE Organization</div>
+    <a href="https://github.com/CTPVerse" target="_blank" rel="noopener" title="CTPVerse on GitHub — visit the organization page"><img src="assets/branding/ctpverse-org-avatar.jpg" alt="CTPVerse" width="460" height="460" /></a>
+  </div>
+
   <nav class="nav" aria-label="Dashboard sections">
     <a href="#units" class="active">Home :: Business Units</a>
     <a href="#ctp-news">CTP News</a>
