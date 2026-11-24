@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="layout">
+{{ partial "sidebar-left.html" . }}
+<div class="col col-main">
+<article class="module">
+  <div class="module-title">{{ .Title }}</div>
+  <div class="module-body">
+    {{ .Content }}
+    <p class="article-back"><a href="{{ .Site.BaseURL }}">← Back to the CTPVerse Dashboard</a></p>
+  </div>
+</article>
+</div>
+{{ partial "sidebar-right.html" . }}
+</div>
+{{ end }}
