@@ -1,5 +1,5 @@
 ---
-title: 'CTP-EOS: The Digital Gateway to the CTPverse'
+title: 'CTP-EOS: The Digital Gateway to the CTPVerse'
 anchor: ctp-eos-pitch
 weight: 30
 module_class: module report-module
@@ -10,11 +10,11 @@ byline: The CTP-EOS pitch — why CTP-EOS is the disclosure Linux · Executive o
 
 ![CTP-EOS Tri-Force — metallic blue triangle on a dark blue background](/images/ctp-eos/ctp-eos-pitch-tri-force.jpg)
 
-CTP-EOS · The Operating System · Digital Gateway to the CTPverse
+CTP-EOS · The Operating System · Digital Gateway to the CTPVerse
 
 ### The operating system is the gateway
 
-**CTP-EOS is not being developed as just another Linux distribution. It is being built as the consumer technology gateway into the emerging CTPverse ecosystem — connecting computing, education, community, creativity, and future technologies.**
+**CTP-EOS is not being developed as just another Linux distribution. It is being built as the consumer technology gateway into the emerging CTPVerse ecosystem — connecting computing, education, community, creativity, and future technologies.**
 
 Many investors evaluate opportunities based only on markets they understand. The challenge? The largest technology shifts rarely begin inside existing categories. They create new ones.
 
@@ -28,7 +28,7 @@ For decades, operating systems have primarily been functional tools — platform
 
 #### Not just another Linux distribution
 
-CTP-EOS is a branded computing platform designed to become the digital foundation of the emerging CTPverse ecosystem. The operating system is the beginning. The CTP ecosystem is the opportunity.
+CTP-EOS is a branded computing platform designed to become the digital foundation of the emerging CTPVerse ecosystem. The operating system is the beginning. The CTP ecosystem is the opportunity.
 
 CTP-EOS on GitHub: [github.com/ctp-eos](https://github.com/ctp-eos) · LinkedIn showcase: [CTP-EOS on LinkedIn](https://www.linkedin.com/showcase/ctp-eos/)
 
@@ -92,7 +92,7 @@ The OS itself does not need to be the primary revenue generator. Many of the wor
 
 The important distinction is this: CTP-EOS is not being built as another Linux distribution competing for a small slice of existing Linux users. It is being developed as the consumer-facing technology platform of a larger emerging brand ecosystem. The strategic opportunity: use Linux as the entry point, build trust through daily technology use, and expand into hardware, education, community, and future CTP technologies.
 
-The companies that define future technology movements are not always the ones with the first breakthrough technology. They are often the ones that successfully build the brand, the community, the ecosystem, and the user relationship. CTP-EOS is designed to become that relationship layer for the CTPverse.
+The companies that define future technology movements are not always the ones with the first breakthrough technology. They are often the ones that successfully build the brand, the community, the ecosystem, and the user relationship. CTP-EOS is designed to become that relationship layer for the CTPVerse.
 
 #### The convergence of consciousness
 
