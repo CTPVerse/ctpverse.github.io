@@ -700,7 +700,7 @@
   /* ===== Three-column portal layout: left blocks | centre | right blocks ===== */
   .layout{
     display:grid; grid-template-columns:182px minmax(0,1fr) 212px; gap:8px;
-    padding:8px; background:var(--page); align-items:stretch;
+    padding:8px 0; background:var(--page); align-items:stretch;
   }
   /* ===== Width toggle (v83) =====
      Default is the classic Nuke width (.wrap max-width 1180px, side columns
