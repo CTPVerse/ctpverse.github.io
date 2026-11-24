@@ -691,6 +691,10 @@
   }
   .module-body{padding:12px}
   .module-body > p{margin:0 0 10px}
+  /* Content images from section markdown fit their module: without
+     this they render at full natural size and blow out of the column
+     (the old single-file page sized them inline instead). */
+  .module-body img{max-width:100%; height:auto; display:block}
   /* CTP-EOS locked banner — permanent header banner for the CTP-EOS module only.
      Full width of the module, shown full and uncropped, never rotates. */
   .eos-banner{margin:0; line-height:0; background:#021d38; border-bottom:1px solid #000000}
