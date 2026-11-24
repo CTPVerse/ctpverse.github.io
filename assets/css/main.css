@@ -639,18 +639,17 @@
   }
   .col{min-width:0}
 
-  /* Centre scrolls on its own; the side rails do not scroll.
-     The rails are full viewport height, fixed in place — not sticky,
-     and not stretched to show everything at once. Only .col-main
-     has its own scroll. (Phones keep the ordinary scrolling page.) */
+  /* Whole page scrolls together on the browser's own scrollbar, and
+     the centre keeps its own scroll for its content. The centre stays
+     in view like now while the page moves; the side rails move with
+     the page and have no scrollbar of their own. (Phones keep the
+     ordinary scrolling page.) */
   @media (min-width:961px){
-    html, body{height:100%}
-    html, body{overflow:hidden}
-    .wrap{height:100vh; margin:0 auto; display:flex; flex-direction:column}
-    .wrap > *{flex:none}
-    .wrap > .layout{flex:1 1 auto; min-height:0}
-    .layout .col{min-height:0}
-    .col-main{overflow-y:auto}
+    .col-main{
+      position:sticky; top:8px;
+      height:calc(100vh - 16px);
+      overflow-y:auto;
+    }
     .col-left,.col-right{background:var(--surface); border:1px solid var(--navy)}
   }
 
