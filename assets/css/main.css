@@ -1186,6 +1186,27 @@
     .art-slide{transition:none}
   }
 
+  /* ===== CTP Music — laut.fm widget + station toggle, top of the right column ===== */
+  #ctp-music{scroll-margin-top:52px}
+  #ctp-music .block-title a{color:inherit; text-decoration:none}
+  #ctp-music .block-title a:hover{text-decoration:underline}
+  .mp-label{font-family:"Rajdhani",sans-serif; font-weight:600; font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); margin:0 0 6px}
+  .mp-station-row{display:flex; align-items:center; gap:8px; margin-bottom:8px}
+  .mp-nav{flex:0 0 28px; height:32px; background:transparent; color:var(--link); border:1px solid var(--border-soft); font-size:20px; line-height:1; font-family:Tahoma,Verdana,sans-serif; cursor:pointer; padding:0 0 2px}
+  .mp-nav:hover{background:var(--blue-wash)}
+  .mp-nav:focus-visible{outline:2px solid #5ed4ff; outline-offset:2px}
+  .mp-channel-wrap{flex:1; min-width:0; text-align:center}
+  .mp-group{font-family:"Rajdhani",sans-serif; font-weight:600; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:var(--heading); line-height:1.3}
+  .mp-channel{font-family:"Rajdhani",sans-serif; font-weight:700; font-size:16px; color:var(--text); line-height:1.2}
+  .mp-genre{font-size:12px; color:var(--muted); line-height:1.3}
+  .mp-widget{width:100%; height:200px; border:0; display:block; background:var(--blue-wash)}
+  .mp-status{font-size:12px; color:var(--muted); margin-top:8px}
+  .mp-source{font-family:"Share Tech Mono",monospace; font-size:11.5px; color:var(--muted); margin-top:2px}
+  .mp-note{font-size:12.5px; color:var(--muted); margin:8px 0 0}
+  /* C-domain Frequencies — highlighted line + regular text under the CTP Music module */
+  .cdom-head{font-family:"Rajdhani",sans-serif; font-weight:700; font-size:18px; letter-spacing:2px; color:var(--heading); margin-bottom:6px}
+  .cdom-body{font-size:14px; color:var(--text-2); margin:0}
+
   /* ===== CTP Energy Glyphs — square rotating viewer in the left column, modelled on the CE Entities viewer ===== */
   #ctp-energy-glyphs{scroll-margin-top:52px}
   .glyph-viewport{aspect-ratio:1 / 1}
