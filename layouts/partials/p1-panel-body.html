@@ -1,0 +1,17 @@
+{{/* Render a P1 article's panel body from its content page. Mirrors the JS showP1 output. */}}
+{{ $a := . }}
+<div class="p1-panel-top"><span class="p1-id">{{ $a.Params.id }}{{ with $a.Params.cf }} &middot; Original site viewpage ID: {{ . }}{{ end }}</span><span class="p1-date">{{ $a.Params.display_date }}</span></div>
+<div class="p1-panel-body" id="{{ $a.Params.id }}">
+  <h3 class="p1-title">{{ $a.Title }}</h3>
+  <div class="p1-img" role="img" aria-label="Image slot for article {{ $a.Params.id }} — no image assigned yet"><span class="p1-img-label">Image slot</span><span class="p1-img-id">{{ $a.Params.id }}</span><span class="p1-img-note">Image to be added for this article</span></div>
+  {{ if eq $a.Params.note "removed2005" }}
+  <div class="p1-soon"><b>2005 only — later removed from the site.</b><br>This title appears in the C-Domain Topics list on the original static site in February–March 2005. It does not appear in the later site maps or the ColdFusion portal navigation, and no article text for it was preserved in the archive, so none is shown here.</div>
+  {{ else if eq $a.Params.note "cfreq2005" }}
+  <div class="p1-soon"><b>2005 only — later removed from the site.</b><br>C-frequency Existences has its own page in the early site (c_frequency_existences.htm, captured February 28, 2005), but that capture preserved only the navigation and the words Coming Soon — no article text. The topic was later folded into C-energy Frequencies / Group C-energy Frequency (GCF); see CTP-P1-012 and CTP-P1-013.</div>
+  {{ else if eq (len (trim $a.Content " \n")) 0 }}
+  <div class="p1-soon"><b>Coming Soon — no article text in the archive.</b><br>This title appears in the original site's navigation, but the Wayback captures preserved it only as a navigation shell — no article text was archived for it, so none is shown here.</div>
+  {{ else }}
+  <div class="p1-text">{{ $a.Content }}</div>
+  {{ with $a.Params.note }}<p class="p1-note">{{ . }}</p>{{ end }}
+  {{ end }}
+</div>

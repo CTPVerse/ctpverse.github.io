@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="layout">
+<div class="col col-main u-w-100">
+<div class="module">
+  <div class="module-title">{{ .Title }}</div>
+  {{ with .Params.description }}<div class="byline">{{ . }}</div>{{ end }}
+  <div class="module-body">
+    {{ .Content }}
+    <div class="article-list">
+    {{ range sort .Pages ".Params.id" }}
+      <a class="article" href="{{ .RelPermalink }}">
+        <span><b>{{ .Params.id }}</b> {{ .Title }}</span>
+        {{ with .Params.display_date }}<p>{{ . }}</p>{{ end }}
+      </a>
+    {{ end }}
+    </div>
+    <p class="article-back"><a href="{{ .Site.BaseURL }}">← Back to the CTPVerse Dashboard</a></p>
+  </div>
+</div>
+</div>
+</div>
+{{ end }}

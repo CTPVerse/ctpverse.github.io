@@ -1,0 +1,49 @@
+{{ define "main" }}
+{{ partial "hero.html" . }}
+<div class="layout">
+{{ partial "sidebar-left.html" . }}
+<div class="col col-main">
+{{ $sections := (.Site.GetPage "sections").RegularPages.ByWeight }}
+{{ range $sections }}
+  {{ $anchor := .Params.anchor }}
+  {{ if eq $anchor "phase1-archive" }}
+    {{ partial "section-p1-archive.html" . }}
+  {{ else if eq $anchor "phase2" }}
+    {{ partial "section-p2.html" . }}
+  {{ else if eq $anchor "featured-article" }}
+    {{ partial "section-featured.html" . }}
+  {{ else if eq $anchor "craft-video" }}
+    {{ partial "section-video.html" . }}
+  {{ else if eq $anchor "ctp-showcase" }}
+    {{ partial "section-showcase.html" . }}
+  {{ else }}
+  <section class="module {{ .Params.module_class }}" id="{{ $anchor }}" aria-labelledby="{{ $anchor }}Label">
+    <div class="module-title" id="{{ $anchor }}Label">{{ .Title }}</div>
+    {{ with .Params.byline }}<div class="byline">{{ . }}</div>{{ end }}
+    {{ if .Params.structural }}
+    {{ .Content }}
+    {{ else }}
+    <div class="module-body{{ if in .Params.module_class "report-module" }} report-body{{ end }}">{{ .Content }}</div>
+    {{ end }}
+  </section>
+  {{ end }}
+{{ end }}
+</div>
+{{ partial "sidebar-right.html" . }}
+</div>
+
+{{/* Article data for the P1/P2 panels, generated from the content files. */}}
+{{ $p1 := slice }}
+{{ range sort (where site.RegularPages "Section" "phase-i") ".Params.id" }}
+  {{ $p1 = $p1 | append (dict "id" .Params.id "group" .Params.group "title" .Title "date" .Params.display_date "cf" .Params.cf "note" .Params.note "src" .Params.src "content" .Content "url" .RelPermalink) }}
+{{ end }}
+<script id="p1-data" type="application/json">{{ $p1 | jsonify | safeJS }}</script>
+{{ $p2 := slice }}
+{{ range sort (where site.RegularPages "Section" "phase-ii") ".Params.id" }}
+  {{ $p2 = $p2 | append (dict "id" .Params.id "group" .Params.group "title" .Title "date" .Params.display_date "source" .Params.source "draft" .Params.is_draft "local" .Params.local "note" .Params.note "body" .Content "url" .RelPermalink) }}
+{{ end }}
+<script id="p2-data" type="application/json">{{ $p2 | jsonify | safeJS }}</script>
+<script id="featured-data" type="application/json">{{ site.Data.featured_articles | jsonify | safeJS }}</script>
+<script id="videos-data" type="application/json">{{ site.Data.craft_videos | jsonify | safeJS }}</script>
+<script id="showcase-data" type="application/json">{{ site.Data.showcase_items | jsonify | safeJS }}</script>
+{{ end }}

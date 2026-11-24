@@ -1,0 +1,736 @@
+{
+ "hero": [
+  {
+   "src": "/images/hero/ctpverse.jpg",
+   "alt": "CTPVerse \u2014 Conscious Translational Physics"
+  },
+  {
+   "src": "/images/hero/chamber.jpg",
+   "alt": "Resofactor in the aluminum chamber room"
+  },
+  {
+   "src": "/images/hero/triangular-craft.jpg",
+   "alt": "Triangular CTP Space Systems craft"
+  },
+  {
+   "src": "/images/hero/portrait-white.jpg",
+   "alt": "Resofactor portrait, white background, ankle-length coat"
+  },
+  {
+   "src": "/images/hero/ctpsci.jpg",
+   "alt": "CTPSci, blue chrome entity"
+  },
+  {
+   "src": "/images/hero/craft-earth.jpg",
+   "alt": "Cylindrical craft over Earth"
+  },
+  {
+   "src": "/images/hero/ufo-trees.jpg",
+   "alt": "UFO over trees, black and white"
+  },
+  {
+   "src": "/images/hero/ufo-disc.jpg",
+   "alt": "UFO disc, centred"
+  },
+  {
+   "src": "/images/hero/craft-interior.jpg",
+   "alt": "Craft interior cabin"
+  },
+  {
+   "src": "/images/hero/pyramids.jpg",
+   "alt": "Blue pyramids"
+  },
+  {
+   "src": "/images/hero/rocket-tyranny.jpg",
+   "alt": "The Rocket Tyranny Equation infographic"
+  },
+  {
+   "src": "/images/hero/galaxy-edge.jpg",
+   "alt": "Galaxy, edge-on"
+  },
+  {
+   "src": "/images/hero/cylindrical-craft.jpg",
+   "alt": "Cylindrical craft in space"
+  },
+  {
+   "src": "/images/hero/unlocking-universe.jpg",
+   "alt": "Unlocking the Universe, CTP Energy Science"
+  },
+  {
+   "src": "/images/hero/telescope-ctp.jpg",
+   "alt": "Telescope, CTP"
+  },
+  {
+   "src": "/images/hero/ctp-space-systems-cruiser.jpg",
+   "alt": "CTP Space Systems, CTP Space Cruiser"
+  },
+  {
+   "src": "/images/hero/resofactor-ctp-craft.jpg",
+   "alt": "Resofactor and CTP Craft"
+  },
+  {
+   "src": "/images/hero/c-energy-orbs.jpg",
+   "alt": "C-Energy orbs"
+  },
+  {
+   "src": "/images/hero/ufo-disclosure-card.jpg",
+   "alt": "UFO Disclosure Trading Card, Resofactor"
+  },
+  {
+   "src": "/images/hero/x1-heavy-lift.jpg",
+   "alt": "X-1 Heavy Lift Fuselage, CTP Space Systems"
+  },
+  {
+   "src": "/images/hero/sun-earth-gravity.jpg",
+   "alt": "Sun and Earth, gravity"
+  },
+  {
+   "src": "/images/hero/ufo-airport.jpg",
+   "alt": "UFO over airport"
+  },
+  {
+   "src": "/images/hero/ufo-airport-2.jpg",
+   "alt": "UFO over airport, second view"
+  },
+  {
+   "src": "/images/hero/blue-craft-night.jpg",
+   "alt": "Blue craft at night"
+  },
+  {
+   "src": "/images/hero/cigar-craft-city.jpg",
+   "alt": "Cigar craft over city"
+  },
+  {
+   "src": "/images/hero/ufo-lights-trees.jpg",
+   "alt": "UFO with lights, trees"
+  },
+  {
+   "src": "/images/hero/uap-flir.jpg",
+   "alt": "UAP, FLIR"
+  },
+  {
+   "src": "/images/hero/triangular-craft-top.jpg",
+   "alt": "Triangular craft, top view"
+  },
+  {
+   "src": "/images/hero/blue-diamond-sparkles.jpg",
+   "alt": "Blue diamond, sparkles"
+  },
+  {
+   "src": "/images/hero/blue-x-sparkles.jpg",
+   "alt": "Blue X, sparkles"
+  },
+  {
+   "src": "/images/hero/blue-x-sparkles-2.jpg",
+   "alt": "Blue X, sparkles, second view"
+  },
+  {
+   "src": "/images/hero/ctp-space-systems-saucer.jpg",
+   "alt": "CTP Space Systems saucer craft"
+  },
+  {
+   "src": "/images/hero/ctp-spaceliner.jpg",
+   "alt": "CTP Space Systems, CTP Spaceliner"
+  },
+  {
+   "src": "/images/hero/ctp-industrial-space-platform.jpg",
+   "alt": "CTP Space Systems, CTP Industrial Space Platform (CTPISP)"
+  },
+  {
+   "src": "/images/hero/gravity-control-system.jpg",
+   "alt": "CTP Gravity Control System"
+  },
+  {
+   "src": "/images/hero/three-orbs.jpg",
+   "alt": "Three orbs, C-Energy"
+  },
+  {
+   "src": "/images/hero/espirito-santo-brazil-1991.jpg",
+   "alt": "Esp\u00edrito Santo, Brazil, May 29, 1991"
+  },
+  {
+   "src": "/images/hero/mixquic-mexico-2004.jpg",
+   "alt": "Mixquic, Mexico, November 2, 2004"
+  },
+  {
+   "src": "/images/hero/beijing-china-1995.jpg",
+   "alt": "Beijing, China, February 3, 1995"
+  },
+  {
+   "src": "/images/hero/kannarraville-utah-1996.jpg",
+   "alt": "Kannarraville, Utah, USA, June 6, 1996"
+  },
+  {
+   "src": "/images/hero/santa-monica-california-1990.jpg",
+   "alt": "Santa Monica, California, USA, 1990"
+  },
+  {
+   "src": "/images/hero/scottsdale-arizona-1995.jpg",
+   "alt": "Scottsdale, Arizona, USA, October 3, 1995"
+  },
+  {
+   "src": "/images/hero/topanga-canyon-california-1997.jpg",
+   "alt": "Topanga Canyon, California, USA, 1997"
+  },
+  {
+   "src": "/images/hero/gulf-breeze-florida-1994.jpg",
+   "alt": "Gulf Breeze, Florida, USA, 1994"
+  },
+  {
+   "src": "/images/hero/denver-colorado-1991.jpg",
+   "alt": "Denver, Colorado, USA, 1991"
+  },
+  {
+   "src": "/images/hero/tepoztlan-mexico-1992.jpg",
+   "alt": "Tepoztl\u00e1n, Mexico, June 7, 1992"
+  },
+  {
+   "src": "/images/hero/fyffe-alabama-1976.jpg",
+   "alt": "Fyffe, Alabama, USA, 1976"
+  },
+  {
+   "src": "/images/hero/bryce-canyon-utah-1996.jpg",
+   "alt": "Bryce Canyon, Utah, USA, July 1996"
+  },
+  {
+   "src": "/images/hero/milan-italy-2004.jpg",
+   "alt": "Milan, Italy, November 27, 2004"
+  },
+  {
+   "src": "/images/hero/milan-italy-2005.jpg",
+   "alt": "Milan, Italy, May 8, 2005"
+  },
+  {
+   "src": "/images/hero/ufo-disc-black-white.jpg",
+   "alt": "UFO disc, black and white"
+  },
+  {
+   "src": "/images/hero/ufo-disc-city-black-white.jpg",
+   "alt": "UFO disc over city, black and white"
+  },
+  {
+   "src": "/images/hero/ufo-disc-trees-black-white.jpg",
+   "alt": "UFO disc over trees, black and white"
+  },
+  {
+   "src": "/images/hero/resofactor-lab-screens.jpg",
+   "alt": "Resofactor in the CTP lab, UFO screens"
+  },
+  {
+   "src": "/images/hero/canaima-venezuela-1990.jpg",
+   "alt": "Canaima, Venezuela, 1990"
+  },
+  {
+   "src": "/images/hero/purple-disc.jpg",
+   "alt": "Purple disc craft"
+  },
+  {
+   "src": "/images/hero/ctp-space-cruiser.jpg",
+   "alt": "CTP space cruiser"
+  },
+  {
+   "src": "/images/hero/ctp-gravitic-meme.jpg",
+   "alt": "CTP gravitics \u2014 manned space travel, transformed"
+  },
+  {
+   "src": "/images/hero/ctp-energy-science-book.jpg",
+   "alt": "CTP Energy Science \u2014 the book"
+  },
+  {
+   "src": "/images/hero/ctp-energy-computer.jpg",
+   "alt": "CTP Energy Computer \u2014 Beyond Quantum. Built for Conscious."
+  },
+  {
+   "src": "/images/hero/ctp-energy-computer-tower.jpg",
+   "alt": "CTP Energy Computer tower"
+  },
+  {
+   "src": "/images/hero/ctp-eos-installer.jpg",
+   "alt": "CTP-EOS Installer"
+  },
+  {
+   "src": "/images/hero/ctp-eos-files.jpg",
+   "alt": "CTP-EOS file system"
+  },
+  {
+   "src": "/images/hero/ctp-eos-logo.jpg",
+   "alt": "CTP-EOS logo"
+  },
+  {
+   "src": "/images/hero/ctp-exo.jpg",
+   "alt": "CTP EXO \u2014 next-gen exo-space exploration"
+  },
+  {
+   "src": "/images/hero/ctp-industrial-space-platform-blueprint.jpg",
+   "alt": "CTP Industrial Space Platform \u2014 blueprint"
+  },
+  {
+   "src": "/images/hero/ctp-telescope.jpg",
+   "alt": "CTP and the telescope"
+  },
+  {
+   "src": "/images/hero/ctp-eos-terminal.jpg",
+   "alt": "CTP-EOS build terminal"
+  },
+  {
+   "src": "/images/hero/ctp-university.jpg",
+   "alt": "CTP University lecture hall"
+  },
+  {
+   "src": "/images/hero/ctp-space-liner.jpg",
+   "alt": "CTP Space Liner"
+  },
+  {
+   "src": "/images/hero/ctp-diamond-craft.jpg",
+   "alt": "CTP diamond craft"
+  },
+  {
+   "src": "/images/hero/ctp-space-platform.jpg",
+   "alt": "CTP Space Systems platform"
+  },
+  {
+   "src": "/images/hero/ctp-diamond-craft-dark.jpg",
+   "alt": "CTP Space Systems diamond craft"
+  },
+  {
+   "src": "/images/hero/ctp-orbs.jpg",
+   "alt": "Three CTP orbs, white, blue and black"
+  },
+  {
+   "src": "/images/hero/ce-entity.jpg",
+   "alt": "CE entity, chrome with green glowing eyes and green holographic data panels"
+  },
+  {
+   "src": "/images/hero/ce-entity-orb.jpg",
+   "alt": "Wireframe CE entity in profile holding a glowing orb with a small figure inside, above the clouds"
+  },
+  {
+   "src": "/images/hero/ctp-eos-tri-force.jpg",
+   "alt": "CTP-EOS banner, metallic blue Tri-Force triangle on a dark blue background"
+  },
+  {
+   "src": "/images/hero/cylindrical-craft-1950.jpg",
+   "alt": "Cylindrical craft, New York, 1950"
+  },
+  {
+   "src": "/images/hero/tesla-arrival.jpg",
+   "alt": "Nikola Tesla \u2014 The day science begins to study non-physical phenomena, it will make more progress in one decade than in all the previous centuries of its existence. CTP is the fulfillment of Tesla's prediction. CTP has arrived."
+  }
+ ],
+ "glyph": [
+  {
+   "src": "/images/ctpeg/glyph-01.jpg",
+   "alt": "CTP Energy Glyph 1"
+  },
+  {
+   "src": "/images/ctpeg/glyph-02.jpg",
+   "alt": "CTP Energy Glyph 2"
+  },
+  {
+   "src": "/images/ctpeg/glyph-03.jpg",
+   "alt": "CTP Energy Glyph 3"
+  },
+  {
+   "src": "/images/ctpeg/glyph-04.jpg",
+   "alt": "CTP Energy Glyph 4"
+  },
+  {
+   "src": "/images/ctpeg/glyph-05.jpg",
+   "alt": "CTP Energy Glyph 5"
+  },
+  {
+   "src": "/images/ctpeg/glyph-06.jpg",
+   "alt": "CTP Energy Glyph 6"
+  },
+  {
+   "src": "/images/ctpeg/glyph-07.jpg",
+   "alt": "CTP Energy Glyph 7"
+  },
+  {
+   "src": "/images/ctpeg/glyph-08.jpg",
+   "alt": "CTP Energy Glyph 8"
+  },
+  {
+   "src": "/images/ctpeg/glyph-09.jpg",
+   "alt": "CTP Energy Glyph 9"
+  },
+  {
+   "src": "/images/ctpeg/glyph-10.jpg",
+   "alt": "CTP Energy Glyph 10"
+  },
+  {
+   "src": "/images/ctpeg/glyph-11.jpg",
+   "alt": "CTP Energy Glyph 11"
+  },
+  {
+   "src": "/images/ctpeg/glyph-12.jpg",
+   "alt": "CTP Energy Glyph 12"
+  },
+  {
+   "src": "/images/ctpeg/glyph-13.jpg",
+   "alt": "CTP Energy Glyph 13"
+  },
+  {
+   "src": "/images/ctpeg/glyph-14.jpg",
+   "alt": "CTP Energy Glyph 14"
+  },
+  {
+   "src": "/images/ctpeg/glyph-15.jpg",
+   "alt": "CTP Energy Glyph 15"
+  },
+  {
+   "src": "/images/ctpeg/glyph-16.jpg",
+   "alt": "CTP Energy Glyph 16"
+  },
+  {
+   "src": "/images/ctpeg/glyph-17.jpg",
+   "alt": "CTP Energy Glyph 17"
+  },
+  {
+   "src": "/images/ctpeg/glyph-18.jpg",
+   "alt": "CTP Energy Glyph 18"
+  },
+  {
+   "src": "/images/ctpeg/glyph-19.jpg",
+   "alt": "CTP Energy Glyph 19"
+  },
+  {
+   "src": "/images/ctpeg/glyph-20.jpg",
+   "alt": "CTP Energy Glyph 20"
+  },
+  {
+   "src": "/images/ctpeg/glyph-21.jpg",
+   "alt": "CTP Energy Glyph 21"
+  },
+  {
+   "src": "/images/ctpeg/glyph-22.jpg",
+   "alt": "CTP Energy Glyph 22"
+  },
+  {
+   "src": "/images/ctpeg/glyph-23.jpg",
+   "alt": "CTP Energy Glyph 23"
+  },
+  {
+   "src": "/images/ctpeg/glyph-24.jpg",
+   "alt": "CTP Energy Glyph 24"
+  },
+  {
+   "src": "/images/ctpeg/glyph-25.jpg",
+   "alt": "CTP Energy Glyph 25"
+  },
+  {
+   "src": "/images/ctpeg/glyph-26.jpg",
+   "alt": "CTP Energy Glyph 26"
+  },
+  {
+   "src": "/images/ctpeg/glyph-27.jpg",
+   "alt": "CTP Energy Glyph 27"
+  },
+  {
+   "src": "/images/ctpeg/glyph-28.jpg",
+   "alt": "CTP Energy Glyph 28"
+  },
+  {
+   "src": "/images/ctpeg/glyph-29.jpg",
+   "alt": "CTP Energy Glyph 29"
+  },
+  {
+   "src": "/images/ctpeg/glyph-30.jpg",
+   "alt": "CTP Energy Glyph 30"
+  },
+  {
+   "src": "/images/ctpeg/glyph-31.jpg",
+   "alt": "CTP Energy Glyph 31"
+  },
+  {
+   "src": "/images/ctpeg/glyph-32.jpg",
+   "alt": "CTP Energy Glyph 32"
+  },
+  {
+   "src": "/images/ctpeg/glyph-33.jpg",
+   "alt": "CTP Energy Glyph 33"
+  },
+  {
+   "src": "/images/ctpeg/glyph-34.jpg",
+   "alt": "CTP Energy Glyph 34"
+  },
+  {
+   "src": "/images/ctpeg/glyph-35.jpg",
+   "alt": "CTP Energy Glyph 35"
+  },
+  {
+   "src": "/images/ctpeg/glyph-36.jpg",
+   "alt": "CTP Energy Glyph 36"
+  },
+  {
+   "src": "/images/ctpeg/glyph-37.jpg",
+   "alt": "CTP Energy Glyph 37"
+  },
+  {
+   "src": "/images/ctpeg/glyph-38.jpg",
+   "alt": "CTP Energy Glyph 38"
+  },
+  {
+   "src": "/images/ctpeg/glyph-39.jpg",
+   "alt": "CTP Energy Glyph 39"
+  },
+  {
+   "src": "/images/ctpeg/glyph-40.jpg",
+   "alt": "CTP Energy Glyph 40"
+  },
+  {
+   "src": "/images/ctpeg/glyph-41.jpg",
+   "alt": "CTP Energy Glyph 41"
+  },
+  {
+   "src": "/images/ctpeg/glyph-42.jpg",
+   "alt": "CTP Energy Glyph 42"
+  },
+  {
+   "src": "/images/ctpeg/glyph-43.jpg",
+   "alt": "CTP Energy Glyph 43"
+  },
+  {
+   "src": "/images/ctpeg/glyph-44.jpg",
+   "alt": "CTP Energy Glyph 44"
+  },
+  {
+   "src": "/images/ctpeg/glyph-45.jpg",
+   "alt": "CTP Energy Glyph 45"
+  },
+  {
+   "src": "/images/ctpeg/glyph-46.jpg",
+   "alt": "CTP Energy Glyph 46"
+  },
+  {
+   "src": "/images/ctpeg/glyph-47.jpg",
+   "alt": "CTP Energy Glyph 47"
+  },
+  {
+   "src": "/images/ctpeg/glyph-48.jpg",
+   "alt": "CTP Energy Glyph 48"
+  },
+  {
+   "src": "/images/ctpeg/glyph-49.jpg",
+   "alt": "CTP Energy Glyph 49"
+  },
+  {
+   "src": "/images/ctpeg/glyph-50.jpg",
+   "alt": "CTP Energy Glyph 50"
+  },
+  {
+   "src": "/images/ctpeg/glyph-51.jpg",
+   "alt": "CTP Energy Glyph 51"
+  },
+  {
+   "src": "/images/ctpeg/glyph-52.jpg",
+   "alt": "CTP Energy Glyph 52"
+  },
+  {
+   "src": "/images/ctpeg/glyph-53.jpg",
+   "alt": "CTP Energy Glyph 53"
+  },
+  {
+   "src": "/images/ctpeg/glyph-54.jpg",
+   "alt": "CTP Energy Glyph 54"
+  },
+  {
+   "src": "/images/ctpeg/glyph-55.jpg",
+   "alt": "CTP Energy Glyph 55"
+  },
+  {
+   "src": "/images/ctpeg/glyph-56.jpg",
+   "alt": "CTP Energy Glyph 56"
+  },
+  {
+   "src": "/images/ctpeg/glyph-57.jpg",
+   "alt": "CTP Energy Glyph 57"
+  },
+  {
+   "src": "/images/ctpeg/glyph-58.jpg",
+   "alt": "CTP Energy Glyph 58"
+  },
+  {
+   "src": "/images/ctpeg/glyph-59.jpg",
+   "alt": "CTP Energy Glyph 59"
+  },
+  {
+   "src": "/images/ctpeg/glyph-60.jpg",
+   "alt": "CTP Energy Glyph 60"
+  },
+  {
+   "src": "/images/ctpeg/glyph-61.jpg",
+   "alt": "CTP Energy Glyph 61"
+  },
+  {
+   "src": "/images/ctpeg/glyph-62.jpg",
+   "alt": "CTP Energy Glyph 62"
+  },
+  {
+   "src": "/images/ctpeg/glyph-63.jpg",
+   "alt": "CTP Energy Glyph 63"
+  },
+  {
+   "src": "/images/ctpeg/glyph-64.jpg",
+   "alt": "CTP Energy Glyph 64"
+  },
+  {
+   "src": "/images/ctpeg/glyph-65.jpg",
+   "alt": "CTP Energy Glyph 65"
+  },
+  {
+   "src": "/images/ctpeg/glyph-66.jpg",
+   "alt": "CTP Energy Glyph 66"
+  },
+  {
+   "src": "/images/ctpeg/glyph-67.jpg",
+   "alt": "CTP Energy Glyph 67"
+  },
+  {
+   "src": "/images/ctpeg/glyph-68.jpg",
+   "alt": "CTP Energy Glyph 68"
+  }
+ ],
+ "ce": [
+  {
+   "src": "/images/ce-entities/ce-01.jpg",
+   "alt": "CE Entity 1, faceted blue chrome bust, three-quarter view"
+  },
+  {
+   "src": "/images/ce-entities/ce-02.jpg",
+   "alt": "CE Entity 2, faceted blue chrome profile holding a diamond frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-03.jpg",
+   "alt": "CE Entity 3, blue chrome face in a crystal diamond frame, dark background"
+  },
+  {
+   "src": "/images/ce-entities/ce-04.jpg",
+   "alt": "CE Entity 4, blue chrome face with a crystal pentagon frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-05.jpg",
+   "alt": "CE Entity 5, blue chrome face, close-up, in a dark diamond frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-06.jpg",
+   "alt": "CE Entity 6, blue chrome face, close-up, light background"
+  },
+  {
+   "src": "/images/ce-entities/ce-07.jpg",
+   "alt": "CE Entity 7, blue chrome face with a crystal shard frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-08.jpg",
+   "alt": "CE Entity 8, blue chrome face behind a crystal diamond"
+  },
+  {
+   "src": "/images/ce-entities/ce-09.jpg",
+   "alt": "CE Entity 9, blue chrome profile inside a diamond frame, crystal shards"
+  },
+  {
+   "src": "/images/ce-entities/ce-10.jpg",
+   "alt": "CE Entity 10, blue chrome face in a crystal diamond frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-12.jpg",
+   "alt": "CE Entity 12, two blue chrome entities, kissing, diamond frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-13.jpg",
+   "alt": "CE Entity 13, blue chrome face, diamond frame, dark background"
+  },
+  {
+   "src": "/images/ce-entities/ce-14.jpg",
+   "alt": "CE Entity 14, blue chrome profile with a crystal shard"
+  },
+  {
+   "src": "/images/ce-entities/ce-15.jpg",
+   "alt": "CE Entity 15, blue chrome face, crystal diamond frame, dark background"
+  },
+  {
+   "src": "/images/ce-entities/ce-16.jpg",
+   "alt": "CE Entity 16, blue chrome face, double diamond frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-17.jpg",
+   "alt": "CE Entity 17, blue chrome face in a glowing rectangular frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-20.jpg",
+   "alt": "CE Entity 20, blue chrome face, V frame with cyan dots"
+  },
+  {
+   "src": "/images/ce-entities/ce-21.jpg",
+   "alt": "CE Entity 21, blue chrome face, faceted diamond frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-22.jpg",
+   "alt": "CE Entity 22, blue chrome face, close-up, light blue frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-23.jpg",
+   "alt": "CE Entity 23, two blue chrome profiles facing each other, crystal diamond frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-25.jpg",
+   "alt": "CE Entity 25, blue chrome face in a black diamond frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-26.jpg",
+   "alt": "CE Entity 26, blue chrome face in a faceted shield frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-27.jpg",
+   "alt": "CE Entity 27, blue chrome face, close-up, crystal point frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-28.jpg",
+   "alt": "CE Entity 28, blue chrome face in a crystal diamond frame, dark background"
+  },
+  {
+   "src": "/images/ce-entities/ce-30.jpg",
+   "alt": "CE Entity 30, blue chrome face, close-up, fine diamond outline"
+  },
+  {
+   "src": "/images/ce-entities/ce-31.jpg",
+   "alt": "CE Entity 31, blue chrome bust in a faceted crystal diamond frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-32.jpg",
+   "alt": "CE Entity 32, blue chrome face in a glowing oval frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-33.jpg",
+   "alt": "CE Entity 33, blue chrome face in a crystal diamond frame, three-quarter view"
+  },
+  {
+   "src": "/images/ce-entities/ce-34.jpg",
+   "alt": "CE Entity 34, two cracked blue chrome profiles facing each other"
+  },
+  {
+   "src": "/images/ce-entities/ce-35.jpg",
+   "alt": "CE Entity 35, blue chrome face in a dark blue diamond frame, light background"
+  },
+  {
+   "src": "/images/ce-entities/ce-36.jpg",
+   "alt": "CE Entity 36, blue chrome face in a chrome oval frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-37.jpg",
+   "alt": "CE Entity 37, blue chrome face in a translucent shield frame, dark background"
+  },
+  {
+   "src": "/images/ce-entities/ce-38.jpg",
+   "alt": "CE Entity 38, blue chrome face, close-up, geometric frame"
+  },
+  {
+   "src": "/images/ce-entities/ce-40.jpg",
+   "alt": "CE Entity 40, two blue chrome entities, kissing, close-up"
+  },
+  {
+   "src": "/images/ce-entities/ce-41.jpg",
+   "alt": "CE Entity 41, blue chrome face in a double diamond frame, light blue background"
+  }
+ ]
+}

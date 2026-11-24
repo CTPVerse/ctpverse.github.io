@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en" data-theme="eos">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+<div class="wrap">
+{{ partial "header.html" . }}
+{{ block "main" . }}{{ end }}
+{{ partial "footer.html" . }}
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
+{{ partial "scripts.html" . }}
+</body>
+</html>

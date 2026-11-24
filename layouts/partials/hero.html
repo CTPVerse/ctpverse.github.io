@@ -1,0 +1,22 @@
+<section class="hero-banner" id="hero-banner" aria-roledescription="carousel" aria-label="CTPVerse hero banner">
+    <div class="hero-viewport">
+      {{/* figures rendered from data/figures.json */}}
+      {{ range $i, $f := site.Data.figures.hero }}
+      <figure class="hero-slide{{ if eq $i 0 }} is-active{{ end }}"{{ if ne $i 0 }} aria-hidden="true"{{ end }}>
+        <img src="{{ $f.src }}" alt="{{ $f.alt }}" width="1920" height="1080"{{ if ne $i 0 }} loading="lazy"{{ end }} />
+      </figure>
+      {{ end }}
+
+
+      <button type="button" class="hero-arrow hero-arrow-prev" id="heroPrev" aria-label="Previous hero image">&#8249;</button>
+      <button type="button" class="hero-arrow hero-arrow-next" id="heroNext" aria-label="Next hero image">&#8250;</button>
+
+      <div class="hero-bar">
+        <p class="hero-caption" id="heroCaption">CTPVerse — Conscious Translational Physics</p>
+        <div class="hero-controls">
+          <span class="hero-count" id="heroCount" aria-live="polite">Hero 0 of 79</span>
+        </div>
+      </div>
+    </div>
+  
+  </section>
