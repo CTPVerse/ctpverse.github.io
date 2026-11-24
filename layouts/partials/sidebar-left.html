@@ -1,17 +1,8 @@
-{{/* Left column: P1 accordion (from content/phase-i), P2 menu (from content/phase-ii),
-     then the static blocks (Organization, Main Menu, Lineage, The Science, CTP-EOS),
-     the Glyph viewer (from data/figures.json), CTP Ads and CTPVerse Sites. */}}
+{{/* Left column order: Organization, Main Menu, then the P1 accordion
+     (from content/phase-i) and P2 menu (from content/phase-ii), then the
+     static blocks (Lineage, The Science, CTP-EOS), the Glyph viewer
+     (from data/figures.json), CTP Ads and CTPVerse Sites. */}}
 <div class="col col-left">
-
-  <div class="block" id="phase1-nav">
-    <div class="block-title">CTP Phase I Archive</div>
-    <div class="block-body u-pad-0">{{ $groups := slice "science" "systems" "topics" "topics2005" "courses" }}{{ $labels := dict "science" "CTP Energy Science" "systems" "CTP Energy Systems" "topics" "C-Domain Topics" "topics2005" "C-Domain Topics — 2005 Only" "courses" "CTP Courses" }}{{ range $gi, $g := $groups }}<div class="p1-acc"><button type="button" class="p1-acc-head" aria-expanded="{{ if eq $gi 0 }}true{{ else }}false{{ end }}">{{ index $labels $g }}<span class="p1-caret" aria-hidden="true">{{ if eq $gi 0 }}▾{{ else }}▸{{ end }}</span></button><ul class="p1-acc-list{{ if ne $gi 0 }} hidden{{ end }}">{{ range sort (where (where site.RegularPages "Section" "phase-i") ".Params.group" $g) ".Params.id" }}<li><button type="button" class="p1-item" data-p1="{{ .Params.id }}"><span class="p1-item-id">{{ .Params.id }}{{ with .Params.cf }} · CF {{ . }}{{ end }}</span>{{ .Title }}</button></li>{{ end }}</ul></div>{{ end }}</div>
-  </div>
-
-  <div class="block" id="phase2-nav">
-    <div class="block-title">CTP Phase II Menu &mdash; All 18 Items</div>
-    <div class="block-body u-pad-0" id="p2MenuDesktop"></div>
-  </div>
 
 <div class="block">
         <div class="block-title">CTPVERSE Organization</div>
@@ -41,6 +32,16 @@
           </ul>
         </div>
       </div>
+
+  <div class="block" id="phase1-nav">
+    <div class="block-title">CTP Phase I Archive</div>
+    <div class="block-body u-pad-0">{{ $groups := slice "science" "systems" "topics" "topics2005" "courses" }}{{ $labels := dict "science" "CTP Energy Science" "systems" "CTP Energy Systems" "topics" "C-Domain Topics" "topics2005" "C-Domain Topics — 2005 Only" "courses" "CTP Courses" }}{{ range $gi, $g := $groups }}<div class="p1-acc"><button type="button" class="p1-acc-head" aria-expanded="false">{{ index $labels $g }}<span class="p1-caret" aria-hidden="true">▸</span></button><ul class="p1-acc-list hidden">{{ range sort (where (where site.RegularPages "Section" "phase-i") ".Params.group" $g) ".Params.id" }}<li><button type="button" class="p1-item" data-p1="{{ .Params.id }}"><span class="p1-item-id">{{ .Params.id }}{{ with .Params.cf }} · CF {{ . }}{{ end }}</span>{{ .Title }}</button></li>{{ end }}</ul></div>{{ end }}</div>
+  </div>
+
+  <div class="block" id="phase2-nav">
+    <div class="block-title">CTP Phase II Menu &mdash; All 18 Items</div>
+    <div class="block-body u-pad-0" id="p2MenuDesktop"></div>
+  </div>
 
       <div class="block">
         <div class="block-title">Lineage</div>

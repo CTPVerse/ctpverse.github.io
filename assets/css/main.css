@@ -624,7 +624,7 @@
   /* ===== Three-column portal layout: left blocks | centre | right blocks ===== */
   .layout{
     display:grid; grid-template-columns:182px minmax(0,1fr) 212px; gap:8px;
-    padding:8px; background:var(--page); align-items:start;
+    padding:8px; background:var(--page); align-items:stretch;
   }
   /* ===== Width toggle (v83) =====
      Default is the classic Nuke width (.wrap max-width 1180px, side columns
@@ -639,8 +639,13 @@
   }
   .col{min-width:0}
 
-  /* Side columns scroll with the page like everything else. Nothing
-     on this site sticks. */
+  /* Side columns run the full length of the page: the grid stretches
+     them to the full row height, so the centre content scrolls
+     between two full-length rails. They scroll with the page like
+     everything else. Nothing on this site sticks. */
+  @media (min-width:961px){
+    .col-left,.col-right{background:var(--surface); border:1px solid var(--navy)}
+  }
 
   /* Side blocks */
   .block{background:var(--surface); border:1px solid var(--navy); margin-bottom:8px}
