@@ -39,7 +39,7 @@
   </div>
 
   <div class="block" id="phase2-nav">
-    <div class="block-title">CTP Phase II Menu &mdash; All 18 Items</div>
+    <div class="block-title">CTP Phase II</div>
     <div class="block-body u-pad-0" id="p2MenuDesktop">{{ $p2groups := slice "New Articles" "Overview" "Core Principles" "Deep Papers" "Cosmology & Funding" "Movement & Trends" }}{{ range $g := $p2groups }}<div class="p2-acc"><button type="button" class="p2-acc-head" aria-expanded="false">{{ $g }}<span class="p2-caret" aria-hidden="true">▸</span></button><ul class="p2-acc-list hidden">{{ range sort (where (where site.RegularPages "Section" "phase-ii") ".Params.group" $g) ".Params.id" }}<li><a class="p2-item" data-p2="{{ .Params.id }}" href="{{ .RelPermalink }}"><span class="p2-item-id">{{ .Params.id }}</span>{{ .Title }}</a></li>{{ end }}</ul></div>{{ end }}</div>
   </div>
 
