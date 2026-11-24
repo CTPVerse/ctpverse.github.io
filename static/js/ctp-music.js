@@ -48,15 +48,42 @@
       STATIONS.push({ group: g.label, id: s.id, name: s.name, genre: s.genre });
     });
   });
-  /* Widget colours — grayscale only (no blue), matches the dark theme. */
-  var W = {
-    color: "%23ffffff", shadow: "false", radius: "6px",
-    bgTo: "%231f2937", bgFrom: "%23111827",
-    borderColor: "%236b7280", borderWidth: "1px",
-    btnBgTo: "%234b5563", btnBgFrom: "%234b5563",
-    btnBorderColor: "%23ffffff", btnBorderWidth: "1px"
-  };
+  /* Widget colours — read from this site theme's own CSS variables, so the
+     player matches whatever theme is active (light or dark). Falls back to
+     the dark grayscale set if a variable is missing. */
+  function encHex(c){ return "%23" + c.slice(1); }
+  function toHex(c){
+    if(!c) return null;
+    c = String(c).trim();
+    if(c.charAt(0) === "#"){
+      if(c.length === 4) c = "#" + c[1] + c[1] + c[2] + c[2] + c[3] + c[3];
+      return c.length === 7 ? c.toLowerCase() : null;
+    }
+    var m = c.match(/rgba?\(\s*([^)]+)\)/);
+    if(!m) return null;
+    var p = m[1].split(",").map(function(x){ return parseInt(x, 10); });
+    if(p.length < 3 || isNaN(p[0]) || isNaN(p[1]) || isNaN(p[2])) return null;
+    function h(n){ n = Math.max(0, Math.min(255, n)); return (n < 16 ? "0" : "") + n.toString(16); }
+    return "#" + h(p[0]) + h(p[1]) + h(p[2]);
+  }
+  function cssVar(name){
+    try { return toHex(getComputedStyle(document.documentElement).getPropertyValue(name)); }
+    catch(e){ return null; }
+  }
+  function themeW(){
+    return {
+      color: encHex(cssVar("--text") || "#ffffff"),
+      shadow: "false", radius: "6px",
+      bgTo: encHex(cssVar("--surface") || "#1f2937"),
+      bgFrom: encHex(cssVar("--surface") || "#1f2937"),
+      borderColor: encHex(cssVar("--border-soft") || "#6b7280"), borderWidth: "1px",
+      btnBgTo: encHex(cssVar("--btn-bg") || "#4b5563"),
+      btnBgFrom: encHex(cssVar("--btn-bg") || "#4b5563"),
+      btnBorderColor: encHex(cssVar("--btn-text") || "#ffffff"), btnBorderWidth: "1px"
+    };
+  }
   function widgetURL(st){
+    var W = themeW();
     return "https://laut.fm/widgets/player_for/" + st + ","
       + "?player%5Bstations%5D=" + st + "%2C"
       + "&player%5Bcolor%5D%5Bcolor%5D=" + W.color
@@ -98,4 +125,12 @@
   if(prevBtn) prevBtn.addEventListener("click", function(){ loadStation(idx - 1); });
   if(nextBtn) nextBtn.addEventListener("click", function(){ loadStation(idx + 1); });
   loadStation(idx);
+  /* Rebuild the player when the theme changes, so it keeps matching. */
+  if(window.MutationObserver){
+    var lastTheme = document.documentElement.getAttribute("data-theme");
+    new MutationObserver(function(){
+      var t = document.documentElement.getAttribute("data-theme");
+      if(t !== lastTheme){ lastTheme = t; frame.src = widgetURL(STATIONS[idx].id); }
+    }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+  }
 })();
