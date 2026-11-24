@@ -1198,12 +1198,12 @@
   .mp-channel-wrap{flex:1; min-width:0; text-align:center}
   .mp-group{font-family:"Rajdhani",sans-serif; font-weight:600; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:var(--heading); line-height:1.3}
   .mp-channel{font-family:"Rajdhani",sans-serif; font-weight:700; font-size:16px; color:var(--text); line-height:1.2}
-  .mp-genre{font-size:12px; color:var(--muted); line-height:1.3}
+  .mp-genre{font-size:12px; color:var(--text); line-height:1.3}
   /* laut.fm's widget collapses to 120px tall when its frame is wider than 399px, leaving a white gap in a taller frame — cap the frame at 399px so it stays in its 190px mode */
   .mp-widget{width:100%; max-width:399px; height:190px; margin:0 auto; border:0; display:block; background:var(--blue-wash)}
-  .mp-status{font-size:12px; color:var(--muted); margin-top:8px}
-  .mp-source{font-family:"Share Tech Mono",monospace; font-size:11.5px; color:var(--muted); margin-top:2px}
-  .mp-note{font-size:12.5px; color:var(--muted); margin:8px 0 0}
+  .mp-status{font-size:12px; color:var(--text); margin-top:8px}
+  .mp-source{font-family:"Share Tech Mono",monospace; font-size:11.5px; color:var(--text); margin-top:2px}
+  .mp-note{font-size:12.5px; color:var(--text); margin:8px 0 0}
   /* C-domain Frequencies — highlighted line + regular text under the CTP Music module */
   .cdom-head{font-family:"Rajdhani",sans-serif; font-weight:700; font-size:18px; letter-spacing:2px; text-transform:uppercase; color:var(--heading); margin:12px 0 6px}
   .cdom-body{font-size:14px; color:var(--text-2); margin:0}
