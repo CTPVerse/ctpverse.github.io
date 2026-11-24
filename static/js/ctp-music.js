@@ -82,11 +82,12 @@
   function themeW(){
     var text = cssVar("--text") || "#ffffff";
     var surface = cssVar("--surface") || "#1f2937";
-    /* Player background matches the module and menu background, so the whole
-       module is one colour; the button and bar contrast so it reads as a player. */
-    var bg = surface;
+    var wash = cssVar("--blue-wash") || surface;
+    /* Player background matches the darker module title strip (the border
+       where CTP MUSIC sits), so the whole module reads as one piece. */
+    var bg = wash;
     var fg = text;
-    var btn = mixHex(surface, text, 0.25);
+    var btn = mixHex(bg, fg, 0.25);
     return {
       color: encHex(fg),
       shadow: "false", radius: "6px",
