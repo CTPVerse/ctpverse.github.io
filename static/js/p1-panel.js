@@ -11,7 +11,7 @@
   P1_ARTICLES.forEach(function(a){ byId[a.id]=a; });
   function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
   var current=null;
-  function showP1(id,scroll){
+  function showP1(id,scroll,keepClosed){
     var a=byId[id]; if(!a) return;
     current=id;
     var h='';
@@ -35,7 +35,7 @@
     [].slice.call(document.querySelectorAll('.p1-item')).forEach(function(b){
       var on=b.getAttribute('data-p1')===id;
       b.classList.toggle('is-active',on);
-      if(on){
+      if(on && !keepClosed){
         var list=b.closest('.p1-acc-list');
         if(list && list.classList.contains('hidden')){
           list.classList.remove('hidden'); list.removeAttribute('hidden');
@@ -65,5 +65,5 @@
   });
   var start='CTP-P1-001';
   if(location.hash && byId[location.hash.slice(1)]) start=location.hash.slice(1);
-  showP1(start,false);
+  showP1(start,false,true);
 })();

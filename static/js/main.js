@@ -65,7 +65,6 @@
     if(mode==='full'){ document.documentElement.setAttribute('data-width','full'); }
     else{ document.documentElement.removeAttribute('data-width'); }
     if(widthBtn) widthBtn.textContent=mode==='full'?'WIDTH: Full':'WIDTH: Nuke';
-    syncStickTop();
     if(!silent) show(mode==='full'?'Width: Full spread':'Width: Nuke');
   }
   if(widthBtn){
