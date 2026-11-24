@@ -82,18 +82,20 @@
   function themeW(){
     var text = cssVar("--text") || "#ffffff";
     var surface = cssVar("--surface") || "#1f2937";
-    /* Offset the player background from the module surface, so the widget
-       reads as its own panel instead of blending into the template. */
-    var bg = mixHex(surface, text, 0.25);
+    /* Inverted panel: light widget on dark themes, dark widget on light
+       themes, so the player reads as its own widget. */
+    var bg = mixHex(text, surface, 0.10);
+    var fg = surface;
+    var btn = mixHex(bg, fg, 0.25);
     return {
-      color: encHex(text),
+      color: encHex(fg),
       shadow: "false", radius: "6px",
       bgTo: encHex(bg),
       bgFrom: encHex(bg),
-      borderColor: encHex(cssVar("--border-soft") || "#6b7280"), borderWidth: "1px",
-      btnBgTo: encHex(cssVar("--btn-bg") || "#4b5563"),
-      btnBgFrom: encHex(cssVar("--btn-bg") || "#4b5563"),
-      btnBorderColor: encHex(cssVar("--btn-text") || "#ffffff"), btnBorderWidth: "1px"
+      borderColor: encHex(fg), borderWidth: "1px",
+      btnBgTo: encHex(btn),
+      btnBgFrom: encHex(btn),
+      btnBorderColor: encHex(fg), btnBorderWidth: "1px"
     };
   }
   function widgetURL(st){
