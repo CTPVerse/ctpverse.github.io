@@ -1204,7 +1204,7 @@
   .mp-source{font-family:"Share Tech Mono",monospace; font-size:11.5px; color:var(--muted); margin-top:2px}
   .mp-note{font-size:12.5px; color:var(--muted); margin:8px 0 0}
   /* C-domain Frequencies — highlighted line + regular text under the CTP Music module */
-  .cdom-head{font-family:"Rajdhani",sans-serif; font-weight:700; font-size:18px; letter-spacing:2px; color:var(--heading); margin-bottom:6px}
+  .cdom-head{font-family:"Rajdhani",sans-serif; font-weight:700; font-size:18px; letter-spacing:2px; text-transform:uppercase; color:var(--heading); margin:12px 0 6px}
   .cdom-body{font-size:14px; color:var(--text-2); margin:0}
 
   /* ===== CTP Energy Glyphs — square rotating viewer in the left column, modelled on the CE Entities viewer ===== */
