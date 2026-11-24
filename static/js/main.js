@@ -174,13 +174,14 @@
     if(sNext) sNext.addEventListener('click',function(){ showShowcase(randomShowcase()); });
   }
   // Active nav on scroll
-  var links=[].slice.call(document.querySelectorAll('.nav a[href^="#"]'));
-  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))}).filter(Boolean);
+  var links=[].slice.call(document.querySelectorAll('.nav a[href^="#"], .nav a[href^="/#"]'));
+  function navHash(a){ var h=a.getAttribute('href'); return h.charAt(0)==='/'?h.slice(1):h; }
+  var secs=links.map(function(a){ return document.querySelector(navHash(a)); }).filter(Boolean);
   function onScroll(){
     if(!secs.length) return;
     var y=window.scrollY+90, cur=secs[0];
     secs.forEach(function(s){ if(s.offsetTop<=y) cur=s; });
-    links.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href')==='#'+cur.id); });
+    links.forEach(function(a){ a.classList.toggle('active', navHash(a)==='#'+cur.id); });
   }
   window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
 })();

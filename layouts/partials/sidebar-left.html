@@ -12,20 +12,20 @@
         <div class="block-title">Main Menu</div>
         <div class="block-body u-pad-4-8">
           <ul class="menu">
-            <li><a href="#ctp-news">CTP News</a></li>
-            <li><a href="#from-resofactor">From Resofactor</a></li>
-            <li><a href="#featured-article">Featured Article</a></li>
-            <li><a href="#c-domain-artwork">C-Domain Artwork — CE Entities</a></li>
-            <li><a href="#implications-report">Implications Report</a></li>
-            <li><a href="#phase1-archive">CTP Phase I Archive</a></li>
-            <li><a href="#phase2">CTP Phase II</a></li>
-            <li><a href="#craft-video">Random Video — CTP Craft</a></li>
-            <li><a href="#units">CTPVerse Business Units</a></li>
-            <li><a href="#eos">CTP-EOS — Dev &amp; Rollout</a></li>
-            <li><a href="#ctp-eos-pitch">CTP-EOS Pitch</a></li>
-            <li><a href="#disclosure">CTP is Disclosure Movement</a></li>
-            <li><a href="#linkedin">LinkedIn Pages</a></li>
-            <li><a href="#investor-documents">Investor Documents</a></li>
+            <li><a href="/#ctp-news">CTP News</a></li>
+            <li><a href="/#from-resofactor">From Resofactor</a></li>
+            <li><a href="/#featured-article">Featured Article</a></li>
+            <li><a href="/#c-domain-artwork">C-Domain Artwork — CE Entities</a></li>
+            <li><a href="/#implications-report">Implications Report</a></li>
+            <li><a href="/#phase1-archive">CTP Phase I Archive</a></li>
+            <li><a href="/#phase2">CTP Phase II</a></li>
+            <li><a href="/#craft-video">Random Video — CTP Craft</a></li>
+            <li><a href="/#units">CTPVerse Business Units</a></li>
+            <li><a href="/#eos">CTP-EOS — Dev &amp; Rollout</a></li>
+            <li><a href="/#ctp-eos-pitch">CTP-EOS Pitch</a></li>
+            <li><a href="/#disclosure">CTP is Disclosure Movement</a></li>
+            <li><a href="/#linkedin">LinkedIn Pages</a></li>
+            <li><a href="/#investor-documents">Investor Documents</a></li>
             <li><a href="https://ctp-eos.github.io/" target="_blank" rel="noopener">CTP-EOS Portal ↗</a></li>
             <li><a href="https://linktr.ee/resofactor" target="_blank" rel="noopener">Linktree Hub ↗</a></li>
             <li><a href="mailto:info@ctp-energy.com">Contact Resofactor</a></li>
@@ -40,7 +40,7 @@
 
   <div class="block" id="phase2-nav">
     <div class="block-title">CTP Phase II Menu &mdash; All 18 Items</div>
-    <div class="block-body u-pad-0" id="p2MenuDesktop"></div>
+    <div class="block-body u-pad-0" id="p2MenuDesktop">{{ $p2groups := slice "New Articles" "Overview" "Core Principles" "Deep Papers" "Cosmology & Funding" "Movement & Trends" }}{{ range $g := $p2groups }}<div class="p2-acc"><button type="button" class="p2-acc-head" aria-expanded="false">{{ $g }}<span class="p2-caret" aria-hidden="true">▸</span></button><ul class="p2-acc-list hidden">{{ range sort (where (where site.RegularPages "Section" "phase-ii") ".Params.group" $g) ".Params.id" }}<li><a class="p2-item" data-p2="{{ .Params.id }}" href="{{ .RelPermalink }}"><span class="p2-item-id">{{ .Params.id }}</span>{{ .Title }}</a></li>{{ end }}</ul></div>{{ end }}</div>
   </div>
 
       <div class="block">
@@ -74,7 +74,7 @@
             <li>Part II — Debian &amp; Arch-based Linux distributions</li>
             <li>Part III — Non-physical / C-spiritual OS (CSOP)</li>
           </ul>
-          <p class="u-mt-8"><a href="#eos"><b>Go to the CTP-EOS area »</b></a></p>
+          <p class="u-mt-8"><a href="/#eos"><b>Go to the CTP-EOS area »</b></a></p>
           <p class="u-mt-8"><a href="https://ctp-eos.github.io/" target="_blank" rel="noopener"><b>Open the live portal: ctp-eos.github.io ↗</b></a></p>
           <p class="u-mt-8"><a href="https://github.com/ctp-eos" target="_blank" rel="noopener"><b>CTP-EOS on GitHub: github.com/ctp-eos ↗</b></a></p>
         </div>
