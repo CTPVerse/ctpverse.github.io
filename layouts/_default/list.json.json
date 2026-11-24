@@ -1,0 +1,10 @@
+{{/* JSON index of a section's articles, for the homepage panels. */}}
+{{ $items := slice }}
+{{ range sort .Pages ".Params.id" }}
+  {{ if eq .Section "phase-i" }}
+    {{ $items = $items | append (dict "id" .Params.id "group" .Params.group "title" .Title "date" .Params.display_date "cf" .Params.cf "note" .Params.note "src" .Params.src "content" .Content "url" .RelPermalink) }}
+  {{ else }}
+    {{ $items = $items | append (dict "id" .Params.id "group" .Params.group "title" .Title "date" .Params.display_date "source" .Params.source "draft" .Params.is_draft "local" .Params.local "note" .Params.note "body" .Content "url" .RelPermalink) }}
+  {{ end }}
+{{ end }}
+{{ $items | jsonify }}

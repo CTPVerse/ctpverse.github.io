@@ -1,0 +1,35 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>{{ if .IsHome }}CTPVerse Dashboard{{ else }}{{ .Title }} · CTPVerse Dashboard{{ end }}</title>
+{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+<script>
+  /* Restore the last-used theme before first paint, so there is no flash — new visitors land on CTP-EOS Cynamic (the default) */
+  (function(){
+    var VALID=['eos','eos-light','eos-medium','eos-medium-dark','eos-dark','space-cadet-light','space-cadet-medium','space-cadet-medium-dark','space-cadet-dark','midnight-blue','midnight','tecknotronic-psy','tecknotronic-matrix','ctpix','cdomain-light','cdomain-medium','cdomain-medium-dark','cdomain-dark','frey-light','frey-medium','frey-medium-dark','frey-dark','light','medium','dark','nuke-dark','matrix','amber','catppuccin','cerulean','synthwave','dracula','nord','cyberpunk','tokyonight','solarized','void-signal','plasma-field','cathode-green','deep-current','corporate'];
+    try{
+      var saved=localStorage.getItem('ctpverse-dashboard-theme');
+      if(VALID.indexOf(saved)>-1){
+        document.documentElement.setAttribute('data-theme',saved);
+      }else{
+        document.documentElement.setAttribute('data-theme','eos');
+      }
+    }catch(e){
+      document.documentElement.setAttribute('data-theme','eos');
+    }
+  })();
+  /* Restore the last-used page width before first paint, same pattern as the theme — new visitors land on the classic Nuke width (the default) */
+  (function(){
+    try{
+      if(localStorage.getItem('ctpverse-dashboard-width')==='full'){
+        document.documentElement.setAttribute('data-width','full');
+      }
+    }catch(e){}
+  })();
+</script>
+<script>
+window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>

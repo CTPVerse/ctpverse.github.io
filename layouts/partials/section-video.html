@@ -1,0 +1,20 @@
+{{/* Craft Video widget: default item from data, JS randomises on load. */}}
+{{ $items := site.Data.craft_videos }}
+{{ $first := index $items 0 }}
+<section class="module" id="craft-video" aria-labelledby="craft-videoLabel">
+  <div class="module-title" id="craft-videoLabel">{{ .Title }}</div>
+  {{ with .Params.byline }}<div class="byline">{{ . }}</div>{{ end }}
+  <div class="module-body">
+    <div class="kicker" id="videoKicker">{{ $first.kicker }}</div>
+    <h3 class="featured-headline" id="videoTitle">{{ $first.title }}</h3>
+    <p class="featured-excerpt" id="videoExcerpt">{{ $first.excerpt }}</p>
+    <p class="u-mt-10">Pulled at random from the CTP craft videos verified on Resofactor’s LinkedIn — the CTP Energy demonstration video and the craft clip featured in “The CTP Era”. Use “Show another video” to pull a different one.</p>
+    <div class="featured-meta">
+      <span class="featured-count" id="videoCount" aria-live="polite">Video 1 of 2</span>
+      <div class="featured-actions">
+        <a class="btn primary" id="videoWatch" href="{{ $first.url }}" target="_blank" rel="noopener">▶ Watch the video ↗</a>
+        <button class="btn" id="videoNext" type="button">Show another video ↻</button>
+      </div>
+    </div>
+  </div>
+</section>

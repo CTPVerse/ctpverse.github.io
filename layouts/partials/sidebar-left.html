@@ -1,0 +1,117 @@
+{{/* Left column: P1 accordion (from content/phase-i), P2 menu (from content/phase-ii),
+     then the static blocks (Organization, Main Menu, Lineage, The Science, CTP-EOS),
+     the Glyph viewer (from data/figures.json), CTP Ads and CTPVerse Sites. */}}
+<div class="col col-left">
+
+  <div class="block" id="phase1-nav">
+    <div class="block-title">CTP Phase I Archive</div>
+    <div class="block-body u-pad-0">{{ $groups := slice "science" "systems" "topics" "topics2005" "courses" }}{{ $labels := dict "science" "CTP Energy Science" "systems" "CTP Energy Systems" "topics" "C-Domain Topics" "topics2005" "C-Domain Topics — 2005 Only" "courses" "CTP Courses" }}{{ range $gi, $g := $groups }}<div class="p1-acc"><button type="button" class="p1-acc-head" aria-expanded="{{ if eq $gi 0 }}true{{ else }}false{{ end }}">{{ index $labels $g }}<span class="p1-caret" aria-hidden="true">{{ if eq $gi 0 }}▾{{ else }}▸{{ end }}</span></button><ul class="p1-acc-list{{ if ne $gi 0 }} hidden{{ end }}">{{ range sort (where (where site.RegularPages "Section" "phase-i") ".Params.group" $g) ".Params.id" }}<li><button type="button" class="p1-item" data-p1="{{ .Params.id }}"><span class="p1-item-id">{{ .Params.id }}{{ with .Params.cf }} · CF {{ . }}{{ end }}</span>{{ .Title }}</button></li>{{ end }}</ul></div>{{ end }}</div>
+  </div>
+
+  <div class="block" id="phase2-nav">
+    <div class="block-title">CTP Phase II Menu &mdash; All 18 Items</div>
+    <div class="block-body u-pad-0" id="p2MenuDesktop"></div>
+  </div>
+
+<div class="block">
+        <div class="block-title">CTPVERSE Organization</div>
+        <div class="block-body u-lh-0"><a href="https://github.com/CTPVerse" target="_blank" rel="noopener" title="CTPVerse on GitHub — visit the organization page"><img src="/images/branding/ctpverse-org-avatar.jpg" alt="CTPVerse" width="460" height="460" class="u-img-fill" /></a></div>
+      </div>
+      <div class="block">
+        <div class="block-title">Main Menu</div>
+        <div class="block-body u-pad-4-8">
+          <ul class="menu">
+            <li><a href="#ctp-news">CTP News</a></li>
+            <li><a href="#from-resofactor">From Resofactor</a></li>
+            <li><a href="#featured-article">Featured Article</a></li>
+            <li><a href="#c-domain-artwork">C-Domain Artwork — CE Entities</a></li>
+            <li><a href="#implications-report">Implications Report</a></li>
+            <li><a href="#phase1-archive">CTP Phase I Archive</a></li>
+            <li><a href="#phase2">CTP Phase II</a></li>
+            <li><a href="#craft-video">Random Video — CTP Craft</a></li>
+            <li><a href="#units">CTPVerse Business Units</a></li>
+            <li><a href="#eos">CTP-EOS — Dev &amp; Rollout</a></li>
+            <li><a href="#ctp-eos-pitch">CTP-EOS Pitch</a></li>
+            <li><a href="#disclosure">CTP is Disclosure Movement</a></li>
+            <li><a href="#linkedin">LinkedIn Pages</a></li>
+            <li><a href="#investor-documents">Investor Documents</a></li>
+            <li><a href="https://ctp-eos.github.io/" target="_blank" rel="noopener">CTP-EOS Portal ↗</a></li>
+            <li><a href="https://linktr.ee/resofactor" target="_blank" rel="noopener">Linktree Hub ↗</a></li>
+            <li><a href="mailto:info@ctp-energy.com">Contact Resofactor</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-title">Lineage</div>
+        <div class="block-body">
+          <ul class="lineage-list">
+            <li class="who">Nikola Tesla</li>
+            <li class="arr">↓</li>
+            <li class="who">Drazen Premate</li>
+            <li class="arr">↓</li>
+            <li class="who">Resofactor</li>
+          </ul>
+          <p class="u-center u-mt-8">CTP = Conscious Translational Physics · CTP sciences · C-domain</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-title">The Science</div>
+        <div class="block-body">
+          <p><b>Core science:</b> CTPSci — Conscious Translational Physics.</p>
+          <p><b>Focus:</b> Interstellar-capable civilisation in one generation.</p>
+          <p><b>Headquarters (LinkedIn):</b> Largo, Florida.</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-title">CTP-EOS</div>
+        <div class="block-body">
+          <ul class="mini-list">
+            <li>Part I — Themes &amp; wallpapers</li>
+            <li>Part II — Debian &amp; Arch-based Linux distributions</li>
+            <li>Part III — Non-physical / C-spiritual OS (CSOP)</li>
+          </ul>
+          <p class="u-mt-8"><a href="#eos"><b>Go to the CTP-EOS area »</b></a></p>
+          <p class="u-mt-8"><a href="https://ctp-eos.github.io/" target="_blank" rel="noopener"><b>Open the live portal: ctp-eos.github.io ↗</b></a></p>
+          <p class="u-mt-8"><a href="https://github.com/ctp-eos" target="_blank" rel="noopener"><b>CTP-EOS on GitHub: github.com/ctp-eos ↗</b></a></p>
+        </div>
+      </div>
+
+  <div class="block" id="ctp-energy-glyphs">
+    <div class="block-title">CTP Energy Glyphs</div>
+    <div class="block-body art-body">
+      <div class="art-viewer" id="glyphViewer" aria-roledescription="carousel" aria-label="CTP Energy Glyphs">
+        <div class="art-viewport glyph-viewport">
+        {{ range $i, $f := site.Data.figures.glyph }}
+        <figure class="art-slide{{ if eq $i 0 }} is-active{{ end }}"{{ if ne $i 0 }} aria-hidden="true"{{ end }}>
+          <img src="{{ $f.src }}" alt="{{ $f.alt }}" width="1024" height="1024"{{ if ne $i 0 }} loading="lazy"{{ end }} />
+        </figure>
+        {{ end }}
+          <button type="button" class="art-arrow art-arrow-prev" id="glyphPrev" aria-label="Previous glyph">&#8249;</button>
+          <button type="button" class="art-arrow art-arrow-next" id="glyphNext" aria-label="Next glyph">&#8250;</button>
+        </div>
+        <p class="art-caption" id="glyphCaption">CTP Energy Glyph 1</p>
+        <div class="art-controls">
+          <div class="art-dots" id="glyphDots" role="group" aria-label="Choose glyph"></div>
+          <span class="art-count" id="glyphCount" aria-live="polite">Glyph 1 of 68</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="block" id="ctp-ads">
+        <div class="block-title">CTP Ads</div>
+        <div class="block-body u-pad-0">
+          <a href="https://linktr.ee/resofactor" target="_blank" rel="noopener noreferrer" class="u-block-lh-0" aria-label="CTP Energy Science (also called CTPSci) — visit Resofactor on Linktree">
+            <img src="/images/branding/ctp-ad-banner-new.jpg" alt="CTP Energy Science (also called CTPSci) — Share CTP Content. Take the Disclosure out yourself! Get involved with the CTP is Disclosure Movement and CTP-EOS Linux. Get in touch with 'Reso' to find out more." width="154" height="638" loading="lazy" class="u-img-fill" />
+          </a>
+        </div>
+      </div>
+
+      <div class="block" id="ctpverse-sites">
+        <div class="block-title">CTPVerse Sites</div>
+        <div class="block-body u-lh-0"><a id="ctpverse-sites-link" class="u-block-lh-0" href="https://ctp-eos.github.io/" target="_blank" rel="noopener" title="CTP-EOS — visit the live site"><img id="ctpverse-sites-img" src="https://ctp-eos.github.io//images/branding/ctp-eos-triangle-logo.jpg" alt="CTP-EOS" width="1024" height="1024" class="u-img-fill" /></a></div>
+      </div>
+</div>

@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="layout">
+<div class="col col-main u-w-100">
+<article class="module">
+  <div class="module-title">{{ .Title }}</div>
+  <div class="byline">{{ .Params.id }}{{ with .Params.display_date }} · {{ . }}{{ end }}</div>
+  <div class="module-body">
+    {{ if eq .Section "phase-i" }}
+      {{ partial "p1-panel-body.html" . }}
+    {{ else if eq .Section "phase-ii" }}
+      {{ partial "p2-panel-body.html" . }}
+    {{ else }}
+      {{ .Content }}
+    {{ end }}
+    <p class="article-back"><a href="{{ .Site.BaseURL }}">← Back to the CTPVerse Dashboard</a> · <a href="{{ (site.GetPage .Section).RelPermalink }}">All {{ if eq .Section "phase-i" }}Phase I{{ else }}Phase II{{ end }} articles »</a></p>
+  </div>
+</article>
+</div>
+</div>
+{{ end }}

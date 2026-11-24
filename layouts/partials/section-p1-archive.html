@@ -1,0 +1,15 @@
+{{/* P1 Archive section: mobile accordion nav + article panel (default CTP-P1-001). */}}
+{{ $p1pages := sort (where site.RegularPages "Section" "phase-i") ".Params.id" }}
+{{ $first := index $p1pages 0 }}
+<section class="module" id="phase1-archive" aria-labelledby="phase1-archiveLabel">
+  <div class="module-title" id="phase1-archiveLabel">{{ .Title }}</div>
+  {{ with .Params.byline }}<div class="byline">{{ . }}</div>{{ end }}
+  <div class="module-body">
+    <div class="block p1-nav-inline" id="phase1-nav-mobile">
+      <div class="block-title">&#9776; CTP Phase I Archive Menu — All 87 Articles</div>
+      <div class="block-body u-pad-0">{{ $groups := slice "science" "systems" "topics" "topics2005" "courses" }}{{ $labels := dict "science" "CTP Energy Science" "systems" "CTP Energy Systems" "topics" "C-Domain Topics" "topics2005" "C-Domain Topics — 2005 Only" "courses" "CTP Courses" }}{{ range $g := $groups }}<div class="p1-acc"><button type="button" class="p1-acc-head" aria-expanded="false">{{ index $labels $g }}<span class="p1-caret" aria-hidden="true">▸</span></button><ul class="p1-acc-list hidden">{{ range sort (where (where site.RegularPages "Section" "phase-i") ".Params.group" $g) ".Params.id" }}<li><button type="button" class="p1-item" data-p1="{{ .Params.id }}"><span class="p1-item-id">{{ .Params.id }}{{ with .Params.cf }} · CF {{ . }}{{ end }}</span>{{ .Title }}</button></li>{{ end }}</ul></div>{{ end }}</div>
+    </div>
+    <div class="p1-panel" id="p1Panel" aria-live="polite">{{ partial "p1-panel-body.html" $first }}</div>
+    <p class="p1-more"><a href="{{ $first.RelPermalink }}">Read this article on its own page »</a> · <a href="{{ (site.GetPage "phase-i").RelPermalink }}">All 87 Phase I articles »</a></p>
+  </div>
+</section>

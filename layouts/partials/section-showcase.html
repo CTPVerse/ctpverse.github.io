@@ -1,0 +1,21 @@
+{{/* Showcase widget: default item from data, JS randomises on load. */}}
+{{ $items := site.Data.showcase_items }}
+{{ $first := index $items 0 }}
+<section class="module" id="ctp-showcase" aria-labelledby="ctp-showcaseLabel">
+  <div class="module-title" id="ctp-showcaseLabel">{{ .Title }}</div>
+  {{ with .Params.byline }}<div class="byline">{{ . }}</div>{{ end }}
+  <div class="module-body">
+    <div class="kicker" id="showcaseKicker">{{ $first.kicker }}</div>
+    <h3 class="featured-headline" id="showcaseTitle">{{ $first.title }}</h3>
+    <p class="featured-excerpt" id="showcaseExcerpt">{{ $first.excerpt }}</p>
+    <p class="u-mt-10">From the verified CTP Space Systems showcase content — 9 items in total, highlighted at random. Use “Show another showcase item” to pull a different one.</p>
+    <div class="featured-meta">
+      <span class="featured-count" id="showcaseCount" aria-live="polite">Showcase item 1 of 9</span>
+      <div class="featured-actions">
+        <a class="btn primary" id="showcaseRead" href="{{ $first.url }}" target="_blank" rel="noopener">Read on LinkedIn ↗</a>
+        <button class="btn" id="showcaseNext" type="button">Show another showcase item</button>
+      </div>
+    </div>
+    <div class="note">9 items verified from the public showcase feed, 5–8 Nov 2026 and 12 Jul 2026. Older showcase posts would need a signed-in LinkedIn session to pull.</div>
+  </div>
+</section>

@@ -1,0 +1,121 @@
+{{/* Right column: CE Entities viewer (from data/figures.json), then the static blocks. */}}
+<div class="col col-right">
+  <div class="block" id="c-domain-artwork">
+    <div class="block-title">C-Domain Artwork — CE Entities</div>
+    <div class="block-body art-body">
+      <div class="art-viewer" id="artViewer" aria-roledescription="carousel" aria-label="C-Domain Artwork — CE Entities">
+        <div class="art-viewport">
+        {{ range $i, $f := site.Data.figures.ce }}
+        <figure class="art-slide{{ if eq $i 0 }} is-active{{ end }}"{{ if ne $i 0 }} aria-hidden="true"{{ end }}>
+          <img src="{{ $f.src }}" alt="{{ $f.alt }}" width="512" height="768"{{ if ne $i 0 }} loading="lazy"{{ end }} />
+        </figure>
+        {{ end }}
+          <button type="button" class="art-arrow art-arrow-prev" id="artPrev" aria-label="Previous artwork">&#8249;</button>
+          <button type="button" class="art-arrow art-arrow-next" id="artNext" aria-label="Next artwork">&#8250;</button>
+        </div>
+        <p class="art-caption" id="artCaption">CE Entity 1 — Faceted blue chrome bust, three-quarter view</p>
+        <div class="art-controls">
+          <div class="art-dots" id="artDots" role="group" aria-label="Choose artwork"></div>
+          <span class="art-count" id="artCount" aria-live="polite">Artwork 1 of 35</span>
+        </div>
+      </div>
+      <p class="art-intro">Blue chrome CE entities — conceptual artwork of heart consciousness and female consciousness, for visitors to interface with C-domain.</p>
+    </div>
+  </div>
+
+<div class="block" id="support-ctp">
+        <div class="block-title">Support CTP — GoFundMe</div>
+        <p class="support-subtitle">The CTP crowdsourcing initiative for the startup.</p>
+        <a class="support-logo-link" href="https://gofund.me/4ea0e225c" target="_blank" rel="noopener" aria-label="Support CTP on GoFundMe — CTP Energy logo"><img class="support-logo" src="/images/branding/ctp-energy-logo.jpg" alt="CTP Energy logo — black disc with C at top, T bottom left, P bottom right, and ENERGY across the middle" width="640" height="640" loading="lazy" /></a>
+        <div class="block-body support-body">
+          <p>Resofactor has built the CTPVerse, the CTP Phase I Archive, CTP-EOS and this dashboard with very little money, funding or resources behind him — carrying the work of Conscious Translational Physics forward largely on his own.</p>
+          <p>With patron support and angel investors stepping up now, CTP goes much further: the research, the facility and the craft development laid out on this dashboard can move from documentation into build.</p>
+          <p class="support-actions"><a class="btn accent" href="https://gofund.me/4ea0e225c" target="_blank" rel="noopener">Support CTP on GoFundMe</a></p>
+          <p class="support-actions"><a class="btn" href="#backer-incentives">See Backer Incentives</a></p>
+        </div>
+      </div>
+
+      <div class="block" id="support-ctp-paypal">
+        <div class="block-title">Support CTP — PayPal</div>
+        <a class="paypal-logo-link" href="https://www.paypal.com/donate?business=ctpenergy@gmail.com" target="_blank" rel="noopener" aria-label="Donate to CTP via PayPal"><span class="paypal-logo" aria-hidden="true"><span class="paypal-mark"><span class="pp pp-dark">P</span><span class="pp pp-light">P</span></span><span class="paypal-word"><span class="pay">Pay</span><span class="pal">Pal</span></span></span></a>
+        <p class="support-subtitle">A separate campaign — direct support via PayPal.</p>
+        <div class="block-body support-body">
+          <p>This is a separate way to support the work directly via PayPal, separate from the GoFundMe campaign above.</p>
+          <p class="support-actions"><a class="btn accent" href="https://www.paypal.com/donate?business=ctpenergy@gmail.com" target="_blank" rel="noopener">Support via PayPal</a></p>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-title">At a Glance</div>
+        <div class="block-body">
+          <div class="stat"><span>Core science</span><b>CTPSci — Conscious Translational Physics</b></div>
+          <div class="stat"><span>Headquarters (LinkedIn)</span><b>Largo, Florida</b></div>
+          <div class="stat"><span>CTP Space Systems</span><b>1,034 followers on LinkedIn</b></div>
+          <div class="stat"><span>LinkedIn pages</span><b>24 company &amp; showcase pages + profiles — full directory in the <a href="#linkedin">LinkedIn area</a></b></div>
+          <div class="stat"><span>Focus</span><b>Interstellar-capable civilisation in one generation</b></div>
+          <div class="stat"><span>CTP-EOS Portal</span><b><a href="https://ctp-eos.github.io/" target="_blank" rel="noopener">ctp-eos.github.io ↗</a> — 189 repositories</b></div>
+          <div class="stat"><span>CTP-EOS on GitHub</span><b><a href="https://github.com/ctp-eos" target="_blank" rel="noopener">github.com/ctp-eos ↗</a></b></div>
+          <div class="stat"><span>Interview</span><b><a href="https://www.listennotes.com/de/podcasts/the-catherine-b/131-unlocking-the-future-M1tGm86EOIB/" target="_blank" rel="noopener">Unlocking the Future with CTP Energy Science ↗</a></b></div>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-title">Master Hub</div>
+        <div class="block-body">
+          <p class="u-center"><span class="hub-url-box u-inline-block">linktr.ee/resofactor</span></p>
+          <p class="u-center">
+            <a class="btn accent" href="https://linktr.ee/resofactor" target="_blank" rel="noopener">Open the hub ↗</a>
+          </p>
+          <p class="u-center">
+            <button class="btn" id="copyEmail" type="button">Copy contact email</button>
+          </p>
+          <p class="u-center u-mb-0"><a href="mailto:info@ctp-energy.com"><b>info@ctp-energy.com</b></a></p>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-title">Disclosure</div>
+        <div class="block-body">
+          <ul class="mini-list">
+            <li><a href="#disclosure">CTP Is Disclosure. We Are Arriving Without Permission.</a></li>
+            <li><a href="#disclosure">CTP Is The UFO Disclosure</a></li>
+            <li><a href="#disclosure">The End of Disclosure: The Rise of CTP</a></li>
+            <li><a href="#disclosure">The Matter of Responsible Disclosure</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-title">LinkedIn Pages</div>
+        <div class="block-body">
+          <ul class="mini-list">
+            <li><a href="https://www.linkedin.com/in/resofactor-prime" target="_blank" rel="noopener">Resofactor — personal profile ↗</a></li>
+            <li><a href="https://www.linkedin.com/company/ctp-energy/" target="_blank" rel="noopener">CTP Energy™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/showcase/ctp-space-systems/" target="_blank" rel="noopener">CTP Space Systems™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/showcase/ctp-eos/" target="_blank" rel="noopener">CTP-EOS™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/showcase/ce-os/" target="_blank" rel="noopener">CE-OS™ ↗</a></li>
+            <li><a href="https://linkedin.com/company/ctpeswg" target="_blank" rel="noopener">CTP Energy Software Group™ ↗</a></li>
+            <li><a href="https://linkedin.com/showcase/ctpeteams" target="_blank" rel="noopener">CTPETEAMS™ ↗</a></li>
+            <li><a href="http://linkedin.com/showcase/ctuxp" target="_blank" rel="noopener">CTuxP™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/company/findsp" target="_blank" rel="noopener">FINDSP™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/showcase/ctp-energy-computers" target="_blank" rel="noopener">CTP Energy Computers™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/company/ctp-energy-drinks" target="_blank" rel="noopener">CTP Energy Drinks™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/showcase/ctp-university/" target="_blank" rel="noopener">CTP University™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/company/ctpesot" target="_blank" rel="noopener">CTP Energy School of Thought™ ↗</a></li>
+            <li><a href="https://linkedin.com/company/ctp-entertainment" target="_blank" rel="noopener">CTP Entertainment™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/showcase/ctp-mesa/" target="_blank" rel="noopener">CTP Mesa™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/showcase/ctp-holistic-centers/" target="_blank" rel="noopener">CTP Holistic Centers™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/showcase/ctp-homes" target="_blank" rel="noopener">CTP Homes™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/company/ctples" target="_blank" rel="noopener">CTP Longevity Exogenous Systems™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/company/ctp-ess-ric" target="_blank" rel="noopener">CTP Social Services &amp; Reintegration™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/company/ctp-eros" target="_blank" rel="noopener">CTP EROS™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/showcase/ctp-sports" target="_blank" rel="noopener">CTP Sports™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/showcase/ctp-matsci" target="_blank" rel="noopener">CTP Materials Sciences™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/showcase/ctp-the-great-pyramid-project-campus" target="_blank" rel="noopener">Great Pyramid Project &amp; Campus™ ↗</a></li>
+            <li><a href="https://linkedin.com/showcase/ctp-seti" target="_blank" rel="noopener">CTP SETI™ ↗</a></li>
+            <li><a href="https://www.linkedin.com/company/oort-order" target="_blank" rel="noopener">OORT — Resonant Triad™ ↗</a></li>
+          </ul>
+          <p class="u-mt-8">All 24 company &amp; showcase pages from the Linktree hub, kept as their own thing, separate from the business units — grouped by division in the <a href="#linkedin"><b>LinkedIn area »</b></a></p>
+        </div>
+      </div>
+</div>

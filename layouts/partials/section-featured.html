@@ -1,0 +1,20 @@
+{{/* Featured Article widget: default item from data, JS randomises on load. */}}
+{{ $items := site.Data.featured_articles }}
+{{ $first := index $items 1 }}
+<section class="module" id="featured-article" aria-labelledby="featured-articleLabel">
+  <div class="module-title" id="featured-articleLabel">{{ .Title }}</div>
+  {{ with .Params.byline }}<div class="byline">{{ . }}</div>{{ end }}
+  <div class="module-body">
+    <div class="kicker" id="featuredKicker">{{ $first.kicker }}</div>
+    <h3 class="featured-headline" id="featuredTitle">{{ $first.title }}</h3>
+    <p class="featured-excerpt" id="featuredExcerpt">{{ $first.excerpt }}</p>
+    <p class="u-mt-10">From Resofactor’s verified LinkedIn articles — 11 articles in total, highlighted at random. Use “Show another article” to pull a different one.</p>
+    <div class="featured-meta">
+      <span class="featured-count" id="featuredCount" aria-live="polite">Article 1 of 11</span>
+      <div class="featured-actions">
+        <a class="btn primary" id="featuredRead" href="{{ $first.url }}" target="_blank" rel="noopener">Read on LinkedIn ↗</a>
+        <button class="btn" id="featuredNext" type="button">Show another article ↻</button>
+      </div>
+    </div>
+  </div>
+</section>

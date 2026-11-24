@@ -1,0 +1,35 @@
+baseURL = "https://ctpverse.github.io/"
+title = "CTPVerse Dashboard"
+languageCode = "en"
+enableRobotsTXT = true
+
+# No taxonomies are used on this dashboard.
+disableKinds = ["taxonomy", "term", "RSS"]
+
+# The CTP-EOS documentation site stays an mdBook at /docs and is not part of this build.
+# Nothing in this Hugo site generates /docs.
+
+[markup]
+  [markup.goldmark]
+    # Raw HTML inside markdown (structural blocks, tables, image slots) is
+    # part of the content and must pass through unchanged.
+    unsafe = true
+  [markup.goldmark.renderer]
+    # Keep heading IDs stable for anchor links.
+    unsafe = true
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML", "JSON"]
+  page = ["HTML"]
+
+[mediaTypes]
+  [mediaTypes."application/json"]
+    suffixes = ["json"]
+
+[outputFormats]
+  [outputFormats.JSON]
+    mediaType = "application/json"
+    baseName = "index"
+    isPlainText = true
+

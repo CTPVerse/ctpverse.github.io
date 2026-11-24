@@ -1,0 +1,9 @@
+{{/* Render a P2 article's panel body from its content page. Mirrors the JS showP2 output. */}}
+{{ $a := . }}
+<div class="p2-panel-top"><span class="p2-id">{{ $a.Params.id }}</span><span class="p2-date">{{ $a.Params.display_date }}</span></div>
+<div class="p2-panel-body" id="{{ $a.Params.id }}">
+  <h3 class="p2-title">{{ $a.Title }}</h3>
+  {{ if $a.Params.is_draft }}<p class="p2-draft-note">Draft &mdash; expanded-form draft, as marked in the source file</p>{{ end }}
+  <div class="p2-text">{{ $a.Content }}</div>
+  {{ with $a.Params.note }}<p class="p2-note">{{ . }}</p>{{ end }}
+</div>
