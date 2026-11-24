@@ -27,11 +27,6 @@ structural: true
 
 <div id="liDirectory">
 <div class="li-group">
-<h4>Profiles</h4>
-<a class="li-row" data-search="resofactor profile heir successor tesla prime" href="https://www.linkedin.com/in/resofactor-prime" target="_blank" rel="noopener"><span class="li-name">Resofactor — Heir &amp; Successor to Nikola Tesla</span><span class="li-kind">Personal profile · linkedin.com/in/resofactor-prime ↗</span></a>
-<a class="li-row" data-search="resofactor profile linktree social reso factor" href="https://linktr.ee/resofactor" target="_blank" rel="noopener"><span class="li-name">Resofactor — Linktree profile link</span><span class="li-kind">Personal profile · linktr.ee/resofactor ↗</span></a>
-</div>
-<div class="li-group">
 <h4>Core &amp; Energy</h4>
 <a class="li-row" data-search="ctp energy company core llc" href="https://www.linkedin.com/company/ctp-energy/" target="_blank" rel="noopener"><span class="li-name">CTP Energy™</span><span class="li-kind">Company · linkedin.com/company/ctp-energy ↗</span></a>
 <a class="li-row" data-search="ctp energy drinks ctped beverages" href="https://www.linkedin.com/company/ctp-energy-drinks" target="_blank" rel="noopener"><span class="li-name">CTP Energy Drinks™ (CTPED)</span><span class="li-kind">Company · linkedin.com/company/ctp-energy-drinks ↗</span></a>
