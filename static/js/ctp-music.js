@@ -82,11 +82,12 @@
   function themeW(){
     var text = cssVar("--text") || "#ffffff";
     var surface = cssVar("--surface") || "#1f2937";
-    /* Inverted panel: light widget on dark themes, dark widget on light
-       themes, so the player reads as its own widget. */
-    var bg = mixHex(text, surface, 0.10);
-    var fg = surface;
-    var btn = mixHex(bg, fg, 0.25);
+    var border = cssVar("--border-soft") || "#4b5563";
+    /* Player background matches the module's border colour, so the widget
+       sits on the module with no bright block; text and button contrast. */
+    var bg = border;
+    var fg = text;
+    var btn = surface;
     return {
       color: encHex(fg),
       shadow: "false", radius: "6px",
