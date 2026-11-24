@@ -510,17 +510,15 @@
     border:2px solid var(--blue); outline:1px solid #000000;
   }
 
-  /* ===== Pinned top header (v79) =====
+  /* ===== Top header =====
      The whole top block — brand header (with theme selector), lineage strip,
-     nav bar and date strip — stays pinned at the top while the page scrolls. One
-     sticky wrapper (top:0, opaque background) instead of several sticky
-     strips, so nothing in the header scrolls away and scrolled content
-     never shows through. Anchor jumps clear it via scroll-margin-top. */
-  .top-sticky{
-    position:sticky; top:0; z-index:50; background:var(--surface);
+     nav bar and date strip — scrolls away with the page like everything
+     else. Nothing on this site sticks. */
+  .top-block{
+    background:var(--surface);
   }
   #units,#ctp-news,#ctp-eos-pitch,#from-resofactor,#implications-report,#phase1-archive,#phase2,#eos,#disclosure,#linkedin,#investor-documents{
-    scroll-margin-top:var(--stick-top,220px);
+    scroll-margin-top:8px;
   }
 
   /* ===== Header banner table ===== */
@@ -596,7 +594,7 @@
 
   /* ===== Horizontal main menu bar ===== */
   .nav{
-    position:sticky; top:0; z-index:20; background:var(--nav-bg);
+    background:var(--nav-bg);
     display:flex; flex-wrap:wrap; border-bottom:2px solid var(--blue);
   }
   .nav a{
@@ -641,25 +639,8 @@
   }
   .col{min-width:0}
 
-  /* ===== Sticky side columns (desktop three-column layout only) =====
-     Both side columns stay pinned under the sticky nav bar while the centre
-     column scrolls with the page. Each column is capped at the viewport
-     height left below the nav (--stick-top, measured from the real nav by
-     the script at the bottom of the page) and scrolls internally, so every
-     block in a tall column stays reachable. The stacked layouts at 960px
-     and below keep the normal page scroll. */
-  @media (min-width:961px){
-    .col-left, .col-right{
-      position:sticky; top:var(--stick-top,68px);
-      max-height:calc(100vh - var(--stick-top,68px) - 8px);
-      max-height:calc(100dvh - var(--stick-top,68px) - 8px);
-      overflow-y:auto; overscroll-behavior:contain;
-      scrollbar-width:thin; scrollbar-color:var(--navy) var(--blue-pale);
-    }
-    .col-left::-webkit-scrollbar, .col-right::-webkit-scrollbar{width:8px}
-    .col-left::-webkit-scrollbar-track, .col-right::-webkit-scrollbar-track{background:var(--blue-pale)}
-    .col-left::-webkit-scrollbar-thumb, .col-right::-webkit-scrollbar-thumb{background:var(--navy)}
-  }
+  /* Side columns scroll with the page like everything else. Nothing
+     on this site sticks. */
 
   /* Side blocks */
   .block{background:var(--surface); border:1px solid var(--navy); margin-bottom:8px}

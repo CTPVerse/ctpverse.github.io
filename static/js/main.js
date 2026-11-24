@@ -19,19 +19,6 @@
     if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(function(){show(msg)}).catch(function(){show(text)}); }
     else{ show(text); }
   }
-  // Sticky header + side columns: the pinned top block (brand header, lineage,
-  // nav, date strip, theme bar) wraps to a different height at different
-  // window widths, so measure it and publish its height (+ an 8px gap) as
-  // --stick-top; once stuck, the header fills exactly that much of the viewport
-  // top, and the desktop CSS pins the side columns just below it.
-  var headerEl=document.querySelector('.top-sticky');
-  function syncStickTop(){
-    if(!headerEl) return;
-    document.documentElement.style.setProperty('--stick-top',(headerEl.offsetHeight+8)+'px');
-  }
-  syncStickTop();
-  window.addEventListener('resize',syncStickTop);
-  window.addEventListener('load',syncStickTop);
   // Theme drop-down — 41 themes: CTP-EOS Cynamic first, then the 4 logo-derived CTP-EOS themes, then the 4 CTP Space Cadet themes, then the 2 CTP Midnight themes, then the 2 Tecknotronic themes, then CTPIX, then the 4 C-domain themes, then the 4 Frey Grey Blue themes, then Light / Medium / Dark, then the 12 CTP-EOS GitHub IO themes, then Void Signal, Plasma Field, Cathode Green and Deep Current, then Corporate.
   // CTP-EOS Cynamic is first and the default; the choice is remembered on this device.
   var THEME_KEY='ctpverse-dashboard-theme';
