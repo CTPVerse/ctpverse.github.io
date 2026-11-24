@@ -70,12 +70,26 @@
     try { return toHex(getComputedStyle(document.documentElement).getPropertyValue(name)); }
     catch(e){ return null; }
   }
+  function mixHex(a, b, t){
+    function parse(c){
+      c = c.replace("#", "");
+      return [parseInt(c.substr(0, 2), 16), parseInt(c.substr(2, 2), 16), parseInt(c.substr(4, 2), 16)];
+    }
+    var pa = parse(a), pb = parse(b);
+    function h(n){ n = Math.max(0, Math.min(255, Math.round(n))); return (n < 16 ? "0" : "") + n.toString(16); }
+    return "#" + h(pa[0] + (pb[0] - pa[0]) * t) + h(pa[1] + (pb[1] - pa[1]) * t) + h(pa[2] + (pb[2] - pa[2]) * t);
+  }
   function themeW(){
+    var text = cssVar("--text") || "#ffffff";
+    var surface = cssVar("--surface") || "#1f2937";
+    /* Offset the player background from the module surface, so the widget
+       reads as its own panel instead of blending into the template. */
+    var bg = mixHex(surface, text, 0.25);
     return {
-      color: encHex(cssVar("--text") || "#ffffff"),
+      color: encHex(text),
       shadow: "false", radius: "6px",
-      bgTo: encHex(cssVar("--surface") || "#1f2937"),
-      bgFrom: encHex(cssVar("--surface") || "#1f2937"),
+      bgTo: encHex(bg),
+      bgFrom: encHex(bg),
       borderColor: encHex(cssVar("--border-soft") || "#6b7280"), borderWidth: "1px",
       btnBgTo: encHex(cssVar("--btn-bg") || "#4b5563"),
       btnBgFrom: encHex(cssVar("--btn-bg") || "#4b5563"),
