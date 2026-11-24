@@ -1,9 +1,9 @@
 {{/* Right column: CE Entities viewer (from data/figures.json), then the static blocks. */}}
 <div class="col col-right">
   <div class="block" id="c-domain-artwork">
-    <div class="block-title">C-Domain Artwork — CE Entities</div>
+    <div class="block-title">C-Domain Artwork</div>
     <div class="block-body art-body">
-      <div class="art-viewer" id="artViewer" aria-roledescription="carousel" aria-label="C-Domain Artwork — CE Entities">
+      <div class="art-viewer" id="artViewer" aria-roledescription="carousel" aria-label="C-Domain Artwork">
         <div class="art-viewport">
         {{ range $i, $f := site.Data.figures.ce }}
         <figure class="art-slide{{ if eq $i 0 }} is-active{{ end }}"{{ if ne $i 0 }} aria-hidden="true"{{ end }}>
