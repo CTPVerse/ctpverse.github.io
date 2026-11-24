@@ -1,5 +1,5 @@
 ---
-title: LinkedIn Pages — Their Own Thing
+title: CTPVerse LinkedIn Pages — Their Own Thing
 anchor: linkedin
 weight: 190
 module_class: module

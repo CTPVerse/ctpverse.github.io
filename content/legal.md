@@ -3,7 +3,7 @@ title: Legal
 layout: legal
 ---
 
-CTPVerse Dashboard™ — explore the cosmos of community sounds. Published by CTP Energy.
+CTPVerse Dashboard™ — the Gateway to C-domain. Published by CTP Energy.
 
 **Copyright:** the dashboard's own articles and text are © CTP Energy, LLC. Linked external content remains under its publishers' licences.
 

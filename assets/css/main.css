@@ -1192,7 +1192,7 @@
   /* Glyphs swap instantly — no fade/dissolve on this viewer (the shared .art-slide fade stays for CE Entities only) */
   #glyphViewer .art-slide, #glyphViewer .art-slide.is-active{transition:none}
 
-  /* ===== Support CTP — GoFundMe & PayPal (right column, below artwork — two separate campaigns) ===== */
+  /* ===== Support CTP — GoFundMe (right column, below artwork) & PayPal (right column, bottom) — two separate campaigns ===== */
   #support-ctp{scroll-margin-top:52px}
   #support-ctp-paypal{scroll-margin-top:52px}
   #support-ctp-paypal .btn{max-width:100%; white-space:normal; text-align:center; justify-content:center; line-height:1.4; overflow-wrap:anywhere}
