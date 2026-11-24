@@ -640,18 +640,19 @@
   .col{min-width:0}
 
   /* Desktop shell: the page itself does not scroll. The header and
-     footer stay put and the three columns fill the viewport height,
-     each scrolling on its own — the centre content scrolls between
-     two full-length side rails. Nothing on this site sticks.
+     footer stay put and the three columns fill the viewport height.
+     The side rails are left alone — fixed, full-length, no scrolling
+     of their own. ONLY the centre column scrolls.
      (Phones and narrow windows keep the ordinary scrolling page:
      these rules only apply at desktop width.) */
   @media (min-width:961px){
     html, body{height:100%}
-    body{overflow:hidden}
+    html, body{overflow:hidden}
     .wrap{height:100vh; margin:0 auto; display:flex; flex-direction:column}
     .wrap > *{flex:none}
     .wrap > .layout{flex:1 1 auto; min-height:0}
-    .layout .col{min-height:0; overflow-y:auto}
+    .layout .col{min-height:0}
+    .col-main{overflow-y:auto}
     .col-left,.col-right{background:var(--surface); border:1px solid var(--navy)}
   }
 
