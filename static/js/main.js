@@ -74,7 +74,7 @@
     });
   }
   setWidth(loadWidth()==='full'?'full':'nuke',true);
-  document.getElementById('copyEmail').addEventListener('click',function(){copyText('info@ctp-energy.com','Email copied — info@ctp-energy.com')});
+  var ce=document.getElementById('copyEmail'); if(ce){ce.addEventListener('click',function(){copyText('info@ctp-energy.com','Email copied — info@ctp-energy.com')});}
   var input=document.getElementById('unitSearch'), cards=[].slice.call(document.querySelectorAll('#unitGrid .card')), noRes=document.getElementById('noResults');
   if(input){
     input.addEventListener('input',function(){
