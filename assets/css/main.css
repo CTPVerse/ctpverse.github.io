@@ -656,7 +656,22 @@
   /* ===== Horizontal main menu bar ===== */
   .nav{
     background:var(--nav-bg);
-    display:flex; flex-wrap:wrap; border-bottom:2px solid var(--blue);
+    display:flex; flex-wrap:wrap; align-items:center; gap:2px 10px;
+    border-bottom:1px solid var(--border-soft);
+  }
+  .nav-links{display:flex; flex-wrap:wrap; align-items:center}
+  .nav-controls{display:flex; align-items:center; gap:10px; margin-left:auto; padding:6px 10px 6px 0; flex-wrap:wrap}
+  .width-btn{
+    background:rgba(255,255,255,.14); color:#ffffff; border:1px solid rgba(255,255,255,.30);
+    font-family:"Rajdhani",sans-serif; font-weight:700; font-size:14px; letter-spacing:1px;
+    text-transform:uppercase; padding:6px 14px; min-height:36px; cursor:pointer;
+  }
+  .width-btn:hover{background:rgba(255,255,255,.24)}
+  .theme-picker{display:flex; align-items:center; gap:8px}
+  .theme-picker label{font-family:"Share Tech Mono",monospace; font-size:12px; color:#cfd6de; text-transform:uppercase; letter-spacing:1px}
+  .theme-picker select{
+    background:#17191f; color:#f5f7fa; border:1px solid rgba(255,255,255,.38);
+    font:inherit; font-size:13px; padding:4px 8px; max-width:210px; min-height:36px;
   }
   .nav a{
     color:#ffffff; text-decoration:none; font-family:Tahoma,Verdana,sans-serif;
