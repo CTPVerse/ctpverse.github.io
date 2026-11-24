@@ -76,11 +76,13 @@
   setWidth(loadWidth()==='full'?'full':'nuke',true);
   document.getElementById('copyEmail').addEventListener('click',function(){copyText('info@ctp-energy.com','Email copied — info@ctp-energy.com')});
   var input=document.getElementById('unitSearch'), cards=[].slice.call(document.querySelectorAll('#unitGrid .card')), noRes=document.getElementById('noResults');
-  input.addEventListener('input',function(){
-    var q=input.value.trim().toLowerCase(), visible=0;
-    cards.forEach(function(c){ var hit=!q || (c.textContent+' '+c.getAttribute('data-search')).toLowerCase().indexOf(q)>-1; c.classList.toggle('hidden',!hit); if(hit)visible++; });
-    noRes.classList.toggle('hidden',visible!==0);
-  });
+  if(input){
+    input.addEventListener('input',function(){
+      var q=input.value.trim().toLowerCase(), visible=0;
+      cards.forEach(function(c){ var hit=!q || (c.textContent+' '+c.getAttribute('data-search')).toLowerCase().indexOf(q)>-1; c.classList.toggle('hidden',!hit); if(hit)visible++; });
+      noRes.classList.toggle('hidden',visible!==0);
+    });
+  }
   // LinkedIn directory search
   var liInput=document.getElementById('liSearch'), liRows=[].slice.call(document.querySelectorAll('#liDirectory .li-row')), liGroups=[].slice.call(document.querySelectorAll('#liDirectory .li-group')), liNoRes=document.getElementById('liNoResults');
   if(liInput){
@@ -94,7 +96,8 @@
   // Featured article — randomly pull one of 11 verified LinkedIn articles from Resofactor Prime
   // Source: ~/workspace/ctpverse-dashboard/linkedin-articles-full-list.md (verified 2026-11-08).
   // Only article 11 has a verified individual Pulse URL; the other 10 link to the profile — no individual URLs are invented.
-  var featuredArticles=JSON.parse(document.getElementById('featured-data').textContent);;
+  var _fd=document.getElementById('featured-data');
+  var featuredArticles=_fd?JSON.parse(_fd.textContent):[];
   var fKicker=document.getElementById('featuredKicker'), fTitle=document.getElementById('featuredTitle'), fExcerpt=document.getElementById('featuredExcerpt'), fCount=document.getElementById('featuredCount'), fNext=document.getElementById('featuredNext'), fRead=document.getElementById('featuredRead');
   var featuredIdx=-1;
   function showFeatured(idx){
@@ -121,7 +124,8 @@
   // (CTP Space Systems, Jul 12, 2026): entry 1 is the CTP Energy LinkedIn video post embedded in that article (it has no
   // public standalone post URL, so Watch opens the article where the video plays); entry 2 is the craft clip embedded in
   // the article's "CTP Technologies Demonstrated" section, with its title and URL exactly as verified. No titles or URLs invented.
-  var craftVideos=JSON.parse(document.getElementById('videos-data').textContent);;
+  var _vd=document.getElementById('videos-data');
+  var craftVideos=_vd?JSON.parse(_vd.textContent):[];
   var vKicker=document.getElementById('videoKicker'), vTitle=document.getElementById('videoTitle'), vExcerpt=document.getElementById('videoExcerpt'), vCount=document.getElementById('videoCount'), vNext=document.getElementById('videoNext'), vWatch=document.getElementById('videoWatch');
   var videoIdx=-1;
   function showVideo(idx){
@@ -146,7 +150,8 @@
   // CTP Space Systems Showcase — randomly pull one of 9 verified showcase items.
   // Source: ~/workspace/ctpverse-dashboard/linkedin-showcase-content-full-list.md (verified 2026-11-08).
   // Only item 1 has a verified individual Pulse URL; items 2-9 link to the showcase page — no individual post URLs are invented.
-  var showcaseItems=JSON.parse(document.getElementById('showcase-data').textContent);;
+  var _sd=document.getElementById('showcase-data');
+  var showcaseItems=_sd?JSON.parse(_sd.textContent):[];
   var sKicker=document.getElementById('showcaseKicker'), sTitle=document.getElementById('showcaseTitle'), sExcerpt=document.getElementById('showcaseExcerpt'), sCount=document.getElementById('showcaseCount'), sNext=document.getElementById('showcaseNext'), sRead=document.getElementById('showcaseRead');
   var showcaseIdx=-1;
   function showShowcase(idx){
@@ -172,6 +177,7 @@
   var links=[].slice.call(document.querySelectorAll('.nav a[href^="#"]'));
   var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))}).filter(Boolean);
   function onScroll(){
+    if(!secs.length) return;
     var y=window.scrollY+90, cur=secs[0];
     secs.forEach(function(s){ if(s.offsetTop<=y) cur=s; });
     links.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href')==='#'+cur.id); });

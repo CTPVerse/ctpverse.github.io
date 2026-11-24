@@ -1,6 +1,7 @@
 {{ define "main" }}
 <div class="layout">
-<div class="col col-main u-w-100">
+{{ partial "sidebar-left.html" . }}
+<div class="col col-main">
 <div class="module">
   <div class="module-title">{{ .Title }}</div>
   {{ with .Params.description }}<div class="byline">{{ . }}</div>{{ end }}
@@ -18,5 +19,6 @@
   </div>
 </div>
 </div>
+{{ partial "sidebar-right.html" . }}
 </div>
 {{ end }}
