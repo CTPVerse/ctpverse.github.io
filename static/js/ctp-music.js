@@ -82,12 +82,11 @@
   function themeW(){
     var text = cssVar("--text") || "#ffffff";
     var surface = cssVar("--surface") || "#1f2937";
-    var border = cssVar("--border-soft") || "#4b5563";
-    /* Player background matches the module's border colour, so the widget
-       sits on the module with no bright block; text and button contrast. */
-    var bg = border;
+    /* Player background matches the module and menu background, so the whole
+       module is one colour; the button and bar contrast so it reads as a player. */
+    var bg = surface;
     var fg = text;
-    var btn = surface;
+    var btn = mixHex(surface, text, 0.25);
     return {
       color: encHex(fg),
       shadow: "false", radius: "6px",
