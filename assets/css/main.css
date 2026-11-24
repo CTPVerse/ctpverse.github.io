@@ -1187,7 +1187,7 @@
   }
 
   /* ===== CTP Music — laut.fm widget + station toggle, top of the right column ===== */
-  #ctp-music{scroll-margin-top:52px}
+  #ctp-music{scroll-margin-top:52px; background:var(--blue-wash)}
   #ctp-music .block-title a{color:inherit; text-decoration:none}
   #ctp-music .block-title a:hover{text-decoration:underline}
   .mp-label{font-family:"Rajdhani",sans-serif; font-weight:600; font-size:12.5px; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); margin:0 0 6px}
