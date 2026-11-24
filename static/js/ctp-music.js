@@ -48,12 +48,12 @@
       STATIONS.push({ group: g.label, id: s.id, name: s.name, genre: s.genre });
     });
   });
-  /* Widget colours, set in the widget's own settings (dark blue, dashboard palette). */
+  /* Widget colours — grayscale only (no blue), matches the dark theme. */
   var W = {
     color: "%23ffffff", shadow: "false", radius: "6px",
-    bgTo: "%2316425c", bgFrom: "%230d1b24",
-    borderColor: "%2300aeef", borderWidth: "1px",
-    btnBgTo: "%2300aeef", btnBgFrom: "%2300aeef",
+    bgTo: "%231f2937", bgFrom: "%23111827",
+    borderColor: "%236b7280", borderWidth: "1px",
+    btnBgTo: "%234b5563", btnBgFrom: "%234b5563",
     btnBorderColor: "%23ffffff", btnBorderWidth: "1px"
   };
   function widgetURL(st){

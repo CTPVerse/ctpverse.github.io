@@ -1206,6 +1206,12 @@
   .mp-note{font-size:12.5px; color:var(--text); margin:8px 0 0}
   /* C-domain Frequencies — highlighted line + regular text under the CTP Music module */
   .cdom-head{font-family:"Rajdhani",sans-serif; font-weight:700; font-size:18px; letter-spacing:2px; text-transform:uppercase; color:var(--heading); margin:12px 0 6px}
+  /* CTP Music module — grayscale only (no blue), matches the dark theme. */
+  #ctp-music .block-title{color:var(--text)}
+  #ctp-music .mp-label{color:var(--text)}
+  #ctp-music .mp-group{color:var(--text)}
+  #ctp-music .cdom-head{color:var(--text)}
+  #ctp-music a{color:var(--text); text-decoration:underline}
   .cdom-body{font-size:14px; color:var(--text-2); margin:0}
 
   /* ===== CTP Energy Glyphs — square rotating viewer in the left column, modelled on the CE Entities viewer ===== */
