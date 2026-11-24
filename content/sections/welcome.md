@@ -12,10 +12,6 @@ structural: true
           <h3 class="lead">CTPVerse business units &amp; pages, indexed in one dashboard</h3>
           <p>The CTPVerse business units are linked together below, with CTP-EOS dev &amp; rollout and CTP is Disclosure as their own separate areas, and the LinkedIn pages kept as their own thing.</p>
           <div class="hub-link">
-            <span class="hub-url-box">linktr.ee/resofactor</span>
-            <a class="btn accent" href="https://linktr.ee/resofactor" target="_blank" rel="noopener">Open the Linktree hub ↗</a>
-          </div>
-          <div class="hub-link">
             <a class="btn primary" href="#implications-report">Read the Implications Report »</a>
             <span>History Has Already Been Made — the full 7-page report, in full on this dashboard.</span>
           </div>
