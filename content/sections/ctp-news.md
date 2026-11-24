@@ -1,5 +1,5 @@
 ---
-title: CTP News
+title: CTPVerse News
 anchor: ctp-news
 weight: 20
 module_class: module
