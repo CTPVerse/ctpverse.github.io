@@ -9,7 +9,7 @@
     --border-soft:#99aabb; --border-faint:#ccd5dd; --input-bg:#ffffff; --input-focus:#f2f8fc;
     --btn-bg:#e7e7e7; --btn-text:#000000; --header-grad:linear-gradient(to bottom,#3399cc 0%,#006699 45%,#003366 100%);
     --title-grad:linear-gradient(to bottom,#006699,#003366); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#ffffff; --mark-text:#003366; --hover-border:#000000;
+    --mark-bg:#000000; --mark-text:#ffffff; --hover-border:#000000;
   }
   /* MEDIUM — softer mid-tone slate-blue, grey panels, easier on the eyes than full white */
   :root[data-theme="medium"]{
@@ -21,7 +21,7 @@
     --border-soft:#6f8aa0; --border-faint:#8fa6b8; --input-bg:#eef3f7; --input-focus:#ffffff;
     --btn-bg:#c2d0dd; --btn-text:#0d1d2b; --header-grad:linear-gradient(to bottom,#4f7d9d 0%,#3d698c 45%,#1f425f 100%);
     --title-grad:linear-gradient(to bottom,#3d698c,#1f425f); --nav-bg:#132c42; --strip-bg:#132c42;
-    --mark-bg:#eef3f7; --mark-text:#1f425f; --hover-border:#0d1d2b;
+    --mark-bg:#263645; --mark-text:#eef3f7; --hover-border:#0d1d2b;
   }
   /* CTP-EOS CYNAMIC (default) — Artix Linux cyan blue (default) / dark gray / white / black, a dark theme, first in the tabs */
   :root[data-theme="eos"]{
@@ -58,7 +58,7 @@
     --border-soft:#7a9bb3; --border-faint:#9db8cc; --input-bg:#eaf2f8; --input-focus:#ffffff;
     --btn-bg:#eaf2f8; --btn-text:#011631; --header-grad:linear-gradient(to bottom,#12507d 0%,#0b395d 45%,#062f4f 100%);
     --title-grad:linear-gradient(to bottom,#0b395d,#062f4f); --nav-bg:#011631; --strip-bg:#011631;
-    --mark-bg:#eaf2f8; --mark-text:#0b395d; --hover-border:#00aeef;
+    --mark-bg:#062f4f; --mark-text:#eaf2f8; --hover-border:#00aeef;
   }
   /* CTP-EOS MEDIUM DARK — bg #062f4f, panels #0b395d, primary #00AEEF, text #eaf2f8 */
   :root[data-theme="eos-medium-dark"]{
@@ -70,7 +70,7 @@
     --border-soft:#2a5a7f; --border-faint:#062f4f; --input-bg:#021d38; --input-focus:#062f4f;
     --btn-bg:#062f4f; --btn-text:#eaf2f8; --header-grad:linear-gradient(to bottom,#00aeef 0%,#0b395d 45%,#011631 100%);
     --title-grad:linear-gradient(to bottom,#0b395d,#062f4f); --nav-bg:#011631; --strip-bg:#011631;
-    --mark-bg:#021d38; --mark-text:#00aeef; --hover-border:#00aeef;
+    --mark-bg:#021d38; --mark-text:#7ed6ff; --hover-border:#00aeef;
   }
   /* CTP-EOS DARK — bg #011631, panels #021d38, primary #00AEEF, text #ffffff */
   :root[data-theme="eos-dark"]{
@@ -82,7 +82,7 @@
     --border-soft:#0b395d; --border-faint:#062f4f; --input-bg:#011631; --input-focus:#062f4f;
     --btn-bg:#062f4f; --btn-text:#ffffff; --header-grad:linear-gradient(to bottom,#00aeef 0%,#062f4f 45%,#011631 100%);
     --title-grad:linear-gradient(to bottom,#062f4f,#021d38); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#011631; --mark-text:#00aeef; --hover-border:#00aeef;
+    --mark-bg:#011631; --mark-text:#5ed4ff; --hover-border:#00aeef;
   }
   /* CTP SPACE CADET LIGHT — base #333365, light variant, bg #E8E8F2, panels white, text #1A1A33 */
   :root[data-theme="space-cadet-light"]{
@@ -106,7 +106,7 @@
     --border-soft:#6E6E94; --border-faint:#8F8FB0; --input-bg:#E8E8F2; --input-focus:#FFFFFF;
     --btn-bg:#E8E8F2; --btn-text:#1A1A33; --header-grad:linear-gradient(to bottom,#4A4A80 0%,#333365 45%,#1A1A33 100%);
     --title-grad:linear-gradient(to bottom,#4A4A80,#333365); --nav-bg:#1A1A33; --strip-bg:#1A1A33;
-    --mark-bg:#E8E8F2; --mark-text:#333365; --hover-border:#333365;
+    --mark-bg:#333365; --mark-text:#E8E8F2; --hover-border:#333365;
   }
   /* CTP SPACE CADET MEDIUM DARK — base #333365, bg #333365, panels #45457C, text #E8E8F0 */
   :root[data-theme="space-cadet-medium-dark"]{
@@ -118,7 +118,7 @@
     --border-soft:#5A5A94; --border-faint:#333365; --input-bg:#26264D; --input-focus:#333365;
     --btn-bg:#333365; --btn-text:#E8E8F0; --header-grad:linear-gradient(to bottom,#9A9AD0 0%,#45457C 45%,#1A1A33 100%);
     --title-grad:linear-gradient(to bottom,#45457C,#333365); --nav-bg:#1A1A33; --strip-bg:#1A1A33;
-    --mark-bg:#26264D; --mark-text:#9A9AD0; --hover-border:#9A9AD0;
+    --mark-bg:#26264D; --mark-text:#B8B8E8; --hover-border:#9A9AD0;
   }
   /* CTP SPACE CADET DARK — base #333365, bg #14142B, panels #1F1F40, text #FFFFFF */
   :root[data-theme="space-cadet-dark"]{
@@ -130,7 +130,7 @@
     --border-soft:#333365; --border-faint:#1F1F40; --input-bg:#14142B; --input-focus:#1F1F40;
     --btn-bg:#1F1F40; --btn-text:#FFFFFF; --header-grad:linear-gradient(to bottom,#8A8AC8 0%,#1F1F40 45%,#14142B 100%);
     --title-grad:linear-gradient(to bottom,#1F1F40,#14142B); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#14142B; --mark-text:#8A8AC8; --hover-border:#8A8AC8;
+    --mark-bg:#14142B; --mark-text:#A8A8E0; --hover-border:#8A8AC8;
   }
   /* CTP FOUNDER — palette from the CTP-EOS desktop: deep navy #071c28 / #030f19, steel teal #184e67 / #16394b, accent cyan #4c9cbd, bright #8fd8ef */
   /* CTP FOUNDER — bg #16394b, panels #184e67, primary #4c9cbd, text #ffffff */
@@ -143,7 +143,7 @@
     --border-soft:#2a5a7f; --border-faint:#16394b; --input-bg:#0c2536; --input-focus:#16394b;
     --btn-bg:#184e67; --btn-text:#ffffff; --header-grad:linear-gradient(to bottom,#4c9cbd 0%,#184e67 45%,#0c2536 100%);
     --title-grad:linear-gradient(to bottom,#184e67,#16394b); --nav-bg:#071c28; --strip-bg:#071c28;
-    --mark-bg:#0c2536; --mark-text:#4c9cbd; --hover-border:#8fd8ef;
+    --mark-bg:#0c2536; --mark-text:#8fd8ef; --hover-border:#8fd8ef;
   }
   /* CTP FOUNDER LIGHT — bg #e8f1f6, panels white, primary #16394b with #1b6d92 accents, text #071c28 */
   :root[data-theme="founder-light"]{
@@ -167,7 +167,7 @@
     --border-soft:#5a7f96; --border-faint:#7a9db3; --input-bg:#e8f1f6; --input-focus:#ffffff;
     --btn-bg:#e8f1f6; --btn-text:#071c28; --header-grad:linear-gradient(to bottom,#2a7ba0 0%,#16394b 45%,#071c28 100%);
     --title-grad:linear-gradient(to bottom,#16394b,#0c2536); --nav-bg:#071c28; --strip-bg:#071c28;
-    --mark-bg:#e8f1f6; --mark-text:#16394b; --hover-border:#1b6d92;
+    --mark-bg:#16394b; --mark-text:#e8f1f6; --hover-border:#1b6d92;
   }
   /* CTP FOUNDER MEDIUM DARK — bg #0c2536, panels #16394b, primary #4c9cbd, text #eaf2f8 */
   :root[data-theme="founder-medium-dark"]{
@@ -179,7 +179,7 @@
     --border-soft:#2a5a7f; --border-faint:#0c2536; --input-bg:#071c28; --input-focus:#0c2536;
     --btn-bg:#16394b; --btn-text:#eaf2f8; --header-grad:linear-gradient(to bottom,#4c9cbd 0%,#16394b 45%,#071c28 100%);
     --title-grad:linear-gradient(to bottom,#16394b,#0c2536); --nav-bg:#071c28; --strip-bg:#071c28;
-    --mark-bg:#071c28; --mark-text:#4c9cbd; --hover-border:#4c9cbd;
+    --mark-bg:#071c28; --mark-text:#8fd8ef; --hover-border:#4c9cbd;
   }
   /* CTP FOUNDER DARK — bg #030f19, panels #071c28, primary #4c9cbd, text #ffffff */
   :root[data-theme="founder-dark"]{
@@ -191,7 +191,7 @@
     --border-soft:#184e67; --border-faint:#16394b; --input-bg:#030f19; --input-focus:#16394b;
     --btn-bg:#16394b; --btn-text:#ffffff; --header-grad:linear-gradient(to bottom,#4c9cbd 0%,#16394b 45%,#030f19 100%);
     --title-grad:linear-gradient(to bottom,#16394b,#071c28); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#030f19; --mark-text:#4c9cbd; --hover-border:#4c9cbd;
+    --mark-bg:#030f19; --mark-text:#8fd8ef; --hover-border:#4c9cbd;
   }
   /* CTP MIDNIGHT BLUE — dark navy, bg #0A1128, panels #141D33, accent #5B8DEF, text #E8EEF7 */
   :root[data-theme="midnight-blue"]{
@@ -203,7 +203,7 @@
     --border-soft:#2A3A5E; --border-faint:#141D33; --input-bg:#0A1128; --input-focus:#141D33;
     --btn-bg:#141D33; --btn-text:#E8EEF7; --header-grad:linear-gradient(to bottom,#5B8DEF 0%,#141D33 45%,#0A1128 100%);
     --title-grad:linear-gradient(to bottom,#5B8DEF,#141D33); --nav-bg:#05081A; --strip-bg:#05081A;
-    --mark-bg:#0A1128; --mark-text:#5B8DEF; --hover-border:#5B8DEF;
+    --mark-bg:#0A1128; --mark-text:#8FB4FF; --hover-border:#5B8DEF;
   }
   /* CTP MIDNIGHT — black with light-grey accents, bg #000000, panels #111111, text #E8E8E8 */
   :root[data-theme="midnight"]{
@@ -215,7 +215,7 @@
     --border-soft:#333333; --border-faint:#111111; --input-bg:#000000; --input-focus:#111111;
     --btn-bg:#111111; --btn-text:#E8E8E8; --header-grad:linear-gradient(to bottom,#B8B8B8 0%,#111111 45%,#000000 100%);
     --title-grad:linear-gradient(to bottom,#B8B8B8,#111111); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#000000; --mark-text:#B8B8B8; --hover-border:#B8B8B8;
+    --mark-bg:#000000; --mark-text:#E0E0E0; --hover-border:#B8B8B8;
   }
   /* CTP TECKNOTRONIC PSY — black and dark gray, cyan highlights */
   :root[data-theme="tecknotronic-psy"]{
@@ -227,7 +227,7 @@
     --border-soft:#333333; --border-faint:#1a1a1a; --input-bg:#0a0a0a; --input-focus:#1a1a1a;
     --btn-bg:#1a1a1a; --btn-text:#ffffff; --header-grad:linear-gradient(to bottom,#00aeef 0%,#1a1a1a 45%,#000000 100%);
     --title-grad:linear-gradient(to bottom,#00aeef,#1a1a1a); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#0a0a0a; --mark-text:#00aeef; --hover-border:#00aeef;
+    --mark-bg:#0a0a0a; --mark-text:#5ed4ff; --hover-border:#00aeef;
   }
   /* CTP TECKNOTRONIC MATRIX — black and dark gray, phosphor terminal green highlights */
   :root[data-theme="tecknotronic-matrix"]{
@@ -239,7 +239,7 @@
     --border-soft:#333333; --border-faint:#1a1a1a; --input-bg:#0a0a0a; --input-focus:#1a1a1a;
     --btn-bg:#1a1a1a; --btn-text:#ffffff; --header-grad:linear-gradient(to bottom,#00ff41 0%,#1a1a1a 45%,#000000 100%);
     --title-grad:linear-gradient(to bottom,#00ff41,#1a1a1a); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#0a0a0a; --mark-text:#00ff41; --hover-border:#00ff41;
+    --mark-bg:#0a0a0a; --mark-text:#5eff8a; --hover-border:#00ff41;
   }
   /* CTPIX — Artix Linux site theme (artixlinux.org/default.css): bg #0b0a0a, panels #1b1a1a, text #d9d9d9, headings #eaeaea, links #53bffc, hover #ccf */
   :root[data-theme="ctpix"]{
@@ -251,7 +251,7 @@
     --border-soft:#767676; --border-faint:#1b1a1a; --input-bg:#111; --input-focus:#1b1a1a;
     --btn-bg:#0f3147; --btn-text:#d9d9d9; --header-grad:linear-gradient(to bottom,#0f3147 0%,#1b1a1a 45%,#0b0a0a 100%);
     --title-grad:linear-gradient(to bottom,#53bffc,#4499ff); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#0b0a0a; --mark-text:#53bffc; --hover-border:#53bffc;
+    --mark-bg:#0b0a0a; --mark-text:#eaeaea; --hover-border:#53bffc;
   }
   /* ===== The 4 C-domain themes — palette from the C-domain artwork: deep dark navy, luminous cyan-blue filaments, violet/magenta accents, pale blue-white star highlights ===== */
   /* C-DOMAIN LIGHT — bg #e8ecf9, panels #ffffff / #f2f4fd, text #1c2447, headings #10142e, links #2f6fd0, hover #1b4fa8, accent #6a5ae0 */
@@ -276,7 +276,7 @@
     --border-soft:#4c58a0; --border-faint:#39427c; --input-bg:#2b3160; --input-focus:#333c6e;
     --btn-bg:#3d4680; --btn-text:#e2e8ff; --header-grad:linear-gradient(to bottom,#3d4680 0%,#333c6e 45%,#2a3260 100%);
     --title-grad:linear-gradient(to bottom,#333c6e,#2b3160); --nav-bg:#232a52; --strip-bg:#232a52;
-    --mark-bg:#2b3160; --mark-text:#8fd0ff; --hover-border:#a89aff;
+    --mark-bg:#2b3160; --mark-text:#f5f7ff; --hover-border:#a89aff;
   }
   /* C-DOMAIN MEDIUM DARK — bg #141a38, panels #1c2247 / #171b36, text #dde5ff, headings #f2f5ff, links #7cc8ff, hover #d6e8ff, accent #9a8cff */
   :root[data-theme="cdomain-medium-dark"]{
@@ -288,7 +288,7 @@
     --border-soft:#39406e; --border-faint:#262c52; --input-bg:#171b36; --input-focus:#1c2247;
     --btn-bg:#2a3260; --btn-text:#dde5ff; --header-grad:linear-gradient(to bottom,#2a3260 0%,#1c2247 45%,#141a38 100%);
     --title-grad:linear-gradient(to bottom,#1c2247,#171b36); --nav-bg:#171b36; --strip-bg:#171b36;
-    --mark-bg:#171b36; --mark-text:#7cc8ff; --hover-border:#9a8cff;
+    --mark-bg:#171b36; --mark-text:#f2f5ff; --hover-border:#9a8cff;
   }
   /* C-DOMAIN DARK — bg #070b1d, panels #10142e / #0b0f26, text #d9e4ff, headings #f0f4ff, links #6fc4ff, hover #cfe6ff, accent #8a7cff, nav links #8fb8ff */
   :root[data-theme="cdomain-dark"]{
@@ -300,7 +300,7 @@
     --border-soft:#2c3565; --border-faint:#1c2247; --input-bg:#0b0f26; --input-focus:#10142e;
     --btn-bg:#1c2247; --btn-text:#d9e4ff; --header-grad:linear-gradient(to bottom,#1c2247 0%,#10142e 45%,#070b1d 100%);
     --title-grad:linear-gradient(to bottom,#10142e,#0b0f26); --nav-bg:#0b0f26; --strip-bg:#0b0f26;
-    --mark-bg:#0b0f26; --mark-text:#8fb8ff; --hover-border:#8a7cff;
+    --mark-bg:#0b0f26; --mark-text:#f0f4ff; --hover-border:#8a7cff;
   }
   /* ===== The 4 Frey themes — palette from the Frey Grey Blue swatches: #294155, #6B879B, #243A4C, #8FADC3, #12283B, #9AB9CF, #AECBDC, #4E6875, #3A5364, #20374B ===== */
   /* FREY LIGHT — pale backgrounds #AECBDC / #9AB9CF, panels white, text #12283B / #243A4C, accents #294155 / #3A5364 */
@@ -325,7 +325,7 @@
     --border-soft:#4e6875; --border-faint:#6b879b; --input-bg:#9ab9cf; --input-focus:#aecbdc;
     --btn-bg:#9ab9cf; --btn-text:#12283b; --header-grad:linear-gradient(to bottom,#4e6875 0%,#3a5364 45%,#243a4c 100%);
     --title-grad:linear-gradient(to bottom,#3a5364,#294155); --nav-bg:#12283b; --strip-bg:#12283b;
-    --mark-bg:#aecbdc; --mark-text:#294155; --hover-border:#12283b;
+    --mark-bg:#aecbdc; --mark-text:#12283b; --hover-border:#12283b;
   }
   /* FREY MEDIUM DARK — darker backgrounds #3A5364 / #4E6875, panels #3A5364, text #AECBDC / #9AB9CF */
   :root[data-theme="frey-medium-dark"]{
@@ -337,7 +337,7 @@
     --border-soft:#6b879b; --border-faint:#294155; --input-bg:#243a4c; --input-focus:#3a5364;
     --btn-bg:#4e6875; --btn-text:#aecbdc; --header-grad:linear-gradient(to bottom,#6b879b 0%,#4e6875 45%,#243a4c 100%);
     --title-grad:linear-gradient(to bottom,#4e6875,#3a5364); --nav-bg:#243a4c; --strip-bg:#243a4c;
-    --mark-bg:#243a4c; --mark-text:#9ab9cf; --hover-border:#9ab9cf;
+    --mark-bg:#243a4c; --mark-text:#ffffff; --hover-border:#9ab9cf;
   }
   /* FREY DARK — darkest backgrounds #12283B / #20374B / #243A4C, panels #20374B, text #AECBDC / #9AB9CF, accents #6B879B / #8FADC3 */
   :root[data-theme="frey-dark"]{
@@ -349,7 +349,7 @@
     --border-soft:#3a5364; --border-faint:#243a4c; --input-bg:#12283b; --input-focus:#20374b;
     --btn-bg:#243a4c; --btn-text:#aecbdc; --header-grad:linear-gradient(to bottom,#243a4c 0%,#20374b 45%,#12283b 100%);
     --title-grad:linear-gradient(to bottom,#20374b,#12283b); --nav-bg:#12283b; --strip-bg:#12283b;
-    --mark-bg:#12283b; --mark-text:#8fadc3; --hover-border:#8fadc3;
+    --mark-bg:#12283b; --mark-text:#ffffff; --hover-border:#8fadc3;
   }
   /* DARK — deep navy / black panels, pale blue text, same Nuke structure */
   :root[data-theme="dark"]{
@@ -494,7 +494,7 @@
     --border-soft:#073642; --border-faint:#00212b; --input-bg:#00141a; --input-focus:#00212b;
     --btn-bg:#073642; --btn-text:#fdf6e3; --header-grad:linear-gradient(to bottom,#073642 0%,#00212b 100%);
     --title-grad:linear-gradient(to bottom,#0f4f5c,#022b34); --nav-bg:#00141a; --strip-bg:#00141a;
-    --mark-bg:#00141a; --mark-text:#2aa198; --hover-border:#2aa198;
+    --mark-bg:#00141a; --mark-text:#fdf6e3; --hover-border:#2aa198;
   }
   /* VOID SIGNAL — bg #07070C, surface #11121A, accent #7C5CFF, text #E8E8F0 */
   :root[data-theme="void-signal"]{
@@ -506,7 +506,7 @@
     --border-soft:#2E2F4A; --border-faint:#11121A; --input-bg:#07070C; --input-focus:#11121A;
     --btn-bg:#11121A; --btn-text:#E8E8F0; --header-grad:linear-gradient(to bottom,#7C5CFF 0%,#11121A 45%,#07070C 100%);
     --title-grad:linear-gradient(to bottom,#7C5CFF,#11121A); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#07070C; --mark-text:#7C5CFF; --hover-border:#7C5CFF;
+    --mark-bg:#07070C; --mark-text:#B3A1FF; --hover-border:#7C5CFF;
   }
   /* PLASMA FIELD — bg #0C0608, surface #170D12, accent #FF3D6E, text #F3E9EC */
   :root[data-theme="plasma-field"]{
@@ -518,7 +518,7 @@
     --border-soft:#4A2436; --border-faint:#170D12; --input-bg:#0C0608; --input-focus:#170D12;
     --btn-bg:#170D12; --btn-text:#F3E9EC; --header-grad:linear-gradient(to bottom,#FF3D6E 0%,#170D12 45%,#0C0608 100%);
     --title-grad:linear-gradient(to bottom,#FF3D6E,#170D12); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#0C0608; --mark-text:#FF3D6E; --hover-border:#FF3D6E;
+    --mark-bg:#0C0608; --mark-text:#FF8FAB; --hover-border:#FF3D6E;
   }
   /* CATHODE GREEN — bg #040D0A, surface #0C1712, accent #29E08F, text #E6F5EE */
   :root[data-theme="cathode-green"]{
@@ -530,7 +530,7 @@
     --border-soft:#24483A; --border-faint:#0C1712; --input-bg:#040D0A; --input-focus:#0C1712;
     --btn-bg:#0C1712; --btn-text:#E6F5EE; --header-grad:linear-gradient(to bottom,#29E08F 0%,#0C1712 45%,#040D0A 100%);
     --title-grad:linear-gradient(to bottom,#29E08F,#0C1712); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#040D0A; --mark-text:#29E08F; --hover-border:#29E08F;
+    --mark-bg:#040D0A; --mark-text:#6FF2B0; --hover-border:#29E08F;
   }
   /* DEEP CURRENT — bg #05101A, surface #0C1D2B, accent #31A6FF, text #E6F0F7 */
   :root[data-theme="deep-current"]{
@@ -542,7 +542,7 @@
     --border-soft:#24465E; --border-faint:#0C1D2B; --input-bg:#05101A; --input-focus:#0C1D2B;
     --btn-bg:#0C1D2B; --btn-text:#E6F0F7; --header-grad:linear-gradient(to bottom,#31A6FF 0%,#0C1D2B 45%,#05101A 100%);
     --title-grad:linear-gradient(to bottom,#31A6FF,#0C1D2B); --nav-bg:#000000; --strip-bg:#000000;
-    --mark-bg:#05101A; --mark-text:#31A6FF; --hover-border:#31A6FF;
+    --mark-bg:#05101A; --mark-text:#7CC6FF; --hover-border:#31A6FF;
   }
   /* CTP CONVERGENCE — bg #1A344B, panels #243B51 / #142639, text #EAF2F8, headings #BFDDE9, links #BFDDE9, hover #FFFFFF, accent #729BB3 */
   :root[data-theme="convergence"]{
@@ -554,7 +554,7 @@
     --border-soft:#3D617B; --border-faint:#1A344B; --input-bg:#142639; --input-focus:#1A344B;
     --btn-bg:#243B51; --btn-text:#EAF2F8; --header-grad:linear-gradient(to bottom,#729BB3 0%,#243B51 45%,#142639 100%);
     --title-grad:linear-gradient(to bottom,#243B51,#1A344B); --nav-bg:#0E1B2B; --strip-bg:#0E1B2B;
-    --mark-bg:#142639; --mark-text:#729BB3; --hover-border:#BFDDE9;
+    --mark-bg:#142639; --mark-text:#BFDDE9; --hover-border:#BFDDE9;
   }
   /* CTP CONVERGENCE LIGHT — bg #BFDDE9, panels white, primary #142639 with #294962 accents, text #0E1B2B */
   :root[data-theme="convergence-light"]{
@@ -578,7 +578,7 @@
     --border-soft:#4B6F87; --border-faint:#729BB3; --input-bg:#BFDDE9; --input-focus:#ffffff;
     --btn-bg:#BFDDE9; --btn-text:#0E1B2B; --header-grad:linear-gradient(to bottom,#3D617B 0%,#142639 45%,#0E1B2B 100%);
     --title-grad:linear-gradient(to bottom,#142639,#0E1B2B); --nav-bg:#0E1B2B; --strip-bg:#0E1B2B;
-    --mark-bg:#BFDDE9; --mark-text:#142639; --hover-border:#294962;
+    --mark-bg:#1A344B; --mark-text:#BFDDE9; --hover-border:#294962;
   }
   /* Convergence Medium masthead: title + tagline match the pale CTP mark box.
      --heading/--muted are dark navy and unreadable on the dark --outer masthead. */
@@ -597,6 +597,8 @@
   :root[data-theme="medium"] .brand p{color:#c6d4e0}
   :root[data-theme="space-cadet-medium"] .brand h1{color:#E8E8F2}
   :root[data-theme="space-cadet-medium"] .brand p{color:#B8B8CC}
+  :root[data-theme="cdomain-light"] .brand h1{color:#2f6fd0}
+  :root[data-theme="frey-light"] .brand h1{color:#294155}
   /* CTP CONVERGENCE MEDIUM DARK — bg #0E1B2B, panels #1A344B, primary #729BB3, text #EAF2F8 */
   :root[data-theme="convergence-medium-dark"]{
     color-scheme:dark;
@@ -607,7 +609,7 @@
     --border-soft:#3D617B; --border-faint:#0E1B2B; --input-bg:#09121F; --input-focus:#0E1B2B;
     --btn-bg:#1A344B; --btn-text:#EAF2F8; --header-grad:linear-gradient(to bottom,#729BB3 0%,#1A344B 45%,#09121F 100%);
     --title-grad:linear-gradient(to bottom,#1A344B,#0E1B2B); --nav-bg:#050A14; --strip-bg:#050A14;
-    --mark-bg:#09121F; --mark-text:#729BB3; --hover-border:#729BB3;
+    --mark-bg:#09121F; --mark-text:#BFDDE9; --hover-border:#729BB3;
   }
   /* CTP CONVERGENCE DARK — bg #02050B, panels #0E1B2B, primary #729BB3, text #EAF2F8 */
   :root[data-theme="convergence-dark"]{
@@ -619,7 +621,7 @@
     --border-soft:#243B51; --border-faint:#1A344B; --input-bg:#02050B; --input-focus:#0E1B2B;
     --btn-bg:#1A344B; --btn-text:#EAF2F8; --header-grad:linear-gradient(to bottom,#729BB3 0%,#1A344B 45%,#02050B 100%);
     --title-grad:linear-gradient(to bottom,#1A344B,#0E1B2B); --nav-bg:#020205; --strip-bg:#020205;
-    --mark-bg:#02050B; --mark-text:#729BB3; --hover-border:#729BB3;
+    --mark-bg:#02050B; --mark-text:#BFDDE9; --hover-border:#729BB3;
   }
   /* CORPORATE — light theme: bg #f8fafc, panel #ffffff, primary #2563eb, secondary #0284c7, text #1e293b */
   :root[data-theme="corporate"]{
