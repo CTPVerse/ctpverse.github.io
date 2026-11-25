@@ -544,17 +544,65 @@
     --title-grad:linear-gradient(to bottom,#31A6FF,#0C1D2B); --nav-bg:#000000; --strip-bg:#000000;
     --mark-bg:#05101A; --mark-text:#31A6FF; --hover-border:#31A6FF;
   }
-  /* C-DOMAIN RADIANCE — bg #04070D, panels #0A1826 / #0B1524, text #E6F0F7, headings #D6EBFF, links #8FD0FF, hover #FFFFFF, accent #7EC8FF */
-  :root[data-theme="cdomain-radiance"]{
+  /* CTP CONVERGENCE — bg #1A344B, panels #243B51 / #142639, text #EAF2F8, headings #BFDDE9, links #BFDDE9, hover #FFFFFF, accent #729BB3 */
+  :root[data-theme="convergence"]{
     color-scheme:dark;
-    --navy:#7EC8FF; --navy-dark:#BFE3FF; --blue:#7EC8FF; --blue-mid:#8FD0FF;
-    --blue-pale:#1E3247; --blue-wash:#0B1524; --blue-soft:#122132;
-    --page:#04070D; --text:#E6F0F7; --text-2:#E6F0F7; --text-3:#F2F8FF; --muted:#9AB9CF; --line:#7EC8FF;
-    --outer:#020408; --surface:#0A1826; --heading:#D6EBFF; --link:#8FD0FF; --link-hover:#FFFFFF;
-    --border-soft:#2A4A63; --border-faint:#122132; --input-bg:#0B1524; --input-focus:#0A1826;
-    --btn-bg:#1E3247; --btn-text:#E6F0F7; --header-grad:linear-gradient(to bottom,#1E3247 0%,#0A1826 45%,#04070D 100%);
-    --title-grad:linear-gradient(to bottom,#0A1826,#0B1524); --nav-bg:#020408; --strip-bg:#020408;
-    --mark-bg:#0B1524; --mark-text:#8FD0FF; --hover-border:#7EC8FF;
+    --navy:#729BB3; --navy-dark:#BFDDE9; --blue:#729BB3; --blue-mid:#91B9CD;
+    --blue-pale:#294962; --blue-wash:#142639; --blue-soft:#243B51;
+    --page:#1A344B; --text:#EAF2F8; --text-2:#EAF2F8; --text-3:#D7E3EE; --muted:#91B9CD; --line:#729BB3;
+    --outer:#0E1B2B; --surface:#243B51; --heading:#BFDDE9; --link:#BFDDE9; --link-hover:#FFFFFF;
+    --border-soft:#3D617B; --border-faint:#1A344B; --input-bg:#142639; --input-focus:#1A344B;
+    --btn-bg:#243B51; --btn-text:#EAF2F8; --header-grad:linear-gradient(to bottom,#729BB3 0%,#243B51 45%,#142639 100%);
+    --title-grad:linear-gradient(to bottom,#243B51,#1A344B); --nav-bg:#0E1B2B; --strip-bg:#0E1B2B;
+    --mark-bg:#142639; --mark-text:#729BB3; --hover-border:#BFDDE9;
+  }
+  /* CTP CONVERGENCE LIGHT — bg #BFDDE9, panels white, primary #142639 with #294962 accents, text #0E1B2B */
+  :root[data-theme="convergence-light"]{
+    color-scheme:light;
+    --navy:#142639; --navy-dark:#0E1B2B; --blue:#294962; --blue-mid:#3D617B;
+    --blue-pale:#A9CEDE; --blue-wash:#BFDDE9; --blue-soft:#91B9CD;
+    --page:#BFDDE9; --text:#0E1B2B; --text-2:#0E1B2B; --text-3:#142639; --muted:#294962; --line:#294962;
+    --outer:#91B9CD; --surface:#ffffff; --heading:#142639; --link:#142639; --link-hover:#0E1B2B;
+    --border-soft:#729BB3; --border-faint:#A9CEDE; --input-bg:#ffffff; --input-focus:#BFDDE9;
+    --btn-bg:#A9CEDE; --btn-text:#0E1B2B; --header-grad:linear-gradient(to bottom,#3D617B 0%,#142639 45%,#0E1B2B 100%);
+    --title-grad:linear-gradient(to bottom,#3D617B,#142639); --nav-bg:#0E1B2B; --strip-bg:#0E1B2B;
+    --mark-bg:#ffffff; --mark-text:#142639; --hover-border:#294962;
+  }
+  /* CTP CONVERGENCE MEDIUM — bg #729BB3, panels #A9CEDE, primary #142639, text #0E1B2B */
+  :root[data-theme="convergence-medium"]{
+    color-scheme:light;
+    --navy:#142639; --navy-dark:#0E1B2B; --blue:#142639; --blue-mid:#294962;
+    --blue-pale:#91B9CD; --blue-wash:#91B9CD; --blue-soft:#5B839B;
+    --page:#729BB3; --text:#0E1B2B; --text-2:#0E1B2B; --text-3:#142639; --muted:#1A344B; --line:#142639;
+    --outer:#1A344B; --surface:#A9CEDE; --heading:#0E1B2B; --link:#0E1B2B; --link-hover:#020205;
+    --border-soft:#4B6F87; --border-faint:#729BB3; --input-bg:#BFDDE9; --input-focus:#ffffff;
+    --btn-bg:#BFDDE9; --btn-text:#0E1B2B; --header-grad:linear-gradient(to bottom,#3D617B 0%,#142639 45%,#0E1B2B 100%);
+    --title-grad:linear-gradient(to bottom,#142639,#0E1B2B); --nav-bg:#0E1B2B; --strip-bg:#0E1B2B;
+    --mark-bg:#BFDDE9; --mark-text:#142639; --hover-border:#294962;
+  }
+  /* CTP CONVERGENCE MEDIUM DARK — bg #0E1B2B, panels #1A344B, primary #729BB3, text #EAF2F8 */
+  :root[data-theme="convergence-medium-dark"]{
+    color-scheme:dark;
+    --navy:#729BB3; --navy-dark:#BFDDE9; --blue:#729BB3; --blue-mid:#91B9CD;
+    --blue-pale:#243B51; --blue-wash:#09121F; --blue-soft:#243B51;
+    --page:#0E1B2B; --text:#EAF2F8; --text-2:#EAF2F8; --text-3:#D7E3EE; --muted:#91B9CD; --line:#729BB3;
+    --outer:#050A14; --surface:#1A344B; --heading:#BFDDE9; --link:#BFDDE9; --link-hover:#FFFFFF;
+    --border-soft:#3D617B; --border-faint:#0E1B2B; --input-bg:#09121F; --input-focus:#0E1B2B;
+    --btn-bg:#1A344B; --btn-text:#EAF2F8; --header-grad:linear-gradient(to bottom,#729BB3 0%,#1A344B 45%,#09121F 100%);
+    --title-grad:linear-gradient(to bottom,#1A344B,#0E1B2B); --nav-bg:#050A14; --strip-bg:#050A14;
+    --mark-bg:#09121F; --mark-text:#729BB3; --hover-border:#729BB3;
+  }
+  /* CTP CONVERGENCE DARK — bg #02050B, panels #0E1B2B, primary #729BB3, text #EAF2F8 */
+  :root[data-theme="convergence-dark"]{
+    color-scheme:dark;
+    --navy:#729BB3; --navy-dark:#BFDDE9; --blue:#729BB3; --blue-mid:#91B9CD;
+    --blue-pale:#1A344B; --blue-wash:#050A14; --blue-soft:#142639;
+    --page:#02050B; --text:#EAF2F8; --text-2:#EAF2F8; --text-3:#D7E3EE; --muted:#91B9CD; --line:#729BB3;
+    --outer:#020205; --surface:#0E1B2B; --heading:#BFDDE9; --link:#BFDDE9; --link-hover:#FFFFFF;
+    --border-soft:#243B51; --border-faint:#1A344B; --input-bg:#02050B; --input-focus:#0E1B2B;
+    --btn-bg:#1A344B; --btn-text:#EAF2F8; --header-grad:linear-gradient(to bottom,#729BB3 0%,#1A344B 45%,#02050B 100%);
+    --title-grad:linear-gradient(to bottom,#1A344B,#0E1B2B); --nav-bg:#020205; --strip-bg:#020205;
+    --mark-bg:#02050B; --mark-text:#729BB3; --hover-border:#729BB3;
   }
   /* CORPORATE — light theme: bg #f8fafc, panel #ffffff, primary #2563eb, secondary #0284c7, text #1e293b */
   :root[data-theme="corporate"]{
@@ -977,7 +1025,9 @@
   :root[data-theme="plasma-field"] .brand p,
   :root[data-theme="cathode-green"] .brand p,
   :root[data-theme="deep-current"] .brand p,
-  :root[data-theme="cdomain-radiance"] .brand p{color:#ffffff}
+  :root[data-theme="convergence"] .brand p,
+  :root[data-theme="convergence-medium-dark"] .brand p,
+  :root[data-theme="convergence-dark"] .brand p{color:#ffffff}
   :root[data-theme="dark"] .search input::placeholder,
   :root[data-theme="eos"] .search input::placeholder,
   :root[data-theme="eos-medium-dark"] .search input::placeholder,
@@ -994,7 +1044,10 @@
   :root[data-theme="void-signal"] .search input::placeholder,
   :root[data-theme="plasma-field"] .search input::placeholder,
   :root[data-theme="cathode-green"] .search input::placeholder,
-  :root[data-theme="deep-current"] .search input::placeholder{color:#ffffff; opacity:.8}
+  :root[data-theme="deep-current"] .search input::placeholder,
+  :root[data-theme="convergence"] .search input::placeholder,
+  :root[data-theme="convergence-medium-dark"] .search input::placeholder,
+  :root[data-theme="convergence-dark"] .search input::placeholder{color:#ffffff; opacity:.8}
 
   /* LinkedIn directory — grouped by division */
   .li-group{margin-top:12px}
