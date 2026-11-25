@@ -572,7 +572,7 @@
   :root[data-theme="convergence-medium"]{
     color-scheme:light;
     --navy:#142639; --navy-dark:#0E1B2B; --blue:#142639; --blue-mid:#294962;
-    --blue-pale:#91B9CD; --blue-wash:#91B9CD; --blue-soft:#5B839B;
+    --blue-pale:#91B9CD; --blue-wash:#5B839B; --blue-soft:#5B839B;
     --page:#729BB3; --text:#0E1B2B; --text-2:#0E1B2B; --text-3:#142639; --muted:#1A344B; --line:#142639;
     --outer:#1A344B; --surface:#A9CEDE; --heading:#0E1B2B; --link:#0E1B2B; --link-hover:#020205;
     --border-soft:#4B6F87; --border-faint:#729BB3; --input-bg:#BFDDE9; --input-focus:#ffffff;
