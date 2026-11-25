@@ -580,6 +580,10 @@
     --title-grad:linear-gradient(to bottom,#142639,#0E1B2B); --nav-bg:#0E1B2B; --strip-bg:#0E1B2B;
     --mark-bg:#BFDDE9; --mark-text:#142639; --hover-border:#294962;
   }
+  /* Convergence Medium masthead: title + tagline match the pale CTP mark box.
+     --heading/--muted are dark navy and unreadable on the dark --outer masthead. */
+  :root[data-theme="convergence-medium"] .brand h1{color:#BFDDE9}
+  :root[data-theme="convergence-medium"] .brand p{color:#91B9CD}
   /* CTP CONVERGENCE MEDIUM DARK — bg #0E1B2B, panels #1A344B, primary #729BB3, text #EAF2F8 */
   :root[data-theme="convergence-medium-dark"]{
     color-scheme:dark;
