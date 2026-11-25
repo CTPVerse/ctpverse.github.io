@@ -7,7 +7,8 @@
     {name:'CTP Magazine',href:'https://ctp-magazine.github.io/',img:'https://ctp-magazine.github.io/assets/branding/ctp-magazine-1254x1254.png'},
     {name:'FIN-DSP',href:'https://fin-dsp.github.io/',img:'https://fin-dsp.github.io/assets/branding/findsp-logo-200x200.jpg'},
     {name:'CTP Music',href:'https://ctp-music.github.io/',img:'https://ctp-music.github.io/assets/branding/ctp-music-org-avatar.jpg'},
-    {name:'CTP Space Systems',href:'https://ctp-space-systems.github.io/',img:'https://ctp-space-systems.github.io/assets/branding/ctp-space-systems-org-avatar.jpg'}
+    {name:'CTP Space Systems',href:'https://ctp-space-systems.github.io/',img:'https://ctp-space-systems.github.io/assets/branding/ctp-space-systems-org-avatar.jpg'},
+    {name:'CTP-PSY',href:'https://ctp-psy.github.io/',img:'https://ctp-psy.github.io/assets/branding/ctp-psy-org-avatar.jpg'}
   ];
   var link=document.getElementById('ctpverse-sites-link');
   var img=document.getElementById('ctpverse-sites-img');
