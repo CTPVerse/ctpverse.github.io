@@ -35,7 +35,7 @@
     --title-grad:linear-gradient(to bottom,#3d698c,#1f425f); --nav-bg:#132c42; --strip-bg:#132c42;
     --mark-bg:#263645; --mark-text:#eef3f7; --hover-border:#0d1d2b;
   }
-  /* CTP-EOS CYNAMIC (default) — Artix Linux cyan blue (default) / dark gray / white / black, a dark theme, first in the tabs */
+  /* CTP-EOS Cynamic (default) — Artix Linux cyan blue (default) / dark gray / white / black, a dark theme, first in the tabs */
   :root[data-theme="eos"]{
     color-scheme:dark;
     --navy:#00aeef; --navy-dark:#7ed6ff; --blue:#00aeef; --blue-mid:#29bdf0;
