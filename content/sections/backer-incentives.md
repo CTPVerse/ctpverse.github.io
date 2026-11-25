@@ -15,5 +15,5 @@ Backers who step up will be featured here with sponsorship citations, as they pr
 
 **Backer citations will appear here** — as backers step up and provide their sponsorship citations, their name, organisation, and citation will be featured in this module.
 
-[Telegram — t.me/resofactor ↗](https://t.me/resofactor)
-[LinkedIn — www.linkedin.com/in/resofactor-prime ↗](https://www.linkedin.com/in/resofactor-prime)
+[Telegram — t.me/resofactor](https://t.me/resofactor)
+[LinkedIn — www.linkedin.com/in/resofactor-prime](https://www.linkedin.com/in/resofactor-prime)

@@ -23,5 +23,5 @@ Financing Arm · CTP Capital Group
 
 **Formation approach.** Founding participants contribute their own resources and allocator relationships to create the structure. The Group is being built internally, from the ground up, as a founding-stage function within CTP.
 
-[Connect with Resofactor on LinkedIn ↗](https://www.linkedin.com/in/resofactor-prime)
+[Connect with Resofactor on LinkedIn](https://www.linkedin.com/in/resofactor-prime)
 [info@ctp-energy.com](mailto:info@ctp-energy.com)

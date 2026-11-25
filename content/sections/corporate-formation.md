@@ -26,5 +26,5 @@ Corporate Startup · CTP Energy as the Company
 
 **Participation profile.** Participation is intended for professionals who want to be part of building the future of civilization. This is not a horizontal career move. It is a founding-stage opportunity to participate in the formation of the company and in the transition described above.
 
-[Connect with Resofactor on LinkedIn ↗](https://www.linkedin.com/in/resofactor-prime)
+[Connect with Resofactor on LinkedIn](https://www.linkedin.com/in/resofactor-prime)
 [info@ctp-energy.com](mailto:info@ctp-energy.com)

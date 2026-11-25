@@ -16,9 +16,9 @@ The LinkedIn writing under this movement reframes the whole UFO/UAP conversation
 
 **Core line:** “I am the second generational heir and successor to Nikola Tesla. My late mentor Drazen Premate made a discovery rather than a theory, and gravity and propulsion sit downstream of it.” — Resofactor, via CTP Space Systems / LinkedIn
 
-[Read the articles on LinkedIn ↗](https://www.linkedin.com/in/resofactor-prime)
-[CTP SETI™ on LinkedIn ↗](https://linkedin.com/showcase/ctp-seti)
-[All links via Linktree ↗](https://linktr.ee/resofactor)
+[Read the articles on LinkedIn](https://www.linkedin.com/in/resofactor-prime)
+[CTP SETI™ on LinkedIn](https://linkedin.com/showcase/ctp-seti)
+[All links via Linktree](https://linktr.ee/resofactor)
 
 #### Articles — on LinkedIn
 

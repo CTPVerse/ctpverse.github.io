@@ -99,8 +99,8 @@ The companies that define future technology movements are not always the ones wi
 The global masses are waiting for the coming convergence of consciousness that CTP-EOS embodies. Millions around the world are already exploring the intersection of consciousness, creativity, technology, and human potential. The coming convergence of consciousness is not a single moment — it is a global movement. CTP-EOS is being built as a technology foundation for that future.
 
 ctp-eos-pitch.pdf · 14 pages
-[Read the full 14-page pitch (PDF) ↗](/images/ctp-eos/ctp-eos-pitch.pdf)
-[Original LinkedIn post ↗](https://lnkd.in/p/e4nmxHK3)
-[CTP-EOS Portal ↗](https://ctp-eos.github.io/)
+[Read the full 14-page pitch (PDF)](/images/ctp-eos/ctp-eos-pitch.pdf)
+[Original LinkedIn post](https://lnkd.in/p/e4nmxHK3)
+[CTP-EOS Portal](https://ctp-eos.github.io/)
 
 **Source:** CTP-EOS pitch deck, published on LinkedIn August 2, 2026. The full deck, including the psytrance market appendix, is in the PDF linked above.
