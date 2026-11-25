@@ -33,7 +33,7 @@ structural: true
 <a class="li-row" data-search="ctp energy computers ctpec computing" href="https://www.linkedin.com/showcase/ctp-energy-computers" target="_blank" rel="noopener"><span class="li-name">CTP Energy Computers™ (CTPEC)</span><span class="li-kind">Showcase · linkedin.com/showcase/ctp-energy-computers ↗</span></a>
 </div>
 <div class="li-group">
-<h4>Software &amp; Operating Systems — CTP-EOS family</h4>
+<h4>Software &amp; Operating Systems</h4>
 <a class="li-row" data-search="ctp-eos operating system linux showcase" href="https://www.linkedin.com/showcase/ctp-eos/" target="_blank" rel="noopener"><span class="li-name">CTP-EOS™</span><span class="li-kind">Showcase · linkedin.com/showcase/ctp-eos ↗</span></a>
 <a class="li-row" data-search="ce-os ceos operating system" href="https://www.linkedin.com/showcase/ce-os/" target="_blank" rel="noopener"><span class="li-name">CE-OS™ (CEOS)</span><span class="li-kind">Showcase · linkedin.com/showcase/ce-os ↗</span></a>
 <a class="li-row" data-search="ctp energy software group ctpeswg" href="https://linkedin.com/company/ctpeswg" target="_blank" rel="noopener"><span class="li-name">CTP Energy Software Group™</span><span class="li-kind">Company · linkedin.com/company/ctpeswg ↗</span></a>
@@ -45,6 +45,7 @@ structural: true
 <h4>Education</h4>
 <a class="li-row" data-search="ctp university ctpu education" href="https://www.linkedin.com/showcase/ctp-university/" target="_blank" rel="noopener"><span class="li-name">CTP University™ (CTPU)</span><span class="li-kind">Showcase · linkedin.com/showcase/ctp-university ↗</span></a>
 <a class="li-row" data-search="ctp energy school of thought ctpesot education" href="https://www.linkedin.com/company/ctpesot" target="_blank" rel="noopener"><span class="li-name">CTP Energy School of Thought™ (CTPESOT)</span><span class="li-kind">Company · linkedin.com/company/ctpesot ↗</span></a>
+<a class="li-row" data-search="ontological order resonant triad oort" href="https://www.linkedin.com/company/oort-order" target="_blank" rel="noopener"><span class="li-name">Ontological Order of the Resonant Triad™ (OORT)</span><span class="li-kind">Company · linkedin.com/company/oort-order ↗</span></a>
 </div>
 <div class="li-group">
 <h4>Space, Research &amp; Projects</h4>
@@ -66,7 +67,6 @@ structural: true
 <h4>Media, Sport &amp; Order</h4>
 <a class="li-row" data-search="ctp entertainment ct pent media" href="https://linkedin.com/company/ctp-entertainment" target="_blank" rel="noopener"><span class="li-name">CTP Entertainment™ (CTPENT)</span><span class="li-kind">Company · linkedin.com/company/ctp-entertainment ↗</span></a>
 <a class="li-row" data-search="ctp sports ctps athletics" href="https://www.linkedin.com/showcase/ctp-sports" target="_blank" rel="noopener"><span class="li-name">CTP Sports™ (CTPS)</span><span class="li-kind">Showcase · linkedin.com/showcase/ctp-sports ↗</span></a>
-<a class="li-row" data-search="ontological order resonant triad oort" href="https://www.linkedin.com/company/oort-order" target="_blank" rel="noopener"><span class="li-name">Ontological Order of the Resonant Triad™ (OORT)</span><span class="li-kind">Company · linkedin.com/company/oort-order ↗</span></a>
 </div>
 </div>
 <p id="liNoResults" class="hidden u-muted u-mt-10">No LinkedIn page matches that search. Try “EOS”, “university”, or “space”.</p>
