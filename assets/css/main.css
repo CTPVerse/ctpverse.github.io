@@ -925,7 +925,6 @@
     padding:5px 8px; font-size:11px; font-weight:bold; color:var(--link); text-decoration:none;
   }
   .card a.open::before{content:"» "}
-  .card a.open::after{content:" ↗"}
   .card a.open:hover{background:var(--blue-pale); color:var(--link-hover)}
 
   /* Feature modules (CTP-EOS / Disclosure) */
