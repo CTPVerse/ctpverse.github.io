@@ -1,4 +1,16 @@
-/* ===== Classic Nuke portal — 46 user-selectable themes in one drop-down: CTP-EOS Cynamic first, then the 4 logo-derived CTP-EOS themes, then the 4 CTP Space Cadet themes, then the 5 CTP Founder themes, then the 2 CTP Midnight themes, then the 2 Tecknotronic themes, then CTPIX, then the 4 C-domain themes, then the 4 Frey Grey Blue themes, then Light / Medium / Dark, then the 11 CTP-EOS GitHub IO themes, then Void Signal, Plasma Field, Cathode Green and Deep Current, then Corporate ===== */
+/* ===== Classic Nuke portal — 52 user-selectable themes in one drop-down: CTP Calamares first, then CTP-EOS Cynamic, then the 4 logo-derived CTP-EOS themes, then the 4 CTP Space Cadet themes, then the 5 CTP Founder themes, then the 2 CTP Midnight themes, then the 2 Tecknotronic themes, then CTPIX, then the 4 C-domain themes, then the 4 Frey Grey Blue themes, then Light / Medium / Dark, then the 11 CTP-EOS GitHub IO themes, then Void Signal, Plasma Field, Cathode Green and Deep Current, then Corporate ===== */
+  /* CTP CALAMARES — the CTP-EOS installer palette: near-black teal #0A0F14, CTP-EOS cyan #2AA5C4, light cyan #7ED4E8 */
+  :root[data-theme="calamares"]{
+    color-scheme:dark;
+    --navy:#2AA5C4; --navy-dark:#7ED4E8; --blue:#2AA5C4; --blue-mid:#4CB8D4;
+    --blue-pale:#12303F; --blue-wash:#1E5566; --blue-soft:#16424F;
+    --page:#0A0F14; --text:#E6EEF1; --text-2:#D7E3E8; --text-3:#C2D2D8; --muted:#8FA6AD; --line:#2AA5C4;
+    --outer:#05080A; --surface:#131C22; --heading:#7ED4E8; --link:#2AA5C4; --link-hover:#7ED4E8;
+    --border-soft:#2A3A42; --border-faint:#1A262C; --input-bg:#0F1A20; --input-focus:#12303F;
+    --btn-bg:#1A2E38; --btn-text:#E6EEF1; --header-grad:linear-gradient(to bottom,#4CB8D4 0%,#2AA5C4 45%,#0F2A36 100%);
+    --title-grad:linear-gradient(to bottom,#2AA5C4,#0A0F14); --nav-bg:#05080A; --strip-bg:#05080A;
+    --mark-bg:#0F1A20; --mark-text:#7ED4E8; --hover-border:#2AA5C4;
+  }
   /* LIGHT — the original bright blue / white / black Nuke look */
   :root, :root[data-theme="light"]{
     color-scheme:light;
