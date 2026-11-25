@@ -1,5 +1,5 @@
-/* ===== Classic Nuke portal — 52 user-selectable themes in one drop-down: CTP Calamares first, then CTP-EOS Cynamic, then the 4 logo-derived CTP-EOS themes, then the 4 CTP Space Cadet themes, then the 5 CTP Founder themes, then the 2 CTP Midnight themes, then the 2 Tecknotronic themes, then CTPIX, then the 4 C-domain themes, then the 4 Frey Grey Blue themes, then Light / Medium / Dark, then the 11 CTP-EOS GitHub IO themes, then Void Signal, Plasma Field, Cathode Green and Deep Current, then Corporate ===== */
-  /* CTP CALAMARES — the CTP-EOS installer palette: near-black teal #0A0F14, CTP-EOS cyan #2AA5C4, light cyan #7ED4E8 */
+/* ===== Classic Nuke portal — 52 user-selectable themes in one drop-down: CTP-EOS Calamares first, then CTP-EOS Cynamic, then the 4 logo-derived CTP-EOS themes, then the 4 CTP Space Cadet themes, then the 5 CTP Founder themes, then the 2 CTP Midnight themes, then the 2 Tecknotronic themes, then CTPIX, then the 4 C-domain themes, then the 4 Frey Grey Blue themes, then Light / Medium / Dark, then the 11 CTP-EOS GitHub IO themes, then Void Signal, Plasma Field, Cathode Green and Deep Current, then Corporate ===== */
+  /* CTP-EOS CALAMARES — the CTP-EOS installer palette: near-black teal #0A0F14, CTP-EOS cyan #2AA5C4, light cyan #7ED4E8 */
   :root[data-theme="calamares"]{
     color-scheme:dark;
     --navy:#2AA5C4; --navy-dark:#7ED4E8; --blue:#2AA5C4; --blue-mid:#4CB8D4;
