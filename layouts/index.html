@@ -3,6 +3,11 @@
 {{ partial "sidebar-left.html" . }}
 <div class="col col-main">
 {{ partial "hero.html" . }}
+<figure class="ctpeteams-banner" style="margin:0;">
+  <a href="https://ctpeteams.github.io/" target="_blank" rel="noopener" aria-label="CTPETEAMS — Higher Team Management via C-domain">
+    <img src="assets/branding/ctpeteams-cover.jpg" alt="CTPETEAMS — Higher Team Management via C-domain" width="1128" height="191" loading="lazy" style="display:block;width:100%;height:auto" />
+  </a>
+</figure>
 {{ $sections := (.Site.GetPage "sections").RegularPages.ByWeight }}
 {{ range $sections }}
   {{ $anchor := .Params.anchor }}
