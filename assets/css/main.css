@@ -942,7 +942,7 @@
   /* ===== Horizontal main menu bar ===== */
   .nav{
     background:var(--nav-bg);
-    display:flex; flex-nowrap:nowrap; align-items:center; gap:2px 10px;
+    display:flex; flex-wrap:nowrap; align-items:center; gap:2px 10px;
     border-bottom:1px solid var(--border-soft);
   }
   .nav-links{display:flex; flex-wrap:nowrap; align-items:center}
@@ -1678,6 +1678,12 @@
     .layout{grid-template-columns:170px minmax(0,1fr)}
     .col-right{grid-column:1 / -1; display:grid; grid-template-columns:1fr 1fr; gap:8px; align-items:start}
     .col-right .block{margin-bottom:0}
+  }
+  @media (max-width: 720px) {
+    /* Mobile nav: let the bar wrap to two rows so nothing is cut off. */
+    .nav { flex-wrap: wrap; }
+    .nav-links { flex-wrap: wrap; }
+    .nav-controls { flex-wrap: wrap; min-width: 0; flex: 1 1 auto; margin-left: 0; }
   }
   @media (max-width:680px){
     .wrap{margin:0; border-left:0; border-right:0}
