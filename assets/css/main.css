@@ -149,6 +149,7 @@
   :root[data-theme="club-ctp-medium-dark"] .col-left .p1-item:hover, :root[data-theme="club-ctp-medium-dark"] .col-left .p2-item:hover{background:#4B66FF; color:#FFFFFF}
   :root[data-theme="club-ctp-medium-dark"] .col-left .p1-item.is-active, :root[data-theme="club-ctp-medium-dark"] .col-left .p2-item.is-active{background:#4B66FF; color:#FFFFFF}
   :root[data-theme="club-ctp-medium-dark"] .col-left .p1-item .p1-item-id, :root[data-theme="club-ctp-medium-dark"] .col-left .p2-item .p2-item-id{color:#A9B8FF}
+  :root[data-theme="club-ctp-medium-dark"] .col-left .p1-item:hover .p1-item-id, :root[data-theme="club-ctp-medium-dark"] .col-left .p1-item.is-active .p1-item-id, :root[data-theme="club-ctp-medium-dark"] .col-left .p2-item:hover .p2-item-id, :root[data-theme="club-ctp-medium-dark"] .col-left .p2-item.is-active .p2-item-id{color:#FFFFFF}
   :root[data-theme="club-ctp-medium-dark"] .col-left .lineage-list .who{color:#FFFFFF}
   :root[data-theme="club-ctp-medium-dark"] .col-left .lineage-list .arr{color:#8597F9}
   :root[data-theme="club-ctp-medium-dark"] .col-left .chan-btn{color:#FFFFFF}
@@ -186,6 +187,7 @@
   :root[data-theme="club-ctp-dark"] .col-left .p1-item:hover, :root[data-theme="club-ctp-dark"] .col-left .p2-item:hover{background:#4B66FF; color:#FFFFFF}
   :root[data-theme="club-ctp-dark"] .col-left .p1-item.is-active, :root[data-theme="club-ctp-dark"] .col-left .p2-item.is-active{background:#4B66FF; color:#FFFFFF}
   :root[data-theme="club-ctp-dark"] .col-left .p1-item .p1-item-id, :root[data-theme="club-ctp-dark"] .col-left .p2-item .p2-item-id{color:#A9B8FF}
+  :root[data-theme="club-ctp-dark"] .col-left .p1-item:hover .p1-item-id, :root[data-theme="club-ctp-dark"] .col-left .p1-item.is-active .p1-item-id, :root[data-theme="club-ctp-dark"] .col-left .p2-item:hover .p2-item-id, :root[data-theme="club-ctp-dark"] .col-left .p2-item.is-active .p2-item-id{color:#FFFFFF}
   :root[data-theme="club-ctp-dark"] .col-left .lineage-list .who{color:#FFFFFF}
   :root[data-theme="club-ctp-dark"] .col-left .lineage-list .arr{color:#8597F9}
   :root[data-theme="club-ctp-dark"] .col-left .chan-btn{color:#FFFFFF}
