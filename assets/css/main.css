@@ -1679,18 +1679,6 @@
     .col-right{grid-column:1 / -1; display:grid; grid-template-columns:1fr 1fr; gap:8px; align-items:start}
     .col-right .block{margin-bottom:0}
   }
-  @media (max-width: 720px) {
-    /* Mobile nav: tidy two-row link grid + stacked controls so nothing is cut off. */
-    .nav { flex-wrap: wrap; }
-    .nav-links { display:grid; grid-template-columns:repeat(3, 1fr); flex:1 1 100%; }
-    .nav-links a { justify-content:center; text-align:center; }
-    .nav-links a:nth-child(3n) { border-right:0; }
-    .nav-links a:nth-child(-n+3) { border-bottom:1px solid rgba(255,255,255,.16); }
-    .nav-controls { flex-wrap:wrap; flex-direction:column; align-items:stretch; gap:8px; min-width:0; flex:1 1 100%; margin-left:0; padding:8px 10px; border-top:1px solid rgba(255,255,255,.16); }
-    .nav-controls .width-btn { width:100%; }
-    .nav-controls .theme-picker { width:100%; }
-    .nav-controls .theme-picker select { flex:1 1 auto; max-width:none; }
-  }
   @media (max-width:680px){
     .wrap{margin:0; border-left:0; border-right:0}
     .layout{grid-template-columns:1fr; padding:6px}
@@ -1724,6 +1712,17 @@
     .lineage{padding:4px 8px; font-size:10px}
     .nav a{padding:6px 8px; font-size:10px}
     .subbar{padding:4px 10px; font-size:10px}
+  }
+  @media (max-width: 720px) {
+    /* Mobile nav: let the bar wrap so nothing is cut off, and keep it tidy:
+       links a touch smaller for an even wrap, controls stacked full-width
+       with room to breathe and selects wide enough to show their text. */
+    .nav { flex-wrap: wrap; }
+    .nav a { font-size: 14px; padding: 10px 8px; }
+    .nav-links { flex-wrap: wrap; }
+    .nav-controls { flex-wrap: wrap; min-width: 0; flex: 1 1 auto; margin-left: 0; padding: 8px 10px; gap: 8px; }
+    .nav-controls .theme-picker { flex: 1 1 100%; min-width: 0; }
+    .nav-controls .theme-picker select { max-width: none; flex: 1 1 auto; min-width: 0; }
   }
   @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
 
