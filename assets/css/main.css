@@ -1680,10 +1680,16 @@
     .col-right .block{margin-bottom:0}
   }
   @media (max-width: 720px) {
-    /* Mobile nav: let the bar wrap to two rows so nothing is cut off. */
+    /* Mobile nav: tidy two-row link grid + stacked controls so nothing is cut off. */
     .nav { flex-wrap: wrap; }
-    .nav-links { flex-wrap: wrap; }
-    .nav-controls { flex-wrap: wrap; min-width: 0; flex: 1 1 auto; margin-left: 0; }
+    .nav-links { display:grid; grid-template-columns:repeat(3, 1fr); flex:1 1 100%; }
+    .nav-links a { justify-content:center; text-align:center; }
+    .nav-links a:nth-child(3n) { border-right:0; }
+    .nav-links a:nth-child(-n+3) { border-bottom:1px solid rgba(255,255,255,.16); }
+    .nav-controls { flex-wrap:wrap; flex-direction:column; align-items:stretch; gap:8px; min-width:0; flex:1 1 100%; margin-left:0; padding:8px 10px; border-top:1px solid rgba(255,255,255,.16); }
+    .nav-controls .width-btn { width:100%; }
+    .nav-controls .theme-picker { width:100%; }
+    .nav-controls .theme-picker select { flex:1 1 auto; max-width:none; }
   }
   @media (max-width:680px){
     .wrap{margin:0; border-left:0; border-right:0}
