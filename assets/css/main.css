@@ -1723,6 +1723,9 @@
     .nav-controls { flex-wrap: wrap; min-width: 0; flex: 1 1 auto; margin-left: 0; padding: 8px 10px; gap: 8px; }
     .nav-controls .theme-picker { flex: 1 1 100%; min-width: 0; }
     .nav-controls .theme-picker select { max-width: none; flex: 1 1 auto; min-width: 0; }
+    /* Showcase rows: let the kind label wrap at phone width instead of
+       forcing a 416px nowrap row that overflows the viewport. */
+    .li-row .li-kind { white-space: normal; overflow-wrap: anywhere; min-width: 0; }
   }
   @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
 
