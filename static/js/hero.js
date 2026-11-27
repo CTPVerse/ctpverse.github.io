@@ -25,10 +25,10 @@
     'Sun and Earth, gravity',
     'UFO over airport',
     'UFO over airport, second view',
-    'Blue craft at night',
+    'CTP Space Cruiser\u2122',
     'Cigar craft over city',
-    'UFO with lights, trees',
-    'UAP, FLIR',
+    'CTPcraft w/ CEMAS\u2122 Arrays',
+    'CTPcraft maneuvers',
     'Triangular craft, top view',
     'Blue diamond, sparkles',
     'Blue X, sparkles',
@@ -71,7 +71,7 @@
     'CTP and the telescope',
     'CTP-EOS build terminal',
     'CTP University lecture hall',
-    'CTP Space Liner',
+    'CTP Spaceliner\u2122',
     'CTP diamond craft',
     'CTP Space Systems platform',
     'CTP Space Systems diamond craft',
@@ -79,7 +79,7 @@
     'CE entity, chrome with green glowing eyes and green holographic data panels',
     'Wireframe CE entity holding a glowing orb above the clouds',
     'CTP-EOS banner — Tri-Force',
-    'Cylindrical craft — New York, 1950'
+    'Cylindrical craft — CTP Spaceliner\u2122 — New York, 1950'
   ];
   var slides=[].slice.call(banner.querySelectorAll('.hero-slide'));
   /* Each slide's own hero number, parsed from its image filename (hero-NN-...).
