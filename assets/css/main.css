@@ -16,6 +16,35 @@
   /* Masthead sync: title matches the CTP mark box (--mark-text). */
   :root[data-theme="ctp-phase-i"] .brand h1{color:#FFFFFF}
   :root[data-theme="ctp-phase-i"] .brand p{color:#B0B8FF}
+  /* CTP PHASE I SIDEBAR — black panels, royal blue border, white text (2006 original) */
+  :root[data-theme="ctp-phase-i"] .block{background:#000000; border:1px solid #0000FE; color:#FFFFFF; --text:#FFFFFF; --text-2:#FFFFFF; --text-3:#FFFFFF; --muted:#A9B8FF; --heading:#FFFFFF; --link:#FFFFFF; --link-hover:#A9B8FF}
+  :root[data-theme="ctp-phase-i"] .block-title{background:#000000; color:#FFFFFF; border-bottom:1px solid #0000FE}
+  :root[data-theme="ctp-phase-i"] .block-body{color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] .block-body p{color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] .block a{color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] .block a:hover{color:#A9B8FF}
+  :root[data-theme="ctp-phase-i"] ul.menu a{color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] ul.menu a:hover{background:#0000FE; color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] ul.menu a.is-active{background:#0000FE; color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] .p1-acc-head, :root[data-theme="ctp-phase-i"] .p2-acc-head{color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] .p1-acc-head:hover, :root[data-theme="ctp-phase-i"] .p2-acc-head:hover{background:#0000FE; color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] .p1-item, :root[data-theme="ctp-phase-i"] .p2-item{color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] .p1-item:hover, :root[data-theme="ctp-phase-i"] .p2-item:hover{background:#0000FE; color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] .p1-item.is-active, :root[data-theme="ctp-phase-i"] .p2-item.is-active{background:#0000FE; color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] .p1-item .p1-item-id, :root[data-theme="ctp-phase-i"] .p2-item .p2-item-id{color:#A9B8FF}
+  :root[data-theme="ctp-phase-i"] .lineage-list .who{color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] .lineage-list .arr{color:#4B66FF}
+  :root[data-theme="ctp-phase-i"] .chan-btn{color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] .chan-btn:hover{background:#0000FE}
+  :root[data-theme="ctp-phase-i"] .chan-btn.active{background:#0000FE}
+  :root[data-theme="ctp-phase-i"] .chan-btn .gn{color:#A9B8FF}
+  :root[data-theme="ctp-phase-i"] .block .art-caption{color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] #ctp-music{background:#000000}
+  :root[data-theme="ctp-phase-i"] #ctp-music .block-title{color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] #ctp-music .mp-label, :root[data-theme="ctp-phase-i"] #ctp-music .mp-group, :root[data-theme="ctp-phase-i"] #ctp-music .cdom-head{color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] #ctp-music .mp-channel, :root[data-theme="ctp-phase-i"] #ctp-music .mp-genre, :root[data-theme="ctp-phase-i"] #ctp-music .mp-status, :root[data-theme="ctp-phase-i"] #ctp-music .mp-source, :root[data-theme="ctp-phase-i"] #ctp-music .mp-note, :root[data-theme="ctp-phase-i"] #ctp-music .cdom-body{color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] #ctp-music a{color:#FFFFFF}
+  :root[data-theme="ctp-phase-i"] .mp-nav:hover{background:#0000FE; color:#FFFFFF}
   /* CLUB CTP LIGHT — CTP Phase I masthead blue #3345FD: bg #E9EDFF, panels white, primary #2233A7, text #0A0A2E */
   :root[data-theme="club-ctp-light"]{
     color-scheme:light;
