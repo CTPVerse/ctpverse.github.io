@@ -79,7 +79,9 @@
     'CE entity, chrome with green glowing eyes and green holographic data panels',
     'Wireframe CE entity holding a glowing orb above the clouds',
     'CTP-EOS banner — Tri-Force',
-    'Cylindrical craft — CTP Spaceliner\u2122 — New York, 1950'
+    'Cylindrical craft — CTP Spaceliner\u2122 — New York, 1950',
+    'Nikola Tesla — CTP has arrived',
+    'Silver disc UFO over snow-capped mountains'
   ];
   var slides=[].slice.call(banner.querySelectorAll('.hero-slide'));
   /* Each slide's own hero number, parsed from its image filename (hero-NN-...).
