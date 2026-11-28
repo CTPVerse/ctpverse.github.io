@@ -12,6 +12,8 @@ Editorial
 
 ### The basics of CTPSci, in your mind first
 
+<div class="ufo-rotator" role="img" aria-label="Unlocking the Universe — CTP Energy Science"><img src="/images/hero/unlocking-universe.jpg" alt="Unlocking the Universe, CTP Energy Science" class="is-active" loading="lazy" /></div>
+
 The basics of CTPSci Sciences must be understood on their own terms, their own ontology, and the principles of CTP Energy and the CTP Model as given via CTP materials and resources as published and presented.
 
 Your mind is encountering a new science, so you must think in terms of its model, not prior models, prior ontologies, or previous epistemologies.

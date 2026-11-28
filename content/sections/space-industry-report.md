@@ -14,6 +14,8 @@ Scale & Projections · Draft — October 2026
 
 ### Scale, in the market's own numbers
 
+<div class="ufo-rotator" role="img" aria-label="CTP Industrial Space Platform"><img src="/images/hero/ctp-industrial-space-platform.jpg" alt="CTP Space Systems, CTP Industrial Space Platform (CTPISP)" class="is-active" loading="lazy" /></div>
+
 No institution is asked to validate CTP here. These are third-party figures, used only to set the scale of the arena CTP operates in.
 
 **$1.8T**Goldman Sachs Global Institute, *The Second Space Age* (Aug 13, 2026) — projected global space economy by 2035, from $613B in 2024

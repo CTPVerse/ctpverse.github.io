@@ -8,6 +8,8 @@ byline: By Resofactor · The order I build in — stated plainly, so everything 
 ---
 
 
+<div class="ufo-rotator" role="img" aria-label="CTP Energy Computer"><img src="/images/hero/ctp-energy-computer.jpg" alt="CTP Energy Computer — Beyond Quantum. Built for Conscious." class="is-active" loading="lazy" /></div>
+
 **Capital comes first.** My order is capital first, research second, craft third — and that order stays.
 
 **The CTP ecosystem is not last.** It is not number five, and it is not at the end of my sequence. It sits in the earlier stages. I develop the CTP brand first — across multiple industries and multiple verticals — building it into pre-existing technologies, consumer products, and application stacks that are already on the market today, bundled and distributed through a CTP corporate and retail ecosystem.
