@@ -8,7 +8,7 @@ byline: By Rizwan Virk · The Sol Foundation White Papers · Volume 2, No. 1 · 
 ---
 
 
-<div class="ufo-rotator" role="img" aria-label="UFO sighting photographs"><img src="/assets/hero/beijing-china-1995.jpg" alt="Beijing, China — February 3, 1995" class="is-active" /><img src="/assets/hero/milan-italy-2005.jpg" alt="Milan, Italy — May 8, 2005" loading="lazy" /><img src="/assets/hero/mixquic-mexico-2004.jpg" alt="Mixquic, Mexico — November 2, 2004" loading="lazy" /><img src="/assets/hero/milan-italy-2004.jpg" alt="Milan, Italy — November 27, 2004" loading="lazy" /><div class="ufo-rotator-cap">Beijing, China — February 3, 1995</div></div>
+<div class="ufo-rotator" role="img" aria-label="UFO sighting photographs"><img src="/assets/hero/beijing-china-1995.jpg" alt="Beijing, China — February 3, 1995" class="is-active" /><img src="/assets/hero/milan-italy-2005.jpg" alt="Milan, Italy — May 8, 2005" loading="lazy" /><img src="/assets/hero/mixquic-mexico-2004.jpg" alt="Mixquic, Mexico — November 2, 2004" loading="lazy" /><img src="/assets/hero/milan-italy-2004.jpg" alt="Milan, Italy — November 27, 2004" loading="lazy" /></div>
 
 Independent third-party paper. Not affiliated with CTP. Not an endorsement of CTP.
 

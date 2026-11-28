@@ -5,7 +5,10 @@
    exactly — the standard web article format: the image floats left at
    the top of the first paragraph and the paragraph text wraps around it
    on the right, filling in beside it. On narrow screens the image
-   shrinks but stays floated left, so the text still wraps beside it. */
+   shrinks but stays floated left, so the text still wraps beside it.
+   No caption bar — the raw image only, so the whole picture shows top to
+   bottom with nothing covered (user direction 2026-11-27). Images use
+   object-fit: contain so non-16:9 pictures are never cropped. */
 .ufo-rotator {
   width: 172px;
   max-width: 44%;
@@ -22,24 +25,12 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   opacity: 0;
   transition: opacity 1.2s ease-in-out;
 }
 .ufo-rotator img.is-active {
   opacity: 1;
-}
-.ufo-rotator .ufo-rotator-cap {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 3px 7px;
-  font-size: 11px;
-  line-height: 1.3;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.55);
-  z-index: 2;
 }
 @media (max-width: 680px) {
   .ufo-rotator {

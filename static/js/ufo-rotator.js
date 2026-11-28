@@ -85,10 +85,6 @@
       if (i === 0) img.className = 'is-active';
       box.appendChild(img);
     });
-    var cap = document.createElement('div');
-    cap.className = 'ufo-rotator-cap';
-    cap.textContent = pool[0].cap;
-    box.appendChild(cap);
     return box;
   }
 
@@ -100,7 +96,6 @@
     box.dataset.ufoStarted = '1';
     var imgs = Array.prototype.slice.call(box.querySelectorAll('img'));
     if (imgs.length < 2) return;
-    var capEl = box.querySelector('.ufo-rotator-cap');
     var order = shuffle(imgs.map(function (_, i) { return i; }));
     /* The first image (index 0) is the one showing in the DOM — start the
        order there so the very first tick is a real change. */
@@ -119,10 +114,6 @@
       var next = order[pos];
       imgs[current].classList.remove('is-active');
       imgs[next].classList.add('is-active');
-      /* Caption follows the fade, not the class change, so it never names
-         the image still fading out. */
-      var nextCap = imgs[next].alt || '';
-      setTimeout(function () { if (capEl) capEl.textContent = nextCap; }, 1200);
       current = next;
     }, INTERVAL_MS);
   }
