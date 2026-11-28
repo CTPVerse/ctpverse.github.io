@@ -187,3 +187,5 @@ I need no more sightings. I need capital first, my facility built, my research s
 8 November 2026 — I am **Resofactor**, creator of the CTPVerse. CTP is Conscious Translational Physics. I intend this report for public sharing. I keep my development private and moated, in my own facility only — not open science, not peer review. Contact me directly: Telegram [t.me/resofactor](https://t.me/resofactor) | LinkedIn [www.linkedin.com/in/resofactor-prime](https://www.linkedin.com/in/resofactor-prime)
 
 Fund CTP
+
+<div class="note"><b>Disclaimer — third-party materials:</b> Where this report cites third-party materials, CTP cites them with credit and acknowledgment for the quality of those materials as they apply to CTP's technologies. CTP's use of these materials does not imply any endorsement of, or acknowledgment by, the authors or their organizations, and no working relationship exists between CTP and those authors — neither party is working together with the other on this. CTP leaves open an invitation to collaborate, in the belief that humanity could move further ahead if we did.</div>

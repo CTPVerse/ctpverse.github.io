@@ -10,6 +10,8 @@ byline: By Rizwan Virk · The Sol Foundation White Papers · Volume 2, No. 1 · 
 
 Independent third-party paper. Not affiliated with CTP. Not an endorsement of CTP.
 
+<div class="note"><b>Disclaimer — third-party materials:</b> CTP cites this work by Rizwan Virk with credit and acknowledgment for the quality of the report as it applies to CTP's technologies. CTP's use of these materials does not imply any endorsement of, or acknowledgment by, Rizwan Virk or his organization, and no working relationship exists between CTP and Rizwan Virk — neither party is working together with the other on this. CTP leaves open an invitation to collaborate, in the belief that humanity could move further ahead if we did.</div>
+
 The White Papers of the Sol Foundation · Vol. 2, No. 1 · Winter 2025
 
 ### Investment in UAP Technology and Ventures: Opportunities, Challenges, and a Way Forward
