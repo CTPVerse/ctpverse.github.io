@@ -132,8 +132,8 @@
        Title first: the rotator goes AFTER the document heading — and after
        the date line when one follows the heading (CTPIDM) — so the order
        is title, date, image, body. Never before the title. The rotator
-       is a plain block in the CSS, so the body starts below it and no
-       text ever wraps beside it or slides under it. */
+       floats left in the CSS, so the paragraph text wraps around it
+       the way text wraps an image in a regular web article. */
     var heads = document.querySelectorAll('#investors h3, #uap-investment-documents h3');
     Array.prototype.forEach.call(heads, function (h3) {
       var key = poolForHeading(h3.textContent);

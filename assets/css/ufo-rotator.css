@@ -1,16 +1,17 @@
 /* UFO image rotator — investment documents.
-   A 250px-wide image holder UNDER the document title, top-left, cycling
-   dated UFO sighting photographs in random order with a crossfade,
-   continuously. Layout is title first, image below the title, body text
-   below the image — the rotator is a plain block, never floated, so no
-   text ever wraps beside it or slides under it. On narrow screens the
-   same order holds and the image stays left-aligned, never centred. */
+   Image holder UNDER the document title, top-left, cycling dated UFO
+   sighting photographs in random order with a crossfade, continuously.
+   Layout matches the Dashboard's Phase I article image slot (.p1-img)
+   exactly — the standard web article format: the image floats left at
+   the top of the first paragraph and the paragraph text wraps around it
+   on the right, filling in beside it. On narrow screens the image
+   shrinks but stays floated left, so the text still wraps beside it. */
 .ufo-rotator {
-  width: 250px;
-  max-width: 100%;
+  width: 172px;
+  max-width: 44%;
   aspect-ratio: 16 / 9;
-  display: block;
-  margin: 0 0 12px;
+  float: left;
+  margin: 2px 14px 10px 0;
   position: relative;
   overflow: hidden;
   border-radius: 4px;
@@ -40,8 +41,8 @@
   background: rgba(0, 0, 0, 0.55);
   z-index: 2;
 }
-@media (max-width: 720px) {
+@media (max-width: 680px) {
   .ufo-rotator {
-    margin: 0 0 10px;
+    width: 132px;
   }
 }
