@@ -12,6 +12,8 @@ CTP — Conscious Translational Physics · Full Report
 
 ### History Has Already Been Made
 
+<div class="ufo-rotator" role="img" aria-label="CTP diamond craft"><img src="/images/hero/ctp-diamond-craft.jpg" alt="CTP diamond craft" class="is-active" loading="lazy" /></div>
+
 **I identified the mechanism — not the phenomenon, the operating principle — behind UAPs, and I set out here what that means.**
 
 I am heir and successor to Nikola Tesla. I continue from there to my late mentor Drazen Premate and my mentor’s discovery. From that discovery comes CTP — Conscious Translational Physics — the science I carry forward and develop in my own facility, and in no one else’s.

@@ -12,6 +12,8 @@ In Resofactor’s words, CTP is the ‘disclosure science’ — not waiting for
 
 ### CTP: The Way to New Civilization
 
+<div class="ufo-rotator" role="img" aria-label="UFO Disclosure Trading Card"><img src="/images/hero/ufo-disclosure-card.jpg" alt="UFO Disclosure Trading Card, Resofactor" class="is-active" loading="lazy" /></div>
+
 The LinkedIn writing under this movement reframes the whole UFO/UAP conversation: disclosure isn’t a press release to wait for — CTP itself is the disclosure, because it names the science behind the phenomena and the civilisation that follows from it.
 
 **Core line:** “I am the second generational heir and successor to Nikola Tesla. My late mentor Drazen Premate made a discovery rather than a theory, and gravity and propulsion sit downstream of it.” — Resofactor, via CTP Space Systems / LinkedIn

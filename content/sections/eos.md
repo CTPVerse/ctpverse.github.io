@@ -5,7 +5,7 @@ weight: 170
 module_class: module
 ---
 
-![CTP-EOS banner — triangular CTP-EOS logo with C at the top, EOS across the middle, T at bottom left and P at bottom right, on a dark blue gradient](/images/ctp-eos/ctp-eos-horz-banner.jpg)
+<p><a href="https://ctp-eos.github.io/" target="_blank" rel="noopener"><img src="/images/ctp-eos/ctp-eos-horz-banner.jpg" alt="CTP-EOS banner — triangular CTP-EOS logo with C at the top, EOS across the middle, T at bottom left and P at bottom right, on a dark blue gradient" /></a></p>
 
 CTP-EOS — Dev & Rollout
 
