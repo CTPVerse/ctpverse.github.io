@@ -1,13 +1,16 @@
 /* UFO image rotator — investment documents.
-   A 250px-wide image holder at the top-left of each document card, cycling
-   dated UFO sighting photographs in random order with a crossfade, continuously.
-   Height follows the 16:9 images; scales down cleanly on narrow screens. */
+   A 250px-wide image holder UNDER the document title, top-left, cycling
+   dated UFO sighting photographs in random order with a crossfade,
+   continuously. Layout is title first, image below the title, body text
+   below the image — the rotator is a plain block, never floated, so no
+   text ever wraps beside it or slides under it. On narrow screens the
+   same order holds and the image stays left-aligned, never centred. */
 .ufo-rotator {
   width: 250px;
   max-width: 100%;
   aspect-ratio: 16 / 9;
-  float: left;
-  margin: 2px 14px 10px 0;
+  display: block;
+  margin: 0 0 12px;
   position: relative;
   overflow: hidden;
   border-radius: 4px;
@@ -39,7 +42,6 @@
 }
 @media (max-width: 720px) {
   .ufo-rotator {
-    float: none;
-    margin: 0 auto 10px;
+    margin: 0 0 10px;
   }
 }

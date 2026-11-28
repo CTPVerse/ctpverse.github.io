@@ -2,7 +2,7 @@
    Dated UFO sighting photographs, matched as closely as possible to each
    document's calendar date, cycling in RANDOM order with a crossfade,
    continuously and non-stop (a fresh shuffle every full pass).
-   Two modes: (1) injects a rotator at the top-left of each of the four
+   Two modes: (1) injects a rotator under the title of each of the four
    investment documents, matched by heading; (2) wires up any .ufo-rotator
    already present in the page (e.g. the Virk module on the Dashboard). */
 (function () {
@@ -128,18 +128,23 @@
   }
 
   function init() {
-    /* Mode 1: inject rotators into the four investment documents. */
+    /* Mode 1: inject rotators into the four investment documents.
+       Title first: the rotator goes AFTER the document heading — and after
+       the date line when one follows the heading (CTPIDM) — so the order
+       is title, date, image, body. Never before the title. The rotator
+       is a plain block in the CSS, so the body starts below it and no
+       text ever wraps beside it or slides under it. */
     var heads = document.querySelectorAll('#investors h3, #uap-investment-documents h3');
     Array.prototype.forEach.call(heads, function (h3) {
       var key = poolForHeading(h3.textContent);
       if (!key) return;
-      var article = h3.closest ? h3.closest('article') : null;
       var box = buildRotator(key);
-      if (article) {
-        article.insertBefore(box, article.firstChild);
-      } else {
-        h3.parentNode.insertBefore(box, h3);
+      var anchor = h3;
+      var next = h3.nextElementSibling;
+      if (next && next.tagName === 'P' && next.classList.contains('small') && next.classList.contains('muted')) {
+        anchor = next;
       }
+      anchor.parentNode.insertBefore(box, anchor.nextSibling);
       startRotator(box);
     });
     /* Mode 2: wire up rotators already in the page (Virk module). */
