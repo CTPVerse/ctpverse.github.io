@@ -8,6 +8,8 @@
 <title>{{ if .IsHome }}CTPVerse Dashboard{{ else }}{{ .Title }} · CTPVerse Dashboard{{ end }}</title>
 {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+{{ $ufo := resources.Get "css/ufo-rotator.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $ufo.RelPermalink }}" />
 <script>
   /* Restore the last-used theme before first paint, so there is no flash — new visitors land on CTP-EOS Cynamic (the default) */
   (function(){

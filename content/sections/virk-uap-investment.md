@@ -8,6 +8,8 @@ byline: By Rizwan Virk · The Sol Foundation White Papers · Volume 2, No. 1 · 
 ---
 
 
+<div class="ufo-rotator" role="img" aria-label="UFO sighting photographs"><img src="/assets/hero/beijing-china-1995.jpg" alt="Beijing, China — February 3, 1995" class="is-active" /><img src="/assets/hero/milan-italy-2005.jpg" alt="Milan, Italy — May 8, 2005" loading="lazy" /><img src="/assets/hero/mixquic-mexico-2004.jpg" alt="Mixquic, Mexico — November 2, 2004" loading="lazy" /><img src="/assets/hero/milan-italy-2004.jpg" alt="Milan, Italy — November 27, 2004" loading="lazy" /><div class="ufo-rotator-cap">Beijing, China — February 3, 1995</div></div>
+
 Independent third-party paper. Not affiliated with CTP. Not an endorsement of CTP.
 
 <div class="note"><b>Disclaimer — third-party materials:</b> CTP cites this work by Rizwan Virk with credit and acknowledgment for the quality of the report as it applies to CTP's technologies. CTP's use of these materials does not imply any endorsement of, or acknowledgment by, Rizwan Virk or his organization, and no working relationship exists between CTP and Rizwan Virk — neither party is working together with the other on this. CTP leaves open an invitation to collaborate, in the belief that humanity could move further ahead if we did.</div>
